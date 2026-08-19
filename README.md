@@ -2,15 +2,19 @@
 
 <!-- Typing SVG Header -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=Hi+%F0%9F%91%8B+I'm+Mohamed+Nowar;Junior+.NET+Backend+Developer;Building+Scalable+Backend+Systems+%E2%9A%A1" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=150&lines=Hi+%F0%9F%91%8B+I'm+Mohamed+Nowar;Junior+.NET+Backend+Developer;Building+Scalable+Backend+Systems+%E2%9A%A1" alt="Typing SVG" />
 </a>
 
-<!-- Profile Views Counter -->
-<img src="https://komarev.com/ghpvc/?username=EngMohamedNowar&color=7C3AED&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
+<br/>
 
-<!-- Status Badge -->
-<img src="https://img.shields.io/badge/💼-Open%20to%20Work-111827?style=for-the-badge&logo=github&logoColor=white&labelColor=22C55E" alt="Open to Work" />
-<img src="https://img.shields.io/badge/🌍-Open%20to%20Remote-111827?style=for-the-badge&logo=googleearth&logoColor=white&labelColor=3B82F6" alt="Open to Remote" />
+<!-- Badges Row -->
+<table>
+  <tr>
+    <td align="center"><img src="https://komarev.com/ghpvc/?username=EngMohamedNowar&color=7C3AED&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" /></td>
+    <td align="center"><img src="https://img.shields.io/badge/%F0%9F%92%BC-Open%20to%20Work-111827?style=for-the-badge&logo=github&logoColor=white&labelColor=22C55E" alt="Open to Work" /></td>
+    <td align="center"><img src="https://img.shields.io/badge/%F0%8C%8D%8E-Open%20to%20Remote-111827?style=for-the-badge&logo=googleearth&logoColor=white&labelColor=3B82F6" alt="Open to Remote" /></td>
+  </tr>
+</table>
 
 </div>
 
