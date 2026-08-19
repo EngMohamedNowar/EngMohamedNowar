@@ -272,7 +272,8 @@ var developer = new Developer
 
 > *"Building backend systems that are as clean as the code that powers them."* 🚀
 
-<!-- Footer Typing SVG -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=4000&pause=1000&color=7C3AED&center=true&vCenter=true&multiline=true&repeat=true&width=400&height=60&lines=Thanks+for+visiting!+⭐+Star+my+repos+if+you+like+them" alt="Footer" />
+---
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=4000&pause=1000&color=7C3AED&center=true&vCenter=true&multiline=true&repeat=true&width=400&height=60&lines=Thanks+for+visiting!+%E2%AD%90+Star+my+repos+if+you+like+them)](https://git.io/typing-svg)
 
 </div>
