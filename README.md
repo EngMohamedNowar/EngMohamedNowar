@@ -94,18 +94,21 @@ var developer = new Developer
 
 <div align="center">
 
-<table>
-  <tr>
-    <td><img src="https://github-readme-stats.vercel.app/api?username=EngMohamedNowar&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" width="400" /></td>
-    <td><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EngMohamedNowar&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&width=400" /></td>
-  </tr>
-</table>
+<a href="https://github-readme-stats.vercel.app/api?username=EngMohamedNowar&show_icons=true&theme=radical&hide_border=true">
+  <img src="https://github-readme-stats.vercel.app/api?username=EngMohamedNowar&show_icons=true&theme=radical&hide_border=true" />
+</a>
+
+<a href="https://github-readme-stats.vercel.app/api/top-langs/?username=EngMohamedNowar&layout=compact&theme=radical&hide_border=true&langs_count=8">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EngMohamedNowar&layout=compact&theme=radical&hide_border=true&langs_count=8" />
+</a>
 
 </div>
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com?user=EngMohamedNowar&theme=tokyonight&hide_border=true" width="700" />
+<a href="https://streak-stats.demolab.com?user=EngMohamedNowar&theme=radical&hide_border=true">
+  <img src="https://streak-stats.demolab.com?user=EngMohamedNowar&theme=radical&hide_border=true" />
+</a>
 
 </div>
 
@@ -117,7 +120,9 @@ var developer = new Developer
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=EngMohamedNowar&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=10" width="700" />
+<a href="https://github-profile-trophy.vercel.app/?username=EngMohamedNowar&theme=radical&no-frame=true&no-bg=true&column=7">
+  <img src="https://github-profile-trophy.vercel.app/?username=EngMohamedNowar&theme=radical&no-frame=true&no-bg=true&column=7" />
+</a>
 
 </div>
 
@@ -270,9 +275,9 @@ var developer = new Developer
 
 <div align="center">
 
-> *"Building backend systems that are as clean as the code that powers them."* 🚀
+### *Building backend systems that are as clean as the code that powers them.* 🚀
 
----
+<br/>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=4000&pause=1000&color=7C3AED&center=true&vCenter=true&multiline=true&repeat=true&width=400&height=60&lines=Thanks+for+visiting!+%E2%AD%90+Star+my+repos+if+you+like+them)](https://git.io/typing-svg)
 
