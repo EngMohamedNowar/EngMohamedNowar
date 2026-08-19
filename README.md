@@ -94,21 +94,21 @@ var developer = new Developer
 
 <div align="center">
 
-<a href="https://github-readme-stats.vercel.app/api?username=EngMohamedNowar&show_icons=true&hide_border=true">
-  <img src="https://github-readme-stats.vercel.app/api?username=EngMohamedNowar&show_icons=true&hide_border=true" />
+<a href="https://ghstats.dev/profile/EngMohamedNowar">
+  <img src="https://ghstats.dev/api/card?username=EngMohamedNowar&theme=blue-green" />
 </a>
 
-<a href="https://github-readme-stats.vercel.app/api/top-langs/?username=EngMohamedNowar&layout=compact&hide_border=true&langs_count=8">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EngMohamedNowar&layout=compact&hide_border=true&langs_count=8" />
+<a href="https://ghstats.dev/profile/EngMohamedNowar">
+  <img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=stars&color=FFD700" />
+  <img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=commits&color=0ea5e9" />
+  <img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=contributions&color=a855f7" />
 </a>
 
 </div>
 
 <div align="center">
 
-<a href="https://streak-stats.demolab.com?user=EngMohamedNowar&hide_border=true">
-  <img src="https://streak-stats.demolab.com?user=EngMohamedNowar&hide_border=true" />
-</a>
+<img src="https://ghstats.dev/api/sparkline?username=EngMohamedNowar&days=90&width=500" />
 
 </div>
 
@@ -116,13 +116,11 @@ var developer = new Developer
 
 ---
 
-## 🏆 GitHub Trophies
+## 🏆 Activity
 
 <div align="center">
 
-<a href="https://github-profile-trophy.vercel.app/?username=EngMohamedNowar&no-frame=true&no-bg=true&column=7">
-  <img src="https://github-profile-trophy.vercel.app/?username=EngMohamedNowar&no-frame=true&no-bg=true&column=7" />
-</a>
+<img src="https://ghstats.dev/api/sparkline?username=EngMohamedNowar&days=365&width=700&theme=blue-green" />
 
 </div>
 
