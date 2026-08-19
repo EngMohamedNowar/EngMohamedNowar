@@ -94,20 +94,20 @@ var developer = new Developer
 
 <div align="center">
 
-<a href="https://github-readme-stats.vercel.app/api?username=EngMohamedNowar&show_icons=true&theme=radical&hide_border=true">
-  <img src="https://github-readme-stats.vercel.app/api?username=EngMohamedNowar&show_icons=true&theme=radical&hide_border=true" />
+<a href="https://github-readme-stats.vercel.app/api?username=EngMohamedNowar&show_icons=true&hide_border=true">
+  <img src="https://github-readme-stats.vercel.app/api?username=EngMohamedNowar&show_icons=true&hide_border=true" />
 </a>
 
-<a href="https://github-readme-stats.vercel.app/api/top-langs/?username=EngMohamedNowar&layout=compact&theme=radical&hide_border=true&langs_count=8">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EngMohamedNowar&layout=compact&theme=radical&hide_border=true&langs_count=8" />
+<a href="https://github-readme-stats.vercel.app/api/top-langs/?username=EngMohamedNowar&layout=compact&hide_border=true&langs_count=8">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EngMohamedNowar&layout=compact&hide_border=true&langs_count=8" />
 </a>
 
 </div>
 
 <div align="center">
 
-<a href="https://streak-stats.demolab.com?user=EngMohamedNowar&theme=radical&hide_border=true">
-  <img src="https://streak-stats.demolab.com?user=EngMohamedNowar&theme=radical&hide_border=true" />
+<a href="https://streak-stats.demolab.com?user=EngMohamedNowar&hide_border=true">
+  <img src="https://streak-stats.demolab.com?user=EngMohamedNowar&hide_border=true" />
 </a>
 
 </div>
@@ -120,8 +120,8 @@ var developer = new Developer
 
 <div align="center">
 
-<a href="https://github-profile-trophy.vercel.app/?username=EngMohamedNowar&theme=radical&no-frame=true&no-bg=true&column=7">
-  <img src="https://github-profile-trophy.vercel.app/?username=EngMohamedNowar&theme=radical&no-frame=true&no-bg=true&column=7" />
+<a href="https://github-profile-trophy.vercel.app/?username=EngMohamedNowar&no-frame=true&no-bg=true&column=7">
+  <img src="https://github-profile-trophy.vercel.app/?username=EngMohamedNowar&no-frame=true&no-bg=true&column=7" />
 </a>
 
 </div>
