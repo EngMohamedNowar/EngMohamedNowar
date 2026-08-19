@@ -281,6 +281,6 @@ var developer = new Developer
 
 <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=4000&pause=1000&color=7C3AED&center=true&vCenter=true&multiline=true&repeat=true&width=400&height=60&lines=Thanks+for+visiting!+%E2%AD%90+Star+my+repos+if+you+like+them)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=4000&pause=1000&color=7C3AED&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=60&lines=Thanks+for+visiting!+%E2%AD%90+Star+my+repos+if+you+like+them)](https://git.io/typing-svg)
 
 </div>
