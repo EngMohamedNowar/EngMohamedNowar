@@ -277,6 +277,9 @@ var developer = new Developer
 <a href="https://instagram.com/mohamednowar_">
   <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
 </a>
+<a href="https://x.com/mohamednowar_">
+  <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" />
+</a>
 
 </div>
 
