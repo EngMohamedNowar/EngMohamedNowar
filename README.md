@@ -155,10 +155,10 @@ var developer = new Developer
     <td width="50%" valign="top">
       <h3 align="center">🛒 Ecommerce API</h3>
       <p align="center">
-        <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" />
-        <img src="https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
-        <img src="https://img.shields.io/badge/EF%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
-        <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white" />
+        <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge-square&logo=csharp&logoColor=white" />
+        <img src="https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=for-the-badge-square&logo=dotnet&logoColor=white" />
+        <img src="https://img.shields.io/badge/EF%20Core-512BD4?style=for-the-badge-square&logo=dotnet&logoColor=white" />
+        <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge-square&logo=microsoftsqlserver&logoColor=white" />
       </p>
       <p align="center">RESTful e-commerce API with product catalog, cart, orders, and inventory management. JWT auth with role-based access.</p>
       <p align="center">
@@ -170,10 +170,10 @@ var developer = new Developer
     <td width="50%" valign="top">
       <h3 align="center">🍽️ Restaurant Management System</h3>
       <p align="center">
-        <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" />
-        <img src="https://img.shields.io/badge/WPF-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
-        <img src="https://img.shields.io/badge/ESC%2FPOS-FF6600?style=flat-square&logo=epson&logoColor=white" />
-        <img src="https://img.shields.io/badge/Win32%20API-00ADEF?style=flat-square&logo=microsoft&logoColor=white" />
+        <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge-square&logo=csharp&logoColor=white" />
+        <img src="https://img.shields.io/badge/WPF-512BD4?style=for-the-badge-square&logo=dotnet&logoColor=white" />
+        <img src="https://img.shields.io/badge/ESC%2FPOS-FF6600?style=for-the-badge-square&logo=epson&logoColor=white" />
+        <img src="https://img.shields.io/badge/Win32%20API-00ADEF?style=for-the-badge-square&logo=microsoft&logoColor=white" />
       </p>
       <p align="center">Production-deployed desktop system with ESC/POS thermal printing, Arabic receipt support, and Win32 API integration.</p>
       <p align="center">
@@ -187,10 +187,10 @@ var developer = new Developer
     <td width="50%" valign="top">
       <h3 align="center">🏋️ Gym Management System</h3>
       <p align="center">
-        <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" />
-        <img src="https://img.shields.io/badge/ASP.NET%20MVC-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
-        <img src="https://img.shields.io/badge/EF%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
-        <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white" />
+        <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge-square&logo=csharp&logoColor=white" />
+        <img src="https://img.shields.io/badge/ASP.NET%20MVC-512BD4?style=for-the-badge-square&logo=dotnet&logoColor=white" />
+        <img src="https://img.shields.io/badge/EF%20Core-512BD4?style=for-the-badge-square&logo=dotnet&logoColor=white" />
+        <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge-square&logo=bootstrap&logoColor=white" />
       </p>
       <p align="center">Full gym management with member tracking, trainer scheduling, session booking, and membership lifecycle.</p>
       <p align="center">
@@ -202,9 +202,9 @@ var developer = new Developer
     <td width="50%" valign="top">
       <h3 align="center">🎬 Cinema Ticket Reservation API</h3>
       <p align="center">
-        <img src="https://img.shields.io/badge/REST%20API-2563EB?style=flat-square&logo=postman&logoColor=white" />
-        <img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" />
-        <img src="https://img.shields.io/badge/Relational%20DB-4169E1?style=flat-square&logo=database&logoColor=white" />
+        <img src="https://img.shields.io/badge/REST%20API-2563EB?style=for-the-badge-square&logo=postman&logoColor=white" />
+        <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge-square&logo=jsonwebtokens&logoColor=white" />
+        <img src="https://img.shields.io/badge/Relational%20DB-4169E1?style=for-the-badge-square&logo=database&logoColor=white" />
       </p>
       <p align="center">Movie schedules, seat selection, and ticket booking API with JWT auth and role-based permissions.</p>
       <p align="center">
@@ -260,27 +260,27 @@ var developer = new Developer
 <div align="center">
 
 <a href="https://linkedin.com/in/mohamednowar">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white&label=LinkedIn&message=mohamednowar" />
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&label=LinkedIn&message=mohamednowar" />
 </a>
 <a href="https://engmohamednowar.github.io/portfolio/">
-  <img src="https://img.shields.io/badge/Portfolio-00A86B?style=flat&logo=googlechrome&logoColor=white&label=Portfolio&message=engmohamednowar" />
+  <img src="https://img.shields.io/badge/Portfolio-00A86B?style=for-the-badge&logo=googlechrome&logoColor=white&label=Portfolio&message=engmohamednowar" />
 </a>
 <a href="mailto:mohamednowar2002@gmail.com">
-  <img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white&label=Email&message=mohamednowar2002" />
+  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&label=Email&message=mohamednowar2002" />
 </a>
 <br/>
 <a href="https://github.com/EngMohamedNowar">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white&label=GitHub&message=EngMohamedNowar" />
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white&label=GitHub&message=EngMohamedNowar" />
 </a>
 <a href="https://wa.me/201557722675">
-  <img src="https://img.shields.io/badge/WhatsApp-25D366?style=flat&logo=whatsapp&logoColor=white&label=WhatsApp&message=+201557722675" />
+  <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&label=WhatsApp&message=+201557722675" />
 </a>
 <a href="https://x.com/mohamednowar_">
-  <img src="https://img.shields.io/badge/X-000000?style=flat&logo=x&logoColor=white&label=Follow&message=mohamednowar_" />
+  <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white&label=Follow&message=mohamednowar_" />
 </a>
 <br/>
 <a href="https://instagram.com/mohamednowar_">
-  <img src="https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white&label=Instagram&message=mohamednowar_" />
+  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&label=Instagram&message=mohamednowar_" />
 </a>
 
 </div>
