@@ -259,7 +259,7 @@ var developer = new Developer
 
 <div align="center">
 
-<a href="https://linkedin.com/in/mohamednowar2002">
+<a href="https://linkedin.com/in/mohamednowar">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 <a href="https://engmohamednowar.github.io/portfolio/">
