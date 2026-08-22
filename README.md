@@ -78,6 +78,8 @@ var developer = new Developer
 
 #### Architecture & Security
 <img src="https://img.shields.io/badge/Clean%20Architecture-7C3AED?style=for-the-badge&logo=pattern&logoColor=white" />
+<img src="https://img.shields.io/badge/CQRS-FF6B35?style=for-the-badge&logo=mediatr&logoColor=white" />
+<img src="https://img.shields.io/badge/MediatR-7C3AED?style=for-the-badge&logo=mediatr&logoColor=white" />
 <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" />
 <img src="https://img.shields.io/badge/RESTful%20APIs-2563EB?style=for-the-badge&logo=postman&logoColor=white" />
 
