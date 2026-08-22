@@ -100,15 +100,15 @@ var developer = new Developer
 
 <div align="center">
 
-<a href="https://ghstats.dev/profile/EngMohamedNowar">
-  <img src="https://ghstats.dev/api/card?username=EngMohamedNowar&theme=blue-green" />
-</a>
+<img src="https://ghstats.dev/api/card?username=EngMohamedNowar&theme=blue-green" />
 
-<a href="https://ghstats.dev/profile/EngMohamedNowar">
-  <img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=stars&color=FFD700" />
-  <img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=commits&color=0ea5e9" />
-  <img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=contributions&color=a855f7" />
-</a>
+</div>
+
+<div align="center">
+
+<img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=stars&color=FFD700" />
+<img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=commits&color=0ea5e9" />
+<img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=contributions&color=a855f7" />
 
 </div>
 
@@ -157,10 +157,10 @@ var developer = new Developer
     <td width="50%" valign="top">
       <h3 align="center">🛒 Ecommerce API</h3>
       <p align="center">
-        <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge-square&logo=csharp&logoColor=white" />
-        <img src="https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=for-the-badge-square&logo=dotnet&logoColor=white" />
-        <img src="https://img.shields.io/badge/EF%20Core-512BD4?style=for-the-badge-square&logo=dotnet&logoColor=white" />
-        <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge-square&logo=microsoftsqlserver&logoColor=white" />
+        <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" />
+        <img src="https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+        <img src="https://img.shields.io/badge/EF%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+        <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white" />
       </p>
       <p align="center">RESTful e-commerce API with product catalog, cart, orders, and inventory management. JWT auth with role-based access.</p>
       <p align="center">
@@ -172,14 +172,14 @@ var developer = new Developer
     <td width="50%" valign="top">
       <h3 align="center">🍽️ Restaurant Management System</h3>
       <p align="center">
-        <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge-square&logo=csharp&logoColor=white" />
-        <img src="https://img.shields.io/badge/WPF-512BD4?style=for-the-badge-square&logo=dotnet&logoColor=white" />
-        <img src="https://img.shields.io/badge/ESC%2FPOS-FF6600?style=for-the-badge-square&logo=epson&logoColor=white" />
-        <img src="https://img.shields.io/badge/Win32%20API-00ADEF?style=for-the-badge-square&logo=microsoft&logoColor=white" />
+        <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" />
+        <img src="https://img.shields.io/badge/WPF-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+        <img src="https://img.shields.io/badge/ESC%2FPOS-FF6600?style=flat-square&logo=epson&logoColor=white" />
+        <img src="https://img.shields.io/badge/Win32%20API-00ADEF?style=flat-square&logo=microsoft&logoColor=white" />
       </p>
       <p align="center">Production-deployed desktop system with ESC/POS thermal printing, Arabic receipt support, and Win32 API integration.</p>
       <p align="center">
-        <a href="https://github.com/EngMohamedNowar?tab=repositories">
+        <a href="https://github.com/EngMohamedNowar/RestaurantPOS_DesktopApplication">
           <img src="https://img.shields.io/badge/View-Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
         </a>
       </p>
@@ -189,10 +189,10 @@ var developer = new Developer
     <td width="50%" valign="top">
       <h3 align="center">🏋️ Gym Management System</h3>
       <p align="center">
-        <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge-square&logo=csharp&logoColor=white" />
-        <img src="https://img.shields.io/badge/ASP.NET%20MVC-512BD4?style=for-the-badge-square&logo=dotnet&logoColor=white" />
-        <img src="https://img.shields.io/badge/EF%20Core-512BD4?style=for-the-badge-square&logo=dotnet&logoColor=white" />
-        <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge-square&logo=bootstrap&logoColor=white" />
+        <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" />
+        <img src="https://img.shields.io/badge/ASP.NET%20MVC-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+        <img src="https://img.shields.io/badge/EF%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+        <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white" />
       </p>
       <p align="center">Full gym management with member tracking, trainer scheduling, session booking, and membership lifecycle.</p>
       <p align="center">
@@ -204,9 +204,9 @@ var developer = new Developer
     <td width="50%" valign="top">
       <h3 align="center">🎬 Cinema Ticket Reservation API</h3>
       <p align="center">
-        <img src="https://img.shields.io/badge/REST%20API-2563EB?style=for-the-badge-square&logo=postman&logoColor=white" />
-        <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge-square&logo=jsonwebtokens&logoColor=white" />
-        <img src="https://img.shields.io/badge/Relational%20DB-4169E1?style=for-the-badge-square&logo=database&logoColor=white" />
+        <img src="https://img.shields.io/badge/REST%20API-2563EB?style=flat-square&logo=postman&logoColor=white" />
+        <img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" />
+        <img src="https://img.shields.io/badge/Relational%20DB-4169E1?style=flat-square&logo=database&logoColor=white" />
       </p>
       <p align="center">Movie schedules, seat selection, and ticket booking API with JWT auth and role-based permissions.</p>
       <p align="center">
@@ -217,6 +217,28 @@ var developer = new Developer
     </td>
   </tr>
 </table>
+
+<br/>
+
+---
+
+## 📱 Screenshots
+
+<div align="center">
+
+> 📸 *Add screenshots of your projects here!*
+> 
+> Example:
+> ```markdown
+> <table>
+>   <tr>
+>     <td><img src="screenshot1.png" width="400" /></td>
+>     <td><img src="screenshot2.png" width="400" /></td>
+>   </tr>
+> </table>
+> ```
+
+</div>
 
 <br/>
 
@@ -257,6 +279,32 @@ var developer = new Developer
 
 ---
 
+## 🎓 Certifications
+
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <h3>🤖 HCIA-AI V3.5</h3>
+      <p><strong>Huawei AI Talent Track</strong><br/>NTI x Huawei<br/>Score: 96%<br/><em>Sep 2024 - Oct 2024</em></p>
+      <a href="#"><img src="https://img.shields.io/badge/View-Certificate-7C3AED?style=for-the-badge&logo=huawei&logoColor=white" /></a>
+    </td>
+    <td align="center" width="33%">
+      <h3>🐍 Full Stack Python</h3>
+      <p><strong>Information Technology Institute</strong><br/>ITI<br/>120 Hours<br/><em>Jul 2024 - Aug 2024</em></p>
+      <a href="#"><img src="https://img.shields.io/badge/View-Certificate-00A86B?style=for-the-badge&logo=python&logoColor=white" /></a>
+    </td>
+    <td align="center" width="33%">
+      <h3>🌐 ASP.NET Core</h3>
+      <p><strong>Route Academy</strong><br/>Back-End Training<br/>Clean Architecture<br/><em>Dec 2025 - Jul 2026</em></p>
+      <a href="#"><img src="https://img.shields.io/badge/View-Certificate-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" /></a>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+---
+
 ## 📫 Let's Connect
 
 <div align="center">
@@ -283,6 +331,22 @@ var developer = new Developer
 <br/>
 <a href="https://instagram.com/mohamednowar_">
   <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&label=Instagram&message=mohamednowar_" />
+</a>
+
+</div>
+
+<br/>
+
+---
+
+## ☕ Support
+
+<div align="center">
+
+If you find my work helpful, consider buying me a coffee!
+
+<a href="https://buymeacoffee.com/engmohamednowar">
+  <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" />
 </a>
 
 </div>
