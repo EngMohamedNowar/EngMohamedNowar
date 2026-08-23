@@ -254,11 +254,11 @@ var developer = new Developer
     <td align="center"><strong>Dashboard</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/dashboard.png" width="400" /></td>
   </tr>
   <tr>
-    <td align="center"><strong>Focus Timer</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/focus-timer.png" width="400" /></td>
-    <td align="center"><strong>New Task</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/new-task.png" width="400" /></td>
+    <td align="center"><strong>Focus Timer</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/Timer.png" width="400" /></td>
+    <td align="center"><strong>New Task</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/add%20task.png" width="400" /></td>
   </tr>
   <tr>
-    <td align="center"><strong>Focus Stats</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/focus-stats-summary.png" width="400" /></td>
+    <td align="center"><strong>Focus Stats</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/Status.png" width="400" /></td>
     <td align="center"><strong>Theme Picker</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/theme-picker.png" width="400" /></td>
   </tr>
 </table>
