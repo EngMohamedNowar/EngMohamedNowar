@@ -263,6 +263,27 @@ var developer = new Developer
   </tr>
 </table>
 
+### 🍕 Restaurant POS System
+
+<table>
+  <tr>
+    <td align="center"><strong>Login</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/01-login.png" width="400" /></td>
+    <td align="center"><strong>POS Admin</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/03-pos-admin.png" width="400" /></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Categories</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/05-categories.png" width="400" /></td>
+    <td align="center"><strong>Warehouse</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/07-warehouse.png" width="400" /></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Offers</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/08-offers.png" width="400" /></td>
+    <td align="center"><strong>Daily Report</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/19-report-daily.png" width="400" /></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Order Tracking</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/29-order-tracking.png" width="400" /></td>
+    <td align="center"><strong>Settings</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/28-settings.png" width="400" /></td>
+  </tr>
+</table>
+
 </div>
 
 <br/>
