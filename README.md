@@ -385,21 +385,6 @@ var developer = new Developer
 
 ---
 
-## ☕ Support
-
-<div align="center">
-
-If you find my work helpful, consider buying me a coffee!
-
-<a href="https://buymeacoffee.com/engmohamednowar">
-  <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" />
-</a>
-
-</div>
-
-<br/>
-
----
 
 <div align="center">
 
