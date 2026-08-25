@@ -290,17 +290,6 @@ var developer = new Developer
 
 ---
 
-## 📈 Activity Graph
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=EngMohamedNowar&theme=tokyonight&hide_border=true&area=true&height=250" width="700" />
-
-</div>
-
-<br/>
-
----
 
 ## 🎯 What I Bring to the Table
 
