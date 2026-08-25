@@ -118,7 +118,6 @@ var developer = new Developer
 
 </div>
 
-<br/>
 
 ---
 
