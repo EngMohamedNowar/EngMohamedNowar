@@ -122,7 +122,7 @@ var developer = new Developer
 
 ---
 
-## 🏆 Activity
+<!--## 🏆 Activity -->
 
 <!-- <div align="center">
 
