@@ -112,11 +112,11 @@ var developer = new Developer
 
 </div>
 
-<!-- <div align="center">
+<div align="center">
 
 <img src="https://ghstats.dev/api/sparkline?username=EngMohamedNowar&days=90&width=500" />
 
-</div> -->
+</div>
 
 <br/>
 
@@ -124,11 +124,11 @@ var developer = new Developer
 
 ## 🏆 Activity
 
-<div align="center">
+<!-- <div align="center">
 
 <img src="https://ghstats.dev/api/sparkline?username=EngMohamedNowar&days=365&width=700&theme=blue-green" />
 
-</div>
+</div> -->
 
 <br/>
 
