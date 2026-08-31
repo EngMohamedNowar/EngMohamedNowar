@@ -52,7 +52,7 @@ var developer = new Developer
 <div align="center">
 
 ### Languages & Frameworks
-<img src="https://skillicons.dev/icons?i=cs,dotnet,aspnet,ef,html,css,js" />
+<img src="https://skillicons.dev/icons?i=cs,dotnet,aspnet,ef,python,django,html,css,js" />
 
 ### Tools & Platforms
 <img src="https://skillicons.dev/icons?i=git,github,postman,vs,vscode,redis,postgres,docker" />
@@ -296,7 +296,7 @@ var developer = new Developer
   <tr>
     <td align="center" width="33%">
       <h3>🏗️ Architecture</h3>
-      <p>Clean Architecture<br/>Repository Pattern<br/>Unit of Work<br/>Three-Layer Architecture</p>
+      <p>Clean Architecture<br/>Repository Pattern<br/>Unit of Work<br/>CQRS &amp; MediatR<br/>Three-Layer Architecture</p>
     </td>
     <td align="center" width="33%">
       <h3>🔐 Security</h3>
@@ -304,7 +304,7 @@ var developer = new Developer
     </td>
     <td align="center" width="33%">
       <h3>💾 Data</h3>
-      <p>SQL Server<br/>PostgreSQL<br/>Redis Caching<br/>EF Core</p>
+      <p>SQL Server<br/>PostgreSQL<br/>Redis Caching<br/>EF Core<br/>Django ORM</p>
     </td>
   </tr>
 </table>
