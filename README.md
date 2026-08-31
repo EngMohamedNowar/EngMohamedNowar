@@ -1,7 +1,6 @@
 <div align="center">
 
 <!-- Typing SVG Header -->
-
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=150&lines=Hi+%F0%9F%91%8B+I'm+Mohamed+Nowar;Junior+.NET+Backend+Developer;Building+Scalable+Backend+Systems+%E2%9A%A1" alt="Typing SVG" />
 </a>
@@ -9,18 +8,11 @@
 <br/>
 
 <!-- Badges Row -->
-
 <table>
   <tr>
-    <td align="center">
-      <img src="https://komarev.com/ghpvc/?username=EngMohamedNowar&color=7C3AED&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
-    </td>
-    <td align="center">
-      <img src="https://img.shields.io/badge/%F0%9F%92%BC-Open%20to%20Work-111827?style=for-the-badge&logo=github&logoColor=white&labelColor=22C55E" alt="Open to Work" />
-    </td>
-    <td align="center">
-      <img src="https://img.shields.io/badge/%F0%8C%8D%F0%9F%8C%8E-Open%20to%20Remote-111827?style=for-the-badge&logo=googleearth&logoColor=white&labelColor=3B82F6" alt="Open to Remote" />
-    </td>
+    <td align="center"><img src="https://komarev.com/ghpvc/?username=EngMohamedNowar&color=7C3AED&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" /></td>
+    <td align="center"><img src="https://img.shields.io/badge/%F0%9F%92%BC-Open%20to%20Work-111827?style=for-the-badge&logo=github&logoColor=white&labelColor=22C55E" alt="Open to Work" /></td>
+    <td align="center"><img src="https://img.shields.io/badge/%F0%8C%8D%8E-Open%20to%20Remote-111827?style=for-the-badge&logo=googleearth&logoColor=white&labelColor=3B82F6" alt="Open to Remote" /></td>
   </tr>
 </table>
 
@@ -37,25 +29,21 @@ var developer = new Developer
     Title = "Junior .NET Backend Developer",
     Location = "Cairo, Egypt",
     WorkPreference = "Open to Remote",
-
-    Languages = new[]
-    {
-        "Arabic (Native)",
-        "English (Professional)"
-    },
-
+    Languages = new[] { "Arabic (Native)", "English (Professional)" },
+    
     Passion = "Building clean, scalable backend systems with .NET",
-
-    CurrentlyLearning = new[]
-    {
+    
+    CurrentlyLearning = new[] {
         "Advanced Clean Architecture Patterns",
         "Microservices with .NET",
         "Cloud-Native Development"
     },
-
+    
     FunFact = "I once debugged an Arabic receipt printer for 3 days straight 🖨️"
 };
 ```
+
+<br/>
 
 ---
 
@@ -64,44 +52,38 @@ var developer = new Developer
 <div align="center">
 
 ### Languages & Frameworks
-
-<img src="https://skillicons.dev/icons?i=cs,dotnet,aspnet,python,django,html,css,js" />
+<img src="https://skillicons.dev/icons?i=cs,dotnet,aspnet,ef,python,django,html,css,js" />
 
 ### Tools & Platforms
-
-<img src="https://skillicons.dev/icons?i=git,github,postman,visualstudio,vscode,redis,postgres,docker" />
+<img src="https://skillicons.dev/icons?i=git,github,postman,vs,vscode,redis,postgres,docker" />
 
 </div>
 
 <br/>
 
+<!-- Badges Row -->
 <div align="center">
 
-### Backend
-
+#### Backend
 <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" />
 <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
 <img src="https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
 <img src="https://img.shields.io/badge/Entity%20Framework-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
 <img src="https://img.shields.io/badge/WPF-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
 
-### Databases & Caching
-
+#### Databases & Caching
 <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white" />
 <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
 <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" />
-<img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
 
-### Architecture & Security
-
-<img src="https://img.shields.io/badge/Clean%20Architecture-7C3AED?style=for-the-badge&logoColor=white" />
-<img src="https://img.shields.io/badge/CQRS-FF6B35?style=for-the-badge&logoColor=white" />
-<img src="https://img.shields.io/badge/MediatR-7C3AED?style=for-the-badge&logoColor=white" />
+#### Architecture & Security
+<img src="https://img.shields.io/badge/Clean%20Architecture-7C3AED?style=for-the-badge&logo=pattern&logoColor=white" />
+<img src="https://img.shields.io/badge/CQRS-FF6B35?style=for-the-badge&logo=mediatr&logoColor=white" />
+<img src="https://img.shields.io/badge/MediatR-7C3AED?style=for-the-badge&logo=mediatr&logoColor=white" />
 <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" />
-<img src="https://img.shields.io/badge/RESTful%20APIs-2563EB?style=for-the-badge&logoColor=white" />
+<img src="https://img.shields.io/badge/RESTful%20APIs-2563EB?style=for-the-badge&logo=postman&logoColor=white" />
 
-### Tools
-
+#### Tools
 <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
 <img src="https://img.shields.io/badge/Visual%20Studio-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white" />
@@ -120,17 +102,33 @@ var developer = new Developer
 
 <img src="https://ghstats.dev/api/card?username=EngMohamedNowar&theme=blue-green" />
 
-<br/><br/>
+</div>
+
+<div align="center">
 
 <img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=stars&color=FFD700" />
 <img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=commits&color=0ea5e9" />
 <img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=contributions&color=a855f7" />
 
-<br/><br/>
+</div>
+
+<div align="center">
 
 <img src="https://ghstats.dev/api/sparkline?username=EngMohamedNowar&days=90&width=500" />
 
 </div>
+
+---
+
+<!--## 🏆 Activity -->
+
+<!-- <div align="center">
+
+<img src="https://ghstats.dev/api/sparkline?username=EngMohamedNowar&days=365&width=700&theme=blue-green" />
+
+</div> -->
+
+<br/>
 
 ---
 
@@ -139,18 +137,9 @@ var developer = new Developer
 <div align="center">
 
 <picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/output/github-snake-dark.svg"
-  />
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/output/github-snake.svg"
-  />
-  <img
-    alt="github-snake"
-    src="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/output/github-snake.svg"
-  />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/output/github-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/output/github-snake.svg" />
 </picture>
 
 </div>
@@ -163,150 +152,87 @@ var developer = new Developer
 
 <table>
   <tr>
-
-```
-<!-- Ecommerce -->
-<td width="50%" valign="top">
-
-  <h3 align="center">🛒 Ecommerce API</h3>
-
-  <p align="center">
-    <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" />
-    <img src="https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
-    <img src="https://img.shields.io/badge/EF%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
-    <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white" />
-  </p>
-
-  <p align="center">
-    RESTful e-commerce API with product catalog, cart, orders,
-    inventory management, JWT authentication, and role-based access control.
-  </p>
-
-  <p align="center">
-    <a href="https://github.com/EngMohamedNowar">
-      <img src="https://img.shields.io/badge/View-Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
-    </a>
-  </p>
-
-</td>
-
-<!-- Restaurant POS -->
-<td width="50%" valign="top">
-
-  <h3 align="center">🍽️ Restaurant Management System</h3>
-
-  <p align="center">
-    <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" />
-    <img src="https://img.shields.io/badge/WPF-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
-    <img src="https://img.shields.io/badge/ESC%2FPOS-FF6600?style=flat-square&logo=epson&logoColor=white" />
-    <img src="https://img.shields.io/badge/Win32%20API-00ADEF?style=flat-square&logo=microsoft&logoColor=white" />
-  </p>
-
-  <p align="center">
-    Production-deployed desktop system with ESC/POS thermal printing,
-    Arabic receipt support, and Win32 API integration.
-  </p>
-
-  <p align="center">
-    <a href="https://github.com/EngMohamedNowar/RestaurantPOS_DesktopApplication">
-      <img src="https://img.shields.io/badge/View-Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
-    </a>
-  </p>
-
-</td>
-```
-
+    <td width="50%" valign="top">
+      <h3 align="center">🛒 Ecommerce API</h3>
+      <p align="center">
+        <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" />
+        <img src="https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+        <img src="https://img.shields.io/badge/EF%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+        <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white" />
+      </p>
+      <p align="center">RESTful e-commerce API with product catalog, cart, orders, and inventory management. JWT auth with role-based access.</p>
+      <p align="center">
+        <a href="https://github.com/EngMohamedNowar/ECommerce_API">
+          <img src="https://img.shields.io/badge/View-Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
+        </a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center">🍽️ Restaurant Management System</h3>
+      <p align="center">
+        <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" />
+        <img src="https://img.shields.io/badge/WPF-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+        <img src="https://img.shields.io/badge/ESC%2FPOS-FF6600?style=flat-square&logo=epson&logoColor=white" />
+        <img src="https://img.shields.io/badge/Win32%20API-00ADEF?style=flat-square&logo=microsoft&logoColor=white" />
+      </p>
+      <p align="center">Production-deployed desktop system with ESC/POS thermal printing, Arabic receipt support, and Win32 API integration.</p>
+      <p align="center">
+        <a href="https://github.com/EngMohamedNowar/RestaurantPOS_DesktopApplication">
+          <img src="https://img.shields.io/badge/View-Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
+        </a>
+      </p>
+    </td>
   </tr>
-
   <tr>
-
-```
-<!-- Gym -->
-<td width="50%" valign="top">
-
-  <h3 align="center">🏋️ Gym Management System</h3>
-
-  <p align="center">
-    <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" />
-    <img src="https://img.shields.io/badge/ASP.NET%20MVC-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
-    <img src="https://img.shields.io/badge/EF%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
-    <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white" />
-  </p>
-
-  <p align="center">
-    Full gym management system with member tracking,
-    trainer scheduling, session booking, and membership lifecycle management.
-  </p>
-
-  <p align="center">
-    <a href="https://github.com/EngMohamedNowar">
-      <img src="https://img.shields.io/badge/View-Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
-    </a>
-  </p>
-
-</td>
-
-<!-- Cinema -->
-<td width="50%" valign="top">
-
-  <h3 align="center">🎬 Cinema Ticket Reservation API</h3>
-
-  <p align="center">
-    <img src="https://img.shields.io/badge/REST%20API-2563EB?style=flat-square&logo=postman&logoColor=white" />
-    <img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" />
-    <img src="https://img.shields.io/badge/Relational%20DB-4169E1?style=flat-square&logo=database&logoColor=white" />
-  </p>
-
-  <p align="center">
-    Movie schedules, seat selection, and ticket booking API
-    with JWT authentication and role-based permissions.
-  </p>
-
-  <p align="center">
-    <a href="https://github.com/EngMohamedNowar/CinemaTicketsReservationAPI">
-      <img src="https://img.shields.io/badge/View-Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
-    </a>
-  </p>
-
-</td>
-```
-
+    <td width="50%" valign="top">
+      <h3 align="center">🏋️ Gym Management System</h3>
+      <p align="center">
+        <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" />
+        <img src="https://img.shields.io/badge/ASP.NET%20MVC-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+        <img src="https://img.shields.io/badge/EF%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+        <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white" />
+      </p>
+      <p align="center">Full gym management with member tracking, trainer scheduling, session booking, and membership lifecycle.</p>
+      <p align="center">
+        <a href="https://github.com/EngMohamedNowar/GymManagementSystem_MVC">
+          <img src="https://img.shields.io/badge/View-Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
+        </a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center">🎬 Cinema Ticket Reservation API</h3>
+      <p align="center">
+        <img src="https://img.shields.io/badge/REST%20API-2563EB?style=flat-square&logo=postman&logoColor=white" />
+        <img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" />
+        <img src="https://img.shields.io/badge/Relational%20DB-4169E1?style=flat-square&logo=database&logoColor=white" />
+      </p>
+      <p align="center">Movie schedules, seat selection, and ticket booking API with JWT auth and role-based permissions.</p>
+      <p align="center">
+        <a href="https://github.com/EngMohamedNowar/CinemaTicketsReservationAPI">
+          <img src="https://img.shields.io/badge/View-Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
+        </a>
+      </p>
+    </td>
   </tr>
-
   <tr>
-
-```
-<!-- Todo -->
-<td width="50%" valign="top">
-
-  <h3 align="center">✅ My Tasks — Todo App</h3>
-
-  <p align="center">
-    <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" />
-    <img src="https://img.shields.io/badge/.NET-8-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
-    <img src="https://img.shields.io/badge/WPF-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
-    <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" />
-    <img src="https://img.shields.io/badge/EF%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
-  </p>
-
-  <p align="center">
-    Notion-style task manager with sub-tasks, recurring tasks,
-    Pomodoro timer, dashboard, theming, and 50 unit tests.
-    Built with Clean MVVM and Repository Pattern.
-  </p>
-
-  <p align="center">
-    <a href="https://github.com/EngMohamedNowar/TodoApp">
-      <img src="https://img.shields.io/badge/View-Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
-    </a>
-  </p>
-
-</td>
-
-<td width="50%" valign="top">
-</td>
-```
-
+    <td width="50%" valign="top">
+      <h3 align="center">✅ My Tasks — Todo App</h3>
+      <p align="center">
+        <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" />
+        <img src="https://img.shields.io/badge/.NET-8-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+        <img src="https://img.shields.io/badge/WPF-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+        <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" />
+        <img src="https://img.shields.io/badge/EF%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+      </p>
+      <p align="center">Notion-style task manager with sub-tasks, recurring tasks, Pomodoro timer, dashboard, theming, and 50 unit tests. Clean MVVM + Repository pattern.</p>
+      <p align="center">
+        <a href="https://github.com/EngMohamedNowar/TodoApp">
+          <img src="https://img.shields.io/badge/View-Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
+        </a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+    </td>
   </tr>
 </table>
 
@@ -322,114 +248,54 @@ var developer = new Developer
 
 <table>
   <tr>
-    <td align="center">
-      <strong>Main View</strong><br/>
-      <img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/main.png" width="400" />
-    </td>
-
-```
-<td align="center">
-  <strong>Dashboard</strong><br/>
-  <img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/dashboard.png" width="400" />
-</td>
-```
-
+    <td align="center"><strong>Main View</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/main.png" width="400" /></td>
+    <td align="center"><strong>Dashboard</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/dashboard.png" width="400" /></td>
   </tr>
-
   <tr>
-    <td align="center">
-      <strong>Focus Timer</strong><br/>
-      <img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/Timer.png" width="400" />
-    </td>
-
-```
-<td align="center">
-  <strong>New Task</strong><br/>
-  <img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/add%20task.png" width="400" />
-</td>
-```
-
+    <td align="center"><strong>Focus Timer</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/Timer.png" width="400" /></td>
+    <td align="center"><strong>New Task</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/add%20task.png" width="400" /></td>
   </tr>
-
   <tr>
-    <td align="center">
-      <strong>Focus Stats</strong><br/>
-      <img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/Status.png" width="400" />
-    </td>
-
-```
-<td align="center">
-  <strong>Theme Picker</strong><br/>
-  <img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/theme-picker.png" width="400" />
-</td>
-```
-
+    <td align="center"><strong>Focus Stats</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/Status.png" width="400" /></td>
+    <td align="center"><strong>Theme Picker</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/theme-picker.png" width="400" /></td>
   </tr>
 </table>
 
-<br/>
+### 🏋️ Gym Management System
+
+<table>
+  <tr>
+    <td align="center"><strong>Home Page</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/GymManagementSystem_MVC/main/screenshots/01-Home-Hero.png" width="400" /></td>
+    <td align="center"><strong>Login</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/GymManagementSystem_MVC/main/screenshots/04-Login-Page.png" width="400" /></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Admin Dashboard</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/GymManagementSystem_MVC/main/screenshots/06-Admin-Dashboard-Overview.png" width="400" /></td>
+    <td align="center"><strong>Members</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/GymManagementSystem_MVC/main/screenshots/08-Members-Management.png" width="400" /></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Sessions Schedule</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/GymManagementSystem_MVC/main/screenshots/13-Sessions-Schedule.png" width="400" /></td>
+    <td align="center"><strong>Membership Plans</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/GymManagementSystem_MVC/main/screenshots/14-Membership-Plans.png" width="400" /></td>
+  </tr>
+</table>
 
 ### 🍕 Restaurant POS System
 
 <table>
   <tr>
-    <td align="center">
-      <strong>Login</strong><br/>
-      <img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/01-login.png" width="400" />
-    </td>
-
-```
-<td align="center">
-  <strong>POS Admin</strong><br/>
-  <img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/03-pos-admin.png" width="400" />
-</td>
-```
-
+    <td align="center"><strong>Login</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/01-login.png" width="400" /></td>
+    <td align="center"><strong>POS Admin</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/03-pos-admin.png" width="400" /></td>
   </tr>
-
   <tr>
-    <td align="center">
-      <strong>Categories</strong><br/>
-      <img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/05-categories.png" width="400" />
-    </td>
-
-```
-<td align="center">
-  <strong>Warehouse</strong><br/>
-  <img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/07-warehouse.png" width="400" />
-</td>
-```
-
+    <td align="center"><strong>Categories</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/05-categories.png" width="400" /></td>
+    <td align="center"><strong>Warehouse</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/07-warehouse.png" width="400" /></td>
   </tr>
-
   <tr>
-    <td align="center">
-      <strong>Offers</strong><br/>
-      <img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/08-offers.png" width="400" />
-    </td>
-
-```
-<td align="center">
-  <strong>Daily Report</strong><br/>
-  <img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/19-report-daily.png" width="400" />
-</td>
-```
-
+    <td align="center"><strong>Offers</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/08-offers.png" width="400" /></td>
+    <td align="center"><strong>Daily Report</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/19-report-daily.png" width="400" /></td>
   </tr>
-
   <tr>
-    <td align="center">
-      <strong>Order Tracking</strong><br/>
-      <img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/29-order-tracking.png" width="400" />
-    </td>
-
-```
-<td align="center">
-  <strong>Settings</strong><br/>
-  <img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/28-settings.png" width="400" />
-</td>
-```
-
+    <td align="center"><strong>Order Tracking</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/29-order-tracking.png" width="400" /></td>
+    <td align="center"><strong>Settings</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/28-settings.png" width="400" /></td>
   </tr>
 </table>
 
@@ -443,50 +309,18 @@ var developer = new Developer
 
 <table>
   <tr>
-
-```
-<td align="center" width="33%">
-
-  <h3>🏗️ Architecture</h3>
-
-  <p>
-    Clean Architecture<br/>
-    Repository Pattern<br/>
-    Unit of Work<br/>
-    CQRS &amp; MediatR<br/>
-    Three-Layer Architecture
-  </p>
-
-</td>
-
-<td align="center" width="33%">
-
-  <h3>🔐 Security</h3>
-
-  <p>
-    JWT Authentication<br/>
-    Role-Based Authorization<br/>
-    ASP.NET Core Identity<br/>
-    Token-Based Authentication
-  </p>
-
-</td>
-
-<td align="center" width="33%">
-
-  <h3>💾 Data</h3>
-
-  <p>
-    SQL Server<br/>
-    PostgreSQL<br/>
-    Redis Caching<br/>
-    Entity Framework Core<br/>
-    Django ORM
-  </p>
-
-</td>
-```
-
+    <td align="center" width="33%">
+      <h3>🏗️ Architecture</h3>
+      <p>Clean Architecture<br/>Repository Pattern<br/>Unit of Work<br/>CQRS &amp; MediatR<br/>Three-Layer Architecture</p>
+    </td>
+    <td align="center" width="33%">
+      <h3>🔐 Security</h3>
+      <p>JWT Authentication<br/>Role-Based Authorization<br/>ASP.NET Core Identity<br/>Token-Based Auth</p>
+    </td>
+    <td align="center" width="33%">
+      <h3>💾 Data</h3>
+      <p>SQL Server<br/>PostgreSQL<br/>Redis Caching<br/>EF Core<br/>Django ORM</p>
+    </td>
   </tr>
 </table>
 
@@ -498,60 +332,21 @@ var developer = new Developer
 
 <table>
   <tr>
-
-```
-<td align="center" width="33%">
-
-  <h3>🤖 HCIA-AI V3.5</h3>
-
-  <p>
-    <strong>Huawei AI Talent Track</strong><br/>
-    NTI x Huawei<br/>
-    Score: 96%<br/>
-    <em>Sep 2024 - Oct 2024</em>
-  </p>
-
-  <a href="#">
-    <img src="https://img.shields.io/badge/View-Certificate-7C3AED?style=for-the-badge&logo=huawei&logoColor=white" />
-  </a>
-
-</td>
-
-<td align="center" width="33%">
-
-  <h3>🐍 Full Stack Python</h3>
-
-  <p>
-    <strong>Information Technology Institute</strong><br/>
-    ITI<br/>
-    120 Hours<br/>
-    <em>Jul 2024 - Aug 2024</em>
-  </p>
-
-  <a href="#">
-    <img src="https://img.shields.io/badge/View-Certificate-00A86B?style=for-the-badge&logo=python&logoColor=white" />
-  </a>
-
-</td>
-
-<td align="center" width="33%">
-
-  <h3>🌐 ASP.NET Core</h3>
-
-  <p>
-    <strong>Route Academy</strong><br/>
-    Back-End Training<br/>
-    Clean Architecture<br/>
-    <em>Dec 2025 - Jul 2026</em>
-  </p>
-
-  <a href="#">
-    <img src="https://img.shields.io/badge/View-Certificate-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
-  </a>
-
-</td>
-```
-
+    <td align="center" width="33%">
+      <h3>🤖 HCIA-AI V3.5</h3>
+      <p><strong>Huawei AI Talent Track</strong><br/>NTI x Huawei<br/>Score: 96%<br/><em>Sep 2024 - Oct 2024</em></p>
+      <a href="#"><img src="https://img.shields.io/badge/View-Certificate-7C3AED?style=for-the-badge&logo=huawei&logoColor=white" /></a>
+    </td>
+    <td align="center" width="33%">
+      <h3>🐍 Full Stack Python</h3>
+      <p><strong>Information Technology Institute</strong><br/>ITI<br/>120 Hours<br/><em>Jul 2024 - Aug 2024</em></p>
+      <a href="#"><img src="https://img.shields.io/badge/View-Certificate-00A86B?style=for-the-badge&logo=python&logoColor=white" /></a>
+    </td>
+    <td align="center" width="33%">
+      <h3>🌐 ASP.NET Core</h3>
+      <p><strong>Route Academy</strong><br/>Back-End Training<br/>Clean Architecture<br/><em>Dec 2025 - Jul 2026</em></p>
+      <a href="#"><img src="https://img.shields.io/badge/View-Certificate-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" /></a>
+    </td>
   </tr>
 </table>
 
@@ -566,31 +361,23 @@ var developer = new Developer
 <a href="https://linkedin.com/in/mohamednowar">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&label=LinkedIn&message=mohamednowar" />
 </a>
-
 <a href="https://engmohamednowar.github.io/portfolio/">
   <img src="https://img.shields.io/badge/Portfolio-00A86B?style=for-the-badge&logo=googlechrome&logoColor=white&label=Portfolio&message=engmohamednowar" />
 </a>
-
 <a href="mailto:mohamednowar2002@gmail.com">
   <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&label=Email&message=mohamednowar2002" />
 </a>
-
 <br/>
-
 <a href="https://github.com/EngMohamedNowar">
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white&label=GitHub&message=EngMohamedNowar" />
 </a>
-
 <a href="https://wa.me/201557722675">
-  <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&label=WhatsApp&message=%2B201557722675" />
+  <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&label=WhatsApp&message=+201557722675" />
 </a>
-
 <a href="https://x.com/mohamednowar_">
   <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white&label=Follow&message=mohamednowar_" />
 </a>
-
 <br/>
-
 <a href="https://instagram.com/mohamednowar_">
   <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&label=Instagram&message=mohamednowar_" />
 </a>
@@ -607,11 +394,6 @@ var developer = new Developer
 
 <br/>
 
-<a href="https://git.io/typing-svg">
-  <img
-    src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=4000&pause=1000&color=7C3AED&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=60&lines=Thanks+for+visiting!+%E2%AD%90+Star+my+repos+if+you+like+them"
-    alt="Typing SVG"
-  />
-</a>
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=4000&pause=1000&color=7C3AED&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=60&lines=Thanks+for+visiting!+%E2%AD%90+Star+my+repos+if+you+like+them)](https://git.io/typing-svg)
 
 </div>
