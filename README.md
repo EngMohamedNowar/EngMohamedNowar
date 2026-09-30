@@ -28,18 +28,10 @@ var developer = new Developer
     Name = "Mohamed Nowar",
     Title = "Junior .NET Backend Developer",
     Location = "Cairo, Egypt",
-    WorkPreference = "Open to Remote",
+    OpenTo = new[] { "Remote", "Backend Roles" },
     Languages = new[] { "Arabic (Native)", "English (Professional)" },
-    
     Passion = "Building clean, scalable backend systems with .NET",
-    
-    CurrentlyLearning = new[] {
-        "Advanced Clean Architecture Patterns",
-        "Microservices with .NET",
-        "Cloud-Native Development"
-    },
-    
-    FunFact = "I once debugged an Arabic receipt printer for 3 days straight 🖨️"
+    CurrentlyLearning = "Microservices & Cloud-Native Development"
 };
 ```
 
@@ -61,34 +53,14 @@ var developer = new Developer
 
 <br/>
 
-<!-- Badges Row -->
 <div align="center">
 
-#### Backend
-<img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" />
-<img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
-<img src="https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
-<img src="https://img.shields.io/badge/Entity%20Framework-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
-<img src="https://img.shields.io/badge/WPF-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
-
-#### Databases & Caching
-<img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white" />
-<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-<img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" />
-
-#### Architecture & Security
-<img src="https://img.shields.io/badge/Clean%20Architecture-7C3AED?style=for-the-badge&logo=pattern&logoColor=white" />
-<img src="https://img.shields.io/badge/CQRS-FF6B35?style=for-the-badge&logo=mediatr&logoColor=white" />
-<img src="https://img.shields.io/badge/MediatR-7C3AED?style=for-the-badge&logo=mediatr&logoColor=white" />
-<img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" />
-<img src="https://img.shields.io/badge/RESTful%20APIs-2563EB?style=for-the-badge&logo=postman&logoColor=white" />
-
-#### Tools
-<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-<img src="https://img.shields.io/badge/Visual%20Studio-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white" />
-<img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
-<img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" />
+#### Core Concepts
+<img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white" />
+<img src="https://img.shields.io/badge/Clean%20Architecture-7C3AED?style=flat-square&logo=pattern&logoColor=white" />
+<img src="https://img.shields.io/badge/CQRS-FF6B35?style=flat-square&logo=mediatr&logoColor=white" />
+<img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" />
+<img src="https://img.shields.io/badge/RESTful%20APIs-2563EB?style=flat-square&logo=postman&logoColor=white" />
 
 </div>
 
@@ -248,16 +220,8 @@ var developer = new Developer
 
 <table>
   <tr>
-    <td align="center"><strong>Main View</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/main.png" width="400" /></td>
-    <td align="center"><strong>Dashboard</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/dashboard.png" width="400" /></td>
-  </tr>
-  <tr>
-    <td align="center"><strong>Focus Timer</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/Timer.png" width="400" /></td>
-    <td align="center"><strong>New Task</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/add%20task.png" width="400" /></td>
-  </tr>
-  <tr>
-    <td align="center"><strong>Focus Stats</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/Status.png" width="400" /></td>
-    <td align="center"><strong>Theme Picker</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/theme-picker.png" width="400" /></td>
+    <td align="center"><strong>Main View</strong><br/><img loading="lazy" src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/main.png" width="400" /></td>
+    <td align="center"><strong>Dashboard</strong><br/><img loading="lazy" src="https://raw.githubusercontent.com/EngMohamedNowar/TodoApp/main/screenshots/dashboard.png" width="400" /></td>
   </tr>
 </table>
 
@@ -265,16 +229,8 @@ var developer = new Developer
 
 <table>
   <tr>
-    <td align="center"><strong>Home Page</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/GymManagementSystem_MVC/main/screenshots/01-Home-Hero.png" width="400" /></td>
-    <td align="center"><strong>Login</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/GymManagementSystem_MVC/main/screenshots/04-Login-Page.png" width="400" /></td>
-  </tr>
-  <tr>
-    <td align="center"><strong>Admin Dashboard</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/GymManagementSystem_MVC/main/screenshots/06-Admin-Dashboard-Overview.png" width="400" /></td>
-    <td align="center"><strong>Members</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/GymManagementSystem_MVC/main/screenshots/08-Members-Management.png" width="400" /></td>
-  </tr>
-  <tr>
-    <td align="center"><strong>Sessions Schedule</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/GymManagementSystem_MVC/main/screenshots/13-Sessions-Schedule.png" width="400" /></td>
-    <td align="center"><strong>Membership Plans</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/GymManagementSystem_MVC/main/screenshots/14-Membership-Plans.png" width="400" /></td>
+    <td align="center"><strong>Home Page</strong><br/><img loading="lazy" src="https://raw.githubusercontent.com/EngMohamedNowar/GymManagementSystem_MVC/main/screenshots/01-Home-Hero.png" width="400" /></td>
+    <td align="center"><strong>Admin Dashboard</strong><br/><img loading="lazy" src="https://raw.githubusercontent.com/EngMohamedNowar/GymManagementSystem_MVC/main/screenshots/06-Admin-Dashboard-Overview.png" width="400" /></td>
   </tr>
 </table>
 
@@ -282,20 +238,8 @@ var developer = new Developer
 
 <table>
   <tr>
-    <td align="center"><strong>Login</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/01-login.png" width="400" /></td>
-    <td align="center"><strong>POS Admin</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/03-pos-admin.png" width="400" /></td>
-  </tr>
-  <tr>
-    <td align="center"><strong>Categories</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/05-categories.png" width="400" /></td>
-    <td align="center"><strong>Warehouse</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/07-warehouse.png" width="400" /></td>
-  </tr>
-  <tr>
-    <td align="center"><strong>Offers</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/08-offers.png" width="400" /></td>
-    <td align="center"><strong>Daily Report</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/19-report-daily.png" width="400" /></td>
-  </tr>
-  <tr>
-    <td align="center"><strong>Order Tracking</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/29-order-tracking.png" width="400" /></td>
-    <td align="center"><strong>Settings</strong><br/><img src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/28-settings.png" width="400" /></td>
+    <td align="center"><strong>POS Admin</strong><br/><img loading="lazy" src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/03-pos-admin.png" width="400" /></td>
+    <td align="center"><strong>Daily Report</strong><br/><img loading="lazy" src="https://raw.githubusercontent.com/EngMohamedNowar/RestaurantPOS_DesktopApplication/main/PizzaPOS/screenshots/19-report-daily.png" width="400" /></td>
   </tr>
 </table>
 
@@ -330,22 +274,80 @@ var developer = new Developer
 
 ## 🎓 Certifications
 
+<div align="center">
+
+[![All Certificates — Google Drive](https://img.shields.io/badge/All%20Certificates-Google%20Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/drive/folders/1r_ONbtYPHxP2p0TOfOcmKEdz4MIbd0Jt?usp=sharing)
+
+</div>
+
 <table>
   <tr>
     <td align="center" width="33%">
-      <h3>🤖 HCIA-AI V3.5</h3>
-      <p><strong>Huawei AI Talent Track</strong><br/>NTI x Huawei<br/>Score: 96%<br/><em>Sep 2024 - Oct 2024</em></p>
-      <a href="#"><img src="https://img.shields.io/badge/View-Certificate-7C3AED?style=for-the-badge&logo=huawei&logoColor=white" /></a>
+      <a href="https://drive.google.com/file/d/1KATof9qObGF7jttGQBih6Z8Zl4Jj4Iqj/view?usp=sharing">
+        <img loading="lazy" src="certificates/bachelor-certificate.jpg" width="320" alt="B.Sc. Graduation Certificate" /><br/>
+        <strong>🎓 B.Sc. Graduation Certificate</strong>
+      </a>
+      <br/><sub>Egyptian E-Learning University · 2025</sub>
     </td>
     <td align="center" width="33%">
-      <h3>🐍 Full Stack Python</h3>
-      <p><strong>Information Technology Institute</strong><br/>ITI<br/>120 Hours<br/><em>Jul 2024 - Aug 2024</em></p>
-      <a href="#"><img src="https://img.shields.io/badge/View-Certificate-00A86B?style=for-the-badge&logo=python&logoColor=white" /></a>
+      <a href="https://drive.google.com/file/d/1EYLlRJlzx50N_8i8D6bMJNSKNTpoiuOB/view?usp=sharing">
+        <img loading="lazy" src="certificates/route-aspnet-core.jpg" width="320" alt="ASP.NET Core Back-End Training" /><br/>
+        <strong>🌐 ASP.NET Core Back-End</strong>
+      </a>
+      <br/><sub>Route Academy · Dec 2025 – Jul 2026</sub>
     </td>
     <td align="center" width="33%">
-      <h3>🌐 ASP.NET Core</h3>
-      <p><strong>Route Academy</strong><br/>Back-End Training<br/>Clean Architecture<br/><em>Dec 2025 - Jul 2026</em></p>
-      <a href="#"><img src="https://img.shields.io/badge/View-Certificate-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" /></a>
+      <a href="https://drive.google.com/file/d/1Uql1cZfbJ_mJwTDXv5ZWomS8w9iw30lJ/view?usp=sharing">
+        <img loading="lazy" src="certificates/huawei-hcia-ai.jpg" width="320" alt="HCIA-AI V3.5" /><br/>
+        <strong>🤖 HCIA-AI V3.5</strong>
+      </a>
+      <br/><sub>Huawei · Score 96% · 2024</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="33%">
+      <a href="https://drive.google.com/file/d/19Fk6P6v0B3IubjQlkJDMwB6HSV3vRBOm/view?usp=sharing">
+        <img loading="lazy" src="certificates/nti.jpg" width="320" alt="AI Talent Academy Track" /><br/>
+        <strong>🧠 AI Talent Academy Track</strong>
+      </a>
+      <br/><sub>NTI × Huawei · 80 hrs · Score 96% · 2024</sub>
+    </td>
+    <td align="center" width="33%">
+      <a href="https://drive.google.com/file/d/13mJhYLAQvHMASVqRJ1wvc61cuEPA7h6g/view?usp=sharing">
+        <img loading="lazy" src="certificates/iti-python.jpg" width="320" alt="Full Stack Python" /><br/>
+        <strong>🐍 Full Stack Python</strong>
+      </a>
+      <br/><sub>ITI · 120 Hours · Jul – Aug 2024</sub>
+    </td>
+    <td align="center" width="33%">
+      <a href="https://drive.google.com/file/d/1m_PpMnaFMPOwi3jKf3DjCYNt4sfYoS3r/view?usp=sharing">
+        <img loading="lazy" src="certificates/mastering-oop.jpg" width="320" alt="Mastering OOP using C++" /><br/>
+        <strong>🧩 Mastering OOP using C++</strong>
+      </a>
+      <br/><sub>ITI Platform · Oct 2025</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="33%">
+      <a href="https://drive.google.com/file/d/1aBJj-ccxO_rRc7DQUeFpHM9x783MTAe7/view?usp=sharing">
+        <img loading="lazy" src="certificates/clean-code.jpg" width="320" alt="Principles of Writing Clean Code" /><br/>
+        <strong>✨ Principles of Clean Code</strong>
+      </a>
+      <br/><sub>ITI Platform · Oct 2025</sub>
+    </td>
+    <td align="center" width="33%">
+      <a href="https://drive.google.com/file/d/1cxs0XJfog1LW_tvE4f6Igs_CmpSj8fjY/view?usp=sharing">
+        <img loading="lazy" src="certificates/database.jpg" width="320" alt="Database Fundamentals" /><br/>
+        <strong>🗄️ Database Fundamentals</strong>
+      </a>
+      <br/><sub>ITI Platform · Oct 2024</sub>
+    </td>
+    <td align="center" width="33%">
+      <a href="https://drive.google.com/file/d/1kPOu0tpstFxc67gnUsDttiSiu0XVFjQ5/view?usp=sharing">
+        <img loading="lazy" src="certificates/military-service.jpg" width="320" alt="Military Service Certificate" /><br/>
+        <strong>🎖️ Military Service</strong>
+      </a>
+      <br/><sub>Egypt</sub>
     </td>
   </tr>
 </table>
