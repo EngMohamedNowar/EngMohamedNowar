@@ -12,9 +12,7 @@
 &nbsp;
 <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fstreak-stats.demolab.com%2F%3Fuser%3DEngMohamedNowar%26type%3Djson&query=$.currentStreak.length&label=%F0%9F%94%A5&labelColor=8A5230&color=8A5230&style=flat-square&suffix=-DAY%20STREAK" alt="Current Streak" />
 &nbsp;
-<img src="https://img.shields.io/badge/%F0%9F%92%BC-OPEN%20TO%20WORK-2D6A4F?style=flat-square&labelColor=2D6A4F" alt="Open to Work" />
-&nbsp;
-<img src="https://img.shields.io/badge/%F0%9F%8C%90-OPEN%20TO%20REMOTE-3D5A80?style=flat-square&labelColor=3D5A80" alt="Open to Remote" />
+<img src="https://img.shields.io/badge/%F0%9F%92%BC-ON--SITE%20%C2%B7%20HYBRID%20%C2%B7%20REMOTE%20%C2%B7%20FREELANCE-2D6A4F?style=flat-square&labelColor=2D6A4F" alt="Open to on-site, hybrid, remote and freelance work" />
 
 </div>
 
