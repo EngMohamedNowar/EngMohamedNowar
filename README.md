@@ -204,6 +204,20 @@ var developer = new Developer
       </p>
     </td>
     <td width="50%" valign="top">
+      <h3 align="center">☕ Coffee Store API</h3>
+      <p align="center">
+        <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" />
+        <img src="https://img.shields.io/badge/.NET-10-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+        <img src="https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+        <img src="https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white" />
+        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+      </p>
+      <p align="center">Coffee catalogue &amp; basket API on .NET 10 with Clean Architecture, Redis caching, JWT auth, docker-compose, and an xUnit suite. In active development.</p>
+      <p align="center">
+        <a href="https://github.com/EngMohamedNowar/CoffeeStore">
+          <img src="https://img.shields.io/badge/View-Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
+        </a>
+      </p>
     </td>
   </tr>
 </table>
