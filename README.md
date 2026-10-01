@@ -8,13 +8,11 @@
 <br/>
 
 <!-- Badges Row -->
-<table>
-  <tr>
-    <td align="center"><img src="https://komarev.com/ghpvc/?username=EngMohamedNowar&color=7C3AED&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" /></td>
-    <td align="center"><img src="https://img.shields.io/badge/%F0%9F%92%BC-Open%20to%20Work-111827?style=for-the-badge&logo=github&logoColor=white&labelColor=22C55E" alt="Open to Work" /></td>
-    <td align="center"><img src="https://img.shields.io/badge/%F0%8C%8D%8E-Open%20to%20Remote-111827?style=for-the-badge&logo=googleearth&logoColor=white&labelColor=3B82F6" alt="Open to Remote" /></td>
-  </tr>
-</table>
+<img src="https://komarev.com/ghpvc/?username=EngMohamedNowar&style=flat-square&color=0E1117&labelColor=30363D&label=PROFILE+VIEWS" alt="Profile Views" />
+&nbsp;
+<img src="https://img.shields.io/badge/Open%20to-Work-0E1117?style=flat-square&labelColor=16A34A&logo=github&logoColor=white" alt="Open to Work" />
+&nbsp;
+<img src="https://img.shields.io/badge/Open%20to-Remote-0E1117?style=flat-square&labelColor=2563EB&logo=googleearth&logoColor=white" alt="Open to Remote" />
 
 </div>
 
