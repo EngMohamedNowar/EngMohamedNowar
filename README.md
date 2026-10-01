@@ -10,6 +10,8 @@
 <!-- Badges Row -->
 <img src="https://komarev.com/ghpvc/?username=EngMohamedNowar&style=flat-square&color=0E1117&labelColor=30363D&label=PROFILE+VIEWS" alt="Profile Views" />
 &nbsp;
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fstreak-stats.demolab.com%2F%3Fuser%3DEngMohamedNowar%26type%3Djson&query=$.currentStreak.length&label=%F0%9F%94%A5%20CURRENT%20STREAK&labelColor=D97706&color=0E1117&style=flat-square&suffix=%20days" alt="Current Streak" />
+&nbsp;
 <img src="https://img.shields.io/badge/Open%20to-Work-0E1117?style=flat-square&labelColor=16A34A&logo=github&logoColor=white" alt="Open to Work" />
 &nbsp;
 <img src="https://img.shields.io/badge/Open%20to-Remote-0E1117?style=flat-square&labelColor=2563EB&logo=googleearth&logoColor=white" alt="Open to Remote" />
