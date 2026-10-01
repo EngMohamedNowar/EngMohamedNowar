@@ -10,11 +10,11 @@
 <!-- Badges Row -->
 <img src="https://komarev.com/ghpvc/?username=EngMohamedNowar&style=flat-square&color=0E1117&labelColor=30363D&label=PROFILE+VIEWS" alt="Profile Views" />
 &nbsp;
-<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fstreak-stats.demolab.com%2F%3Fuser%3DEngMohamedNowar%26type%3Djson&query=$.currentStreak.length&label=%F0%9F%94%A5%20STREAK&labelColor=C2410C&color=C2410C&style=flat-square&suffix=%20DAYS" alt="Current Streak" />
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fstreak-stats.demolab.com%2F%3Fuser%3DEngMohamedNowar%26type%3Djson&query=$.currentStreak.length&label=%F0%9F%94%A5%20STREAK&labelColor=9C6240&color=9C6240&style=flat-square&suffix=%20DAYS" alt="Current Streak" />
 &nbsp;
-<img src="https://img.shields.io/badge/%F0%9F%92%BC-OPEN%20TO%20WORK-15803D?style=flat-square&labelColor=15803D" alt="Open to Work" />
+<img src="https://img.shields.io/badge/%F0%9F%92%BC-OPEN%20TO%20WORK-3E7B5E?style=flat-square&labelColor=3E7B5E" alt="Open to Work" />
 &nbsp;
-<img src="https://img.shields.io/badge/%F0%9F%8C%90-OPEN%20TO%20REMOTE-1D4ED8?style=flat-square&labelColor=1D4ED8" alt="Open to Remote" />
+<img src="https://img.shields.io/badge/%F0%9F%8C%90-OPEN%20TO%20REMOTE-4A6FA5?style=flat-square&labelColor=4A6FA5" alt="Open to Remote" />
 
 </div>
 
