@@ -342,13 +342,6 @@ var developer = new Developer
       </a>
       <br/><sub>ITI Platform · Oct 2024</sub>
     </td>
-    <td align="center" width="33%">
-      <a href="https://drive.google.com/file/d/1kPOu0tpstFxc67gnUsDttiSiu0XVFjQ5/view?usp=sharing">
-        <img loading="lazy" src="certificates/military-service.jpg" width="320" alt="Military Service Certificate" /><br/>
-        <strong>🎖️ Military Service</strong>
-      </a>
-      <br/><sub>Egypt</sub>
-    </td>
   </tr>
 </table>
 
