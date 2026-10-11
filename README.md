@@ -8,11 +8,16 @@
 <br/>
 
 <!-- Badges Row -->
-<img src="https://github-view-counter.vercel.app/api?username=EngMohamedNowar&label=PROFILE+VIEWS&base=562&layout=split&style=rounded&bgColor=%2336BCF7&labelBgColor=%23161B22&color=%230E1117&labelColor=%23ffffff&iconColor=%2336BCF7&size=16" alt="Profile Views" />
-&nbsp;
-<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fstreak-stats.demolab.com%2F%3Fuser%3DEngMohamedNowar%26type%3Djson&query=$.currentStreak.length&label=%F0%9F%94%A5&labelColor=8A5230&color=8A5230&style=flat-square&suffix=-DAY%20STREAK" alt="Current Streak" height="30" />
-&nbsp;
-<img src="https://img.shields.io/badge/%F0%9F%92%BC-ON--SITE%20%C2%B7%20HYBRID%20%C2%B7%20REMOTE%20%C2%B7%20FREELANCE-2D6A4F?style=flat-square&labelColor=2D6A4F" alt="Open to on-site, hybrid, remote and freelance work" height="30" />
+<p>
+  <img src="https://github-view-counter.vercel.app/api?username=EngMohamedNowar&label=PROFILE+VIEWS&base=562&layout=split&style=rounded&bgColor=%2336BCF7&labelBgColor=%23161B22&color=%230E1117&labelColor=%23ffffff&iconColor=%2336BCF7&size=16" alt="Profile Views" height="28" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/%F0%9F%92%BC-ON--SITE%20%C2%B7%20HYBRID%20%C2%B7%20REMOTE%20%C2%B7%20FREELANCE-2D6A4F?style=flat-square&labelColor=2D6A4F&color=2D6A4F" alt="Open to on-site, hybrid, remote and freelance work" height="28" />
+</p>
+
+<!-- Streak Card -->
+<p>
+  <img src="https://streak-stats.demolab.com/?user=EngMohamedNowar&theme=dark&hide_border=true&background=161B22&stroke=36BCF7&ring=36BCF7&fire=36BCF7&currStreakLabel=36BCF7&sideNums=DFE2E5&sideLabels=DFE2E5&currStreakNum=36BCF7&dates=8B949E" alt="GitHub Streak" height="150" />
+</p>
 
 </div>
 
