@@ -12,8 +12,6 @@
 <!-- Badges Row -->
 <p>
   <img src="https://github-view-counter.vercel.app/api?username=EngMohamedNowar&label=PROFILE+VIEWS&base=562&layout=split&style=rounded&bgColor=%2336BCF7&labelBgColor=%23161B22&color=%230E1117&labelColor=%23ffffff&iconColor=%2336BCF7&size=16" alt="Profile Views" height="28" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/OPEN%20TO-Backend%20Roles-2D6A4F?style=flat-square&labelColor=2D6A4F&color=2D6A4F" alt="Open to backend roles" height="28" />
 </p>
 
 <!-- Streak Card -->
@@ -34,7 +32,6 @@ var developer = new Developer
     Title = "Junior .NET Backend Developer",
     Location = "Cairo, Egypt",
     Stack = new[] { "C#", "ASP.NET Core", "EF Core", "SQL Server" },
-    OpenTo = "Backend roles (remote · hybrid · on-site)",
     Languages = new[] { "Arabic — Native", "English — Professional" },
     Learning = "Microservices & Cloud-Native"
 };
