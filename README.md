@@ -57,12 +57,59 @@ var developer = new Developer
 
 <div align="center">
 
-#### Core Concepts
-<img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white" />
+#### Backend & Architecture
 <img src="https://img.shields.io/badge/Clean%20Architecture-7C3AED?style=flat-square&logo=pattern&logoColor=white" />
-<img src="https://img.shields.io/badge/CQRS-FF6B35?style=flat-square&logo=mediatr&logoColor=white" />
-<img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" />
+<img src="https://img.shields.io/badge/Repository%20Pattern-096DD1?style=flat-square&logo=layergroup&logoColor=white" />
+<img src="https://img.shields.io/badge/Unit%20of%20Work-6C5CE7?style=flat-square&logo=unity&logoColor=white" />
+<img src="https://img.shields.io/badge/CQRS%20%26%20MediatR-FF6B35?style=flat-square&logo=mediatr&logoColor=white" />
+<img src="https://img.shields.io/badge/LINQ-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+<img src="https://img.shields.io/badge/AutoMapper-F5A623?style=flat-square&logo=autodesk&logoColor=white" />
+
+</div>
+
+<div align="center">
+
+#### Databases & Caching
+<img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white" />
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
+<img src="https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white" />
+<img src="https://img.shields.io/badge/EF%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+<img src="https://img.shields.io/badge/Relational%20Design-2D3748?style=flat-square&logo=database&logoColor=white" />
+
+</div>
+
+<div align="center">
+
+#### API & Security
 <img src="https://img.shields.io/badge/RESTful%20APIs-2563EB?style=flat-square&logo=postman&logoColor=white" />
+<img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" />
+<img src="https://img.shields.io/badge/Token%20Auth-1A202C?style=flat-square&logo=auth0&logoColor=white" />
+<img src="https://img.shields.io/badge/Role-Based%20Auth-E53E3E?style=flat-square&logo=openpolicyagent&logoColor=white" />
+<img src="https://img.shields.io/badge/Identity-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+<img src="https://img.shields.io/badge/Middleware-2D3748?style=flat-square&logo=nginx&logoColor=white" />
+
+</div>
+
+<div align="center">
+
+#### Testing & DevOps
+<img src="https://img.shields.io/badge/xUnit-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+<img src="https://img.shields.io/badge/NSubstitute-3CB371?style=flat-square&logo=nunit&logoColor=white" />
+<img src="https://img.shields.io/badge/Coverlet-20C997?style=flat-square&logo=coverage&logoColor=white" />
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+<img src="https://img.shields.io/badge/Git-FF6B35?style=flat-square&logo=git&logoColor=white" />
+
+</div>
+
+<div align="center">
+
+#### Currently Learning
+<img src="https://img.shields.io/badge/Microservices-FF6B35?style=flat-square&logo=micro&logoColor=white" />
+<img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white" />
+<img src="https://img.shields.io/badge/Azure%20Service%20Bus-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" />
+<img src="https://img.shields.io/badge/CI%2FCD-2088FF?style=flat-square&logo=azuredevops&logoColor=white" />
+<img src="https://img.shields.io/badge/SignalR-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+<img src="https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white" />
 
 </div>
 
@@ -204,17 +251,21 @@ var developer = new Developer
 
 <table>
   <tr>
-    <td align="center" width="33%">
+    <td align="center" width="25%">
       <h3>🏗️ Architecture</h3>
-      <p>Clean Architecture<br/>Repository Pattern<br/>Unit of Work<br/>CQRS &amp; MediatR<br/>Three-Layer Architecture</p>
+      <p>Clean Architecture<br/>Three-Layer Architecture<br/>Repository Pattern<br/>Unit of Work<br/>Dependency Injection<br/>CQRS &amp; MediatR<br/>OOP Principles</p>
     </td>
-    <td align="center" width="33%">
+    <td align="center" width="25%">
       <h3>🔐 Security</h3>
-      <p>JWT Authentication<br/>Role-Based Authorization<br/>ASP.NET Core Identity<br/>Token-Based Auth</p>
+      <p>JWT Authentication<br/>Token-Based Auth<br/>Role-Based Authorization<br/>ASP.NET Core Identity<br/>Middleware Pipeline<br/>Error Handling</p>
     </td>
-    <td align="center" width="33%">
+    <td align="center" width="25%">
       <h3>💾 Data</h3>
-      <p>SQL Server<br/>PostgreSQL<br/>Redis Caching<br/>EF Core<br/>Django ORM</p>
+      <p>SQL Server<br/>PostgreSQL<br/>Redis Caching<br/>EF Core<br/>LINQ<br/>Relational DB Design<br/>Django ORM</p>
+    </td>
+    <td align="center" width="25%">
+      <h3>🧪 Testing &amp; DevOps</h3>
+      <p>xUnit &amp; NSubstitute<br/>Unit Testing<br/>Code Coverage (Coverlet)<br/>Docker<br/>Git / GitHub<br/>CI/CD (Azure DevOps)</p>
     </td>
   </tr>
 </table>
