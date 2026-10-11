@@ -8,7 +8,7 @@
 <br/>
 
 <!-- Badges Row -->
-<img src="https://github-view-counter.vercel.app/api?username=EngMohamedNowar&label=PROFILE+VIEWS&base=562&layout=split&style=rounded&bgColor=%2336BCF7&labelBgColor=%230E1117&color=%230E1117&labelColor=%23DFE2E5" alt="Profile Views" height="20" />
+<img src="https://github-view-counter.vercel.app/api?username=EngMohamedNowar&label=PROFILE+VIEWS&base=562&layout=split&style=rounded&bgColor=%2336BCF7&labelBgColor=%230E1117&color=%230E1117&labelColor=%23DFE2E5&size=15" alt="Profile Views" height="20" />
 &nbsp;
 <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fstreak-stats.demolab.com%2F%3Fuser%3DEngMohamedNowar%26type%3Djson&query=$.currentStreak.length&label=%F0%9F%94%A5&labelColor=8A5230&color=8A5230&style=flat-square&suffix=-DAY%20STREAK" alt="Current Streak" />
 &nbsp;
