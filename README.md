@@ -57,16 +57,16 @@ var developer = new Developer
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/Clean%20Architecture-7C3AED?style=flat-square&logoColor=white" />
-<img src="https://img.shields.io/badge/Repository%20Pattern-096DD1?style=flat-square&logoColor=white" />
-<img src="https://img.shields.io/badge/Unit%20of%20Work-6C5CE7?style=flat-square&logoColor=white" />
-<img src="https://img.shields.io/badge/CQRS%20%26%20MediatR-FF6B35?style=flat-square&logoColor=white" />
+<img src="https://img.shields.io/badge/Clean%20Architecture-7C3AED?style=flat-square" />
+<img src="https://img.shields.io/badge/Repository%20Pattern-096DD1?style=flat-square" />
+<img src="https://img.shields.io/badge/Unit%20of%20Work-6C5CE7?style=flat-square" />
+<img src="https://img.shields.io/badge/CQRS%20%26%20MediatR-FF6B35?style=flat-square" />
 <img src="https://img.shields.io/badge/JWT-2D3748?style=flat-square&logo=jsonwebtokens&logoColor=white" />
 <img src="https://img.shields.io/badge/RESTful%20APIs-2563EB?style=flat-square&logo=postman&logoColor=white" />
-<img src="https://img.shields.io/badge/xUnit-512BD4?style=flat-square&logoColor=white" />
-<img src="https://img.shields.io/badge/NSubstitute-3CB371?style=flat-square&logoColor=white" />
-<img src="https://img.shields.io/badge/AutoMapper-F5A623?style=flat-square&logoColor=white" />
-<img src="https://img.shields.io/badge/LINQ-512BD4?style=flat-square&logoColor=white" />
+<img src="https://img.shields.io/badge/xUnit-512BD4?style=flat-square" />
+<img src="https://img.shields.io/badge/NSubstitute-3CB371?style=flat-square" />
+<img src="https://img.shields.io/badge/AutoMapper-F5A623?style=flat-square" />
+<img src="https://img.shields.io/badge/LINQ-512BD4?style=flat-square" />
 
 </div>
 
