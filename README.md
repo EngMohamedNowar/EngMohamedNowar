@@ -5,13 +5,15 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=150&lines=Hi+%F0%9F%91%8B+I'm+Mohamed+Nowar;Junior+.NET+Backend+Developer;Building+Scalable+Backend+Systems+%E2%9A%A1" alt="Typing SVG" />
 </a>
 
+<p><code style="color:#8B949E">ASP.NET Core &nbsp;•&nbsp; C# &nbsp;•&nbsp; EF Core &nbsp;•&nbsp; SQL Server &nbsp;•&nbsp; REST APIs</code></p>
+
 <br/>
 
 <!-- Badges Row -->
 <p>
   <img src="https://github-view-counter.vercel.app/api?username=EngMohamedNowar&label=PROFILE+VIEWS&base=562&layout=split&style=rounded&bgColor=%2336BCF7&labelBgColor=%23161B22&color=%230E1117&labelColor=%23ffffff&iconColor=%2336BCF7&size=16" alt="Profile Views" height="28" />
   &nbsp;
-  <img src="https://img.shields.io/badge/%F0%9F%92%BC-ON--SITE%20%C2%B7%20HYBRID%20%C2%B7%20REMOTE%20%C2%B7%20FREELANCE-2D6A4F?style=flat-square&labelColor=2D6A4F&color=2D6A4F" alt="Open to on-site, hybrid, remote and freelance work" height="28" />
+  <img src="https://img.shields.io/badge/OPEN%20TO-Backend%20Roles-2D6A4F?style=flat-square&labelColor=2D6A4F&color=2D6A4F" alt="Open to backend roles" height="28" />
 </p>
 
 <!-- Streak Card -->
@@ -31,10 +33,10 @@ var developer = new Developer
     Name = "Mohamed Nowar",
     Title = "Junior .NET Backend Developer",
     Location = "Cairo, Egypt",
-    OpenTo = new[] { "on-site", "hybrid", "remote", "freelance" },
-    Languages = new[] { "Arabic (Native)", "English (Professional)" },
-    Passion = "Building clean, scalable backend systems with .NET",
-    CurrentlyLearning = "Microservices & Cloud-Native Development"
+    Stack = new[] { "C#", "ASP.NET Core", "EF Core", "SQL Server" },
+    OpenTo = "Backend roles (remote · hybrid · on-site)",
+    Languages = new[] { "Arabic — Native", "English — Professional" },
+    Learning = "Microservices & Cloud-Native"
 };
 ```
 
@@ -71,58 +73,6 @@ var developer = new Developer
 
 ---
 
-## 📊 GitHub Stats
-
-<div align="center">
-
-<img src="https://ghstats.dev/api/card?username=EngMohamedNowar&theme=blue-green" />
-
-</div>
-
-<div align="center">
-
-<img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=stars&color=FFD700" />
-<img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=commits&color=0ea5e9" />
-<img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=contributions&color=a855f7" />
-
-</div>
-
-<div align="center">
-
-<img src="https://ghstats.dev/api/sparkline?username=EngMohamedNowar&days=90&width=500" />
-
-</div>
-
----
-
-<!--## 🏆 Activity -->
-
-<!-- <div align="center">
-
-<img src="https://ghstats.dev/api/sparkline?username=EngMohamedNowar&days=365&width=700&theme=blue-green" />
-
-</div> -->
-
-<br/>
-
----
-
-## 🐍 Contribution Snake
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/output/github-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/output/github-snake.svg" />
-</picture>
-
-</div>
-
-<br/>
-
----
-
 ## 📌 Pinned Projects
 
 <table>
@@ -143,37 +93,23 @@ var developer = new Developer
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3 align="center">🍽️ Restaurant Management System</h3>
+      <h3 align="center">☕ Coffee Store API</h3>
       <p align="center">
         <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" />
-        <img src="https://img.shields.io/badge/WPF-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
-        <img src="https://img.shields.io/badge/ESC%2FPOS-FF6600?style=flat-square&logo=epson&logoColor=white" />
-        <img src="https://img.shields.io/badge/Win32%20API-00ADEF?style=flat-square&logo=microsoft&logoColor=white" />
+        <img src="https://img.shields.io/badge/.NET-10-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+        <img src="https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+        <img src="https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white" />
+        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
       </p>
-      <p align="center">Production-deployed desktop system with ESC/POS thermal printing, Arabic receipt support, and Win32 API integration.</p>
+      <p align="center">Coffee catalogue &amp; basket API on .NET 10 with Clean Architecture, Redis caching, JWT auth, docker-compose, and an xUnit suite. In active development.</p>
       <p align="center">
-        <a href="https://github.com/EngMohamedNowar/RestaurantPOS_DesktopApplication">
+        <a href="https://github.com/EngMohamedNowar/CoffeeStore">
           <img src="https://img.shields.io/badge/View-Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
         </a>
       </p>
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="top">
-      <h3 align="center">🏋️ Gym Management System</h3>
-      <p align="center">
-        <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" />
-        <img src="https://img.shields.io/badge/ASP.NET%20MVC-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
-        <img src="https://img.shields.io/badge/EF%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
-        <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white" />
-      </p>
-      <p align="center">Full gym management with member tracking, trainer scheduling, session booking, and membership lifecycle.</p>
-      <p align="center">
-        <a href="https://github.com/EngMohamedNowar/GymManagementSystem_MVC">
-          <img src="https://img.shields.io/badge/View-Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
-        </a>
-      </p>
-    </td>
     <td width="50%" valign="top">
       <h3 align="center">🎬 Cinema Ticket Reservation API</h3>
       <p align="center">
@@ -188,8 +124,6 @@ var developer = new Developer
         </a>
       </p>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <h3 align="center">✅ My Tasks — Todo App</h3>
       <p align="center">
@@ -206,21 +140,60 @@ var developer = new Developer
         </a>
       </p>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
-      <h3 align="center">☕ Coffee Store API</h3>
+      <h3 align="center">🍽️ Restaurant Management System</h3>
       <p align="center">
         <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" />
-        <img src="https://img.shields.io/badge/.NET-10-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
-        <img src="https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
-        <img src="https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white" />
-        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+        <img src="https://img.shields.io/badge/WPF-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+        <img src="https://img.shields.io/badge/ESC%2FPOS-FF6600?style=flat-square&logo=epson&logoColor=white" />
+        <img src="https://img.shields.io/badge/Win32%20API-00ADEF?style=flat-square&logo=microsoft&logoColor=white" />
       </p>
-      <p align="center">Coffee catalogue &amp; basket API on .NET 10 with Clean Architecture, Redis caching, JWT auth, docker-compose, and an xUnit suite. In active development.</p>
+      <p align="center">Production-deployed desktop system with ESC/POS thermal printing, Arabic receipt support, and Win32 API integration.</p>
       <p align="center">
-        <a href="https://github.com/EngMohamedNowar/CoffeeStore">
+        <a href="https://github.com/EngMohamedNowar/RestaurantPOS_DesktopApplication">
           <img src="https://img.shields.io/badge/View-Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
         </a>
       </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center">🏋️ Gym Management System</h3>
+      <p align="center">
+        <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" />
+        <img src="https://img.shields.io/badge/ASP.NET%20MVC-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+        <img src="https://img.shields.io/badge/EF%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+        <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white" />
+      </p>
+      <p align="center">Full gym management with member tracking, trainer scheduling, session booking, and membership lifecycle.</p>
+      <p align="center">
+        <a href="https://github.com/EngMohamedNowar/GymManagementSystem_MVC">
+          <img src="https://img.shields.io/badge/View-Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
+        </a>
+      </p>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+---
+
+## 🎯 What I Bring to the Table
+
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <h3>🏗️ Architecture</h3>
+      <p>Clean Architecture<br/>Repository Pattern<br/>Unit of Work<br/>CQRS &amp; MediatR<br/>Three-Layer Architecture</p>
+    </td>
+    <td align="center" width="33%">
+      <h3>🔐 Security</h3>
+      <p>JWT Authentication<br/>Role-Based Authorization<br/>ASP.NET Core Identity<br/>Token-Based Auth</p>
+    </td>
+    <td align="center" width="33%">
+      <h3>💾 Data</h3>
+      <p>SQL Server<br/>PostgreSQL<br/>Redis Caching<br/>EF Core<br/>Django ORM</p>
     </td>
   </tr>
 </table>
@@ -266,24 +239,17 @@ var developer = new Developer
 
 ---
 
-## 🎯 What I Bring to the Table
+## 🐍 Contribution Snake
 
-<table>
-  <tr>
-    <td align="center" width="33%">
-      <h3>🏗️ Architecture</h3>
-      <p>Clean Architecture<br/>Repository Pattern<br/>Unit of Work<br/>CQRS &amp; MediatR<br/>Three-Layer Architecture</p>
-    </td>
-    <td align="center" width="33%">
-      <h3>🔐 Security</h3>
-      <p>JWT Authentication<br/>Role-Based Authorization<br/>ASP.NET Core Identity<br/>Token-Based Auth</p>
-    </td>
-    <td align="center" width="33%">
-      <h3>💾 Data</h3>
-      <p>SQL Server<br/>PostgreSQL<br/>Redis Caching<br/>EF Core<br/>Django ORM</p>
-    </td>
-  </tr>
-</table>
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/output/github-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/output/github-snake.svg" />
+</picture>
+
+</div>
 
 <br/>
 
