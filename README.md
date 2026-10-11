@@ -70,6 +70,30 @@ var developer = new Developer
 
 ---
 
+## 📊 GitHub Stats
+
+<div align="center">
+
+<img src="https://ghstats.dev/api/card?username=EngMohamedNowar&theme=blue-green" />
+
+</div>
+
+<div align="center">
+
+<img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=stars&color=FFD700" />
+<img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=commits&color=0ea5e9" />
+<img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=contributions&color=a855f7" />
+
+</div>
+
+<div align="center">
+
+<img src="https://ghstats.dev/api/sparkline?username=EngMohamedNowar&days=90&width=500" />
+
+</div>
+
+---
+
 ## 📌 Pinned Projects
 
 <table>
