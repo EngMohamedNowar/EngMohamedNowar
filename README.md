@@ -80,12 +80,6 @@ var developer = new Developer
 
 <div align="center">
 
-<img src="https://ghstats.dev/api/card?username=EngMohamedNowar&theme=blue-green" width="430" />
-
-</div>
-
-<div align="center">
-
 <img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=stars&color=FFD700" width="140" />
 <img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=commits&color=0ea5e9" width="140" />
 <img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=contributions&color=a855f7" width="140" />
