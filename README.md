@@ -7,12 +7,9 @@
 
 <p><code style="color:#36BCF7">ASP.NET Core &nbsp;•&nbsp; C# &nbsp;•&nbsp; EF Core &nbsp;•&nbsp; SQL Server &nbsp;•&nbsp; REST APIs</code></p>
 
-<br/>
+<p><strong>🟢 Open to remote work opportunities</strong></p>
 
-<!-- Badges Row -->
-<p>
-  <img src="https://github-view-counter.vercel.app/api?username=EngMohamedNowar&label=PROFILE+VIEWS&base=562&layout=split&style=rounded&bgColor=%2336BCF7&labelBgColor=%23161B22&color=%230E1117&labelColor=%23ffffff&iconColor=%2336BCF7&size=16" alt="Profile Views" height="28" />
-</p>
+<br/>
 
 <!-- Streak Card -->
 <p>
@@ -30,10 +27,11 @@ var developer = new Developer
 {
     Name = "Mohamed Nowar",
     Title = "Junior .NET Backend Developer",
-    Location = "Cairo, Egypt",
+    Location = "Benha, Egypt",
     Stack = new[] { "C#", "ASP.NET Core", "EF Core", "SQL Server" },
-    Languages = new[] { "Arabic — Native", "English — Professional" },
-    Learning = "Microservices & Cloud-Native"
+    Languages = new[] { "Arabic — Native", "English — Intermediate" },
+    Learning = "Microservices & Cloud-Native",
+    OpenToRemote = true
 };
 ```
 
@@ -57,20 +55,40 @@ var developer = new Developer
 
 <br/>
 
-<div align="center">
+<table>
+  <tr>
+    <td align="center" width="25%">
+      <h3>🏗️ Architecture</h3>
+      <p>Clean Architecture<br/>Three-Layer Architecture<br/>Repository Pattern<br/>Unit of Work<br/>Dependency Injection<br/>CQRS &amp; MediatR<br/>OOP Principles</p>
+    </td>
+    <td align="center" width="25%">
+      <h3>🔐 Security</h3>
+      <p>JWT Authentication<br/>Token-Based Auth<br/>Role-Based Authorization<br/>ASP.NET Core Identity<br/>Middleware Pipeline<br/>Error Handling</p>
+    </td>
+    <td align="center" width="25%">
+      <h3>💾 Data</h3>
+      <p>SQL Server<br/>PostgreSQL<br/>Redis Caching<br/>EF Core<br/>LINQ<br/>Relational DB Design<br/>Django ORM</p>
+    </td>
+    <td align="center" width="25%">
+      <h3>🧪 Testing &amp; DevOps</h3>
+      <p>xUnit &amp; NSubstitute<br/>Unit Testing<br/>Code Coverage (Coverlet)<br/>Docker<br/>Git / GitHub<br/>CI/CD (Azure DevOps)<br/>AutoMapper</p>
+    </td>
+  </tr>
+</table>
 
-<img src="https://img.shields.io/badge/Clean%20Architecture-7C3AED?style=flat-square&logo=visualstudiocode&logoColor=white" />
-<img src="https://img.shields.io/badge/Repository%20Pattern-096DD1?style=flat-square&logo=databricks&logoColor=white" />
-<img src="https://img.shields.io/badge/Unit%20of%20Work-6C5CE7?style=flat-square&logo=unity&logoColor=white" />
-<img src="https://img.shields.io/badge/CQRS%20%26%20MediatR-FF6B35?style=flat-square&logo=mediatr&logoColor=white" />
-<img src="https://img.shields.io/badge/JWT-2D3748?style=flat-square&logo=jsonwebtokens&logoColor=white" />
-<img src="https://img.shields.io/badge/RESTful%20APIs-2563EB?style=flat-square&logo=postman&logoColor=white" />
-<img src="https://img.shields.io/badge/xUnit-512BD4?style=flat-square&logo=xunit&logoColor=white" />
-<img src="https://img.shields.io/badge/NSubstitute-3CB371?style=flat-square&logo=nunit&logoColor=white" />
-<img src="https://img.shields.io/badge/AutoMapper-F5A623?style=flat-square&logo=autodesk&logoColor=white" />
-<img src="https://img.shields.io/badge/LINQ-512BD4?style=flat-square&logo=linq&logoColor=white" />
+<br/>
 
-</div>
+---
+
+## 🏗️ Architecture
+
+```mermaid
+flowchart LR
+    API["API Layer<br/>Controllers • Middleware"] --> APP["Application Layer<br/>Services • DTOs • Interfaces"]
+    APP --> DOM["Domain Layer<br/>Entities • Specifications"]
+    INF["Infrastructure Layer<br/>EF Core • Redis • Repositories"] --> APP
+    API -. "DI registration" .-> INF
+```
 
 <br/>
 
@@ -201,36 +219,18 @@ var developer = new Developer
 
 ---
 
-## 🎯 What I Bring to the Table
-
-<table>
-  <tr>
-    <td align="center" width="25%">
-      <h3>🏗️ Architecture</h3>
-      <p>Clean Architecture<br/>Three-Layer Architecture<br/>Repository Pattern<br/>Unit of Work<br/>Dependency Injection<br/>CQRS &amp; MediatR<br/>OOP Principles</p>
-    </td>
-    <td align="center" width="25%">
-      <h3>🔐 Security</h3>
-      <p>JWT Authentication<br/>Token-Based Auth<br/>Role-Based Authorization<br/>ASP.NET Core Identity<br/>Middleware Pipeline<br/>Error Handling</p>
-    </td>
-    <td align="center" width="25%">
-      <h3>💾 Data</h3>
-      <p>SQL Server<br/>PostgreSQL<br/>Redis Caching<br/>EF Core<br/>LINQ<br/>Relational DB Design<br/>Django ORM</p>
-    </td>
-    <td align="center" width="25%">
-      <h3>🧪 Testing &amp; DevOps</h3>
-      <p>xUnit &amp; NSubstitute<br/>Unit Testing<br/>Code Coverage (Coverlet)<br/>Docker<br/>Git / GitHub<br/>CI/CD (Azure DevOps)</p>
-    </td>
-  </tr>
-</table>
-
-<br/>
-
----
-
 ## 📱 Screenshots
 
 <div align="center">
+
+### 🛒 Ecommerce API — Swagger
+
+<table>
+  <tr>
+    <td align="center"><strong>Accounts • Basket • Brands • Orders</strong><br/><img loading="lazy" src="screenshots/swagger-1.png" width="400" alt="Swagger part 1" /></td>
+    <td align="center"><strong>Orders • Payments • Products • Types</strong><br/><img loading="lazy" src="screenshots/swagger-2.png" width="400" alt="Swagger part 2" /></td>
+  </tr>
+</table>
 
 ### ✅ My Tasks — Todo App
 
@@ -375,13 +375,9 @@ var developer = new Developer
 <a href="https://github.com/EngMohamedNowar">
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white&label=GitHub&message=EngMohamedNowar" />
 </a>
-<a href="https://wa.me/201557722675">
-  <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&label=WhatsApp&message=+201557722675" />
-</a>
 <a href="https://x.com/mohamednowar_">
   <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white&label=Follow&message=mohamednowar_" />
 </a>
-<br/>
 <a href="https://instagram.com/mohamednowar_">
   <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&label=Instagram&message=mohamednowar_" />
 </a>
@@ -395,9 +391,5 @@ var developer = new Developer
 <div align="center">
 
 ### *Building backend systems that are as clean as the code that powers them.* 🚀
-
-<br/>
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=4000&pause=1000&color=7C3AED&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=60&lines=Thanks+for+visiting!+%E2%AD%90+Star+my+repos+if+you+like+them)](https://git.io/typing-svg)
 
 </div>
