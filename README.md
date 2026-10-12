@@ -139,7 +139,6 @@ var developer = new Developer
 </table>
 
 </div>
----
 
 ## 📌 Pinned Projects
 
