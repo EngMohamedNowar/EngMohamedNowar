@@ -80,18 +80,20 @@ var developer = new Developer
 
 <div align="center">
 
-<img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=stars&color=FFD700" width="140" />
-<img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=commits&color=0ea5e9" width="140" />
-<img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=contributions&color=a855f7" width="140" />
+<table>
+  <tr>
+    <td align="center" valign="top">
+      <img src="https://github-readme-stats.vercel.app/api?username=EngMohamedNowar&show_icons=true&include_all_commits=true&hide_border=true&bg_color=161B22&title_color=36BCF7&icon_color=36BCF7&text_color=DFE2E5&ring_color=36BCF7" height="180" alt="GitHub Stats" />
+    </td>
+    <td align="center" valign="top">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EngMohamedNowar&layout=compact&langs_count=8&hide_border=true&bg_color=161B22&title_color=36BCF7&text_color=DFE2E5" height="180" alt="Top Languages" />
+    </td>
+  </tr>
+</table>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=EngMohamedNowar&bg_color=161B22&color=36BCF7&line=36BCF7&point=FFFFFF&area=true&hide_border=true" width="95%" alt="Contribution Graph" />
 
 </div>
-
-<div align="center">
-
-<img src="https://ghstats.dev/api/sparkline?username=EngMohamedNowar&days=90&width=480" width="480" />
-
-</div>
-
 ---
 
 ## 📌 Pinned Projects
