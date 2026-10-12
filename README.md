@@ -140,6 +140,8 @@ var developer = new Developer
 
 </div>
 
+---
+
 ## 📌 Pinned Projects
 
 <table>
