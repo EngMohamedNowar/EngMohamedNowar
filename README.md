@@ -2,7 +2,7 @@
 
 <!-- Typing SVG Header -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=150&lines=Hi+%F0%9F%91%8B+I'm+Mohamed+Nowar;Junior+.NET+Backend+Developer;Building+Scalable+Backend+Systems+%E2%9A%A1" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&multiline=true&repeat=true&width=440&height=110&lines=Hi+%F0%9F%91%8B+I'm+Mohamed+Nowar;Junior+.NET+Backend+Developer;Building+Scalable+Backend+Systems+%E2%9A%A1" alt="Typing SVG" />
 </a>
 
 <p><code style="color:#36BCF7">ASP.NET Core &nbsp;•&nbsp; C# &nbsp;•&nbsp; EF Core &nbsp;•&nbsp; SQL Server &nbsp;•&nbsp; REST APIs</code></p>
@@ -16,7 +16,7 @@
 
 <!-- Streak Card -->
 <p>
-  <img src="https://streak-stats.demolab.com/?user=EngMohamedNowar&theme=dark&hide_border=true&background=161B22&stroke=36BCF7&ring=36BCF7&fire=36BCF7&currStreakLabel=36BCF7&sideNums=DFE2E5&sideLabels=DFE2E5&currStreakNum=36BCF7&dates=8B949E" alt="GitHub Streak" height="150" />
+  <img src="https://streak-stats.demolab.com/?user=EngMohamedNowar&theme=dark&hide_border=true&background=161B22&stroke=36BCF7&ring=36BCF7&fire=36BCF7&currStreakLabel=36BCF7&sideNums=DFE2E5&sideLabels=DFE2E5&currStreakNum=36BCF7&dates=8B949E" alt="GitHub Streak" width="420" />
 </p>
 
 </div>
@@ -46,10 +46,12 @@ var developer = new Developer
 <div align="center">
 
 ### Languages & Frameworks
-<img src="https://skillicons.dev/icons?i=cs,dotnet,aspnet,ef,python,django,html,css,js" />
+<img src="https://skillicons.dev/icons?i=cs,dotnet,aspnet,ef,python" />
+<img src="https://skillicons.dev/icons?i=django,html,css,js" />
 
 ### Tools & Platforms
-<img src="https://skillicons.dev/icons?i=git,github,postman,vs,vscode,redis,postgres,docker" />
+<img src="https://skillicons.dev/icons?i=git,github,postman,vs" />
+<img src="https://skillicons.dev/icons?i=vscode,redis,postgres,docker" />
 
 </div>
 
@@ -78,21 +80,21 @@ var developer = new Developer
 
 <div align="center">
 
-<img src="https://ghstats.dev/api/card?username=EngMohamedNowar&theme=blue-green" />
+<img src="https://ghstats.dev/api/card?username=EngMohamedNowar&theme=blue-green" width="430" />
 
 </div>
 
 <div align="center">
 
-<img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=stars&color=FFD700" />
-<img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=commits&color=0ea5e9" />
-<img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=contributions&color=a855f7" />
+<img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=stars&color=FFD700" width="140" />
+<img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=commits&color=0ea5e9" width="140" />
+<img src="https://ghstats.dev/api/mini?username=EngMohamedNowar&metric=contributions&color=a855f7" width="140" />
 
 </div>
 
 <div align="center">
 
-<img src="https://ghstats.dev/api/sparkline?username=EngMohamedNowar&days=90&width=500" />
+<img src="https://ghstats.dev/api/sparkline?username=EngMohamedNowar&days=90&width=480" width="480" />
 
 </div>
 
@@ -113,7 +115,7 @@ var developer = new Developer
       <p align="center">RESTful e-commerce API with product catalog, cart, orders, and inventory management. JWT auth with role-based access.</p>
       <p align="center">
         <a href="https://github.com/EngMohamedNowar/ECommerce_API">
-          <img src="https://img.shields.io/badge/View-Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
+          <img src="https://img.shields.io/badge/View-Repository-181717?style=flat-square&logo=github&logoColor=white" />
         </a>
       </p>
     </td>
@@ -129,7 +131,7 @@ var developer = new Developer
       <p align="center">Coffee catalogue &amp; basket API on .NET 10 with Clean Architecture, Redis caching, JWT auth, docker-compose, and an xUnit suite. In active development.</p>
       <p align="center">
         <a href="https://github.com/EngMohamedNowar/CoffeeStore">
-          <img src="https://img.shields.io/badge/View-Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
+          <img src="https://img.shields.io/badge/View-Repository-181717?style=flat-square&logo=github&logoColor=white" />
         </a>
       </p>
     </td>
@@ -145,7 +147,7 @@ var developer = new Developer
       <p align="center">Movie schedules, seat selection, and ticket booking API with JWT auth and role-based permissions.</p>
       <p align="center">
         <a href="https://github.com/EngMohamedNowar/CinemaTicketsReservationAPI">
-          <img src="https://img.shields.io/badge/View-Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
+          <img src="https://img.shields.io/badge/View-Repository-181717?style=flat-square&logo=github&logoColor=white" />
         </a>
       </p>
     </td>
@@ -161,7 +163,7 @@ var developer = new Developer
       <p align="center">Notion-style task manager with sub-tasks, recurring tasks, Pomodoro timer, dashboard, theming, and 50 unit tests. Clean MVVM + Repository pattern.</p>
       <p align="center">
         <a href="https://github.com/EngMohamedNowar/TodoApp">
-          <img src="https://img.shields.io/badge/View-Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
+          <img src="https://img.shields.io/badge/View-Repository-181717?style=flat-square&logo=github&logoColor=white" />
         </a>
       </p>
     </td>
@@ -178,7 +180,7 @@ var developer = new Developer
       <p align="center">Production-deployed desktop system with ESC/POS thermal printing, Arabic receipt support, and Win32 API integration.</p>
       <p align="center">
         <a href="https://github.com/EngMohamedNowar/RestaurantPOS_DesktopApplication">
-          <img src="https://img.shields.io/badge/View-Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
+          <img src="https://img.shields.io/badge/View-Repository-181717?style=flat-square&logo=github&logoColor=white" />
         </a>
       </p>
     </td>
@@ -193,7 +195,7 @@ var developer = new Developer
       <p align="center">Full gym management with member tracking, trainer scheduling, session booking, and membership lifecycle.</p>
       <p align="center">
         <a href="https://github.com/EngMohamedNowar/GymManagementSystem_MVC">
-          <img src="https://img.shields.io/badge/View-Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
+          <img src="https://img.shields.io/badge/View-Repository-181717?style=flat-square&logo=github&logoColor=white" />
         </a>
       </p>
     </td>
