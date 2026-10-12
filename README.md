@@ -7,8 +7,6 @@
 
 <p><code style="color:#36BCF7">ASP.NET Core &nbsp;•&nbsp; C# &nbsp;•&nbsp; EF Core &nbsp;•&nbsp; SQL Server &nbsp;•&nbsp; REST APIs</code></p>
 
-<p><strong>🟢 Open to remote work opportunities</strong></p>
-
 <br/>
 
 <!-- Streak Card -->
