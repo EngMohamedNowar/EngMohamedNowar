@@ -225,8 +225,8 @@ flowchart LR
 
 <table>
   <tr>
-    <td align="center"><strong>Accounts • Basket • Brands • Orders</strong><br/><img loading="lazy" src="screenshots/swagger-1.png" width="400" alt="Swagger part 1" /></td>
-    <td align="center"><strong>Orders • Payments • Products • Types</strong><br/><img loading="lazy" src="screenshots/swagger-2.png" width="400" alt="Swagger part 2" /></td>
+    <td align="center"><strong>Accounts • Basket • Brands • Orders</strong><br/><img loading="lazy" src="screenshots/swagger-1.png.png" width="400" alt="Swagger part 1" /></td>
+    <td align="center"><strong>Orders • Payments • Products • Types</strong><br/><img loading="lazy" src="screenshots/swagger-2.png.png" width="400" alt="Swagger part 2" /></td>
   </tr>
 </table>
 
