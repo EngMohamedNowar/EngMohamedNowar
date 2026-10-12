@@ -7,6 +7,8 @@
 
 <p><code style="color:#36BCF7">ASP.NET Core &nbsp;•&nbsp; C# &nbsp;•&nbsp; EF Core &nbsp;•&nbsp; SQL Server &nbsp;•&nbsp; REST APIs</code></p>
 
+<p><strong>🟢 Open to remote work opportunities</strong></p>
+
 <br/>
 
 <!-- Streak Card -->
@@ -41,13 +43,25 @@ var developer = new Developer
 
 <div align="center">
 
-### Languages & Frameworks
-<img src="https://skillicons.dev/icons?i=cs,dotnet,aspnet,ef,python" />
-<img src="https://skillicons.dev/icons?i=django,html,css,js" />
+### Backend & .NET
+<img src="https://skillicons.dev/icons?i=cs,dotnet,aspnet,ef,swagger,postman" />
 
-### Tools & Platforms
-<img src="https://skillicons.dev/icons?i=git,github,postman,vs" />
-<img src="https://skillicons.dev/icons?i=vscode,redis,postgres,docker" />
+### Cloud & DevOps
+<img src="https://skillicons.dev/icons?i=azure,docker,kubernetes,githubactions,git,github" />
+
+### Databases & Messaging
+<img src="https://skillicons.dev/icons?i=postgres,redis,rabbitmq,sqlite" />
+
+### Tools & Extras
+<img src="https://skillicons.dev/icons?i=vs,vscode,python,django,html,css,js" />
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/Azure%20App%20Service-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" />
+<img src="https://img.shields.io/badge/Azure%20SQL%20Database-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" />
+<img src="https://img.shields.io/badge/Azure%20Blob%20Storage-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" />
+<img src="https://img.shields.io/badge/Azure%20DevOps-0078D7?style=flat-square&logo=azuredevops&logoColor=white" />
+<img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white" />
 
 </div>
 
@@ -68,8 +82,8 @@ var developer = new Developer
       <p>SQL Server<br/>PostgreSQL<br/>Redis Caching<br/>EF Core<br/>LINQ<br/>Relational DB Design<br/>Django ORM</p>
     </td>
     <td align="center" width="25%">
-      <h3>🧪 Testing &amp; DevOps</h3>
-      <p>xUnit &amp; NSubstitute<br/>Unit Testing<br/>Code Coverage (Coverlet)<br/>Docker<br/>Git / GitHub<br/>CI/CD (Azure DevOps)<br/>AutoMapper</p>
+      <h3>🧪 Testing &amp; Cloud</h3>
+      <p>xUnit &amp; NSubstitute<br/>Code Coverage (Coverlet)<br/>AutoMapper<br/>Docker<br/>Azure<br/>CI/CD (Azure DevOps)<br/>Git / GitHub</p>
     </td>
   </tr>
 </table>
@@ -80,13 +94,45 @@ var developer = new Developer
 
 ## 🏗️ Architecture
 
-```mermaid
-flowchart LR
-    API["API Layer<br/>Controllers • Middleware"] --> APP["Application Layer<br/>Services • DTOs • Interfaces"]
-    APP --> DOM["Domain Layer<br/>Entities • Specifications"]
-    INF["Infrastructure Layer<br/>EF Core • Redis • Repositories"] --> APP
-    API -. "DI registration" .-> INF
-```
+<div align="center">
+
+<table>
+  <tr>
+    <td align="center" width="60%">
+      <strong>🌐 API Layer</strong><br/>
+      <sub>Controllers • Middleware • JWT</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">⬇️</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <strong>⚙️ Application Layer</strong><br/>
+      <sub>Services • DTOs • Interfaces</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">⬇️</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <strong>📦 Domain Layer</strong><br/>
+      <sub>Entities • Specifications</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">⬆️</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <strong>🗄️ Infrastructure Layer</strong><br/>
+      <sub>EF Core • Redis • Repositories</sub>
+    </td>
+  </tr>
+</table>
+
+</div>
 
 <br/>
 
