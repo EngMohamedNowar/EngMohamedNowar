@@ -130,7 +130,7 @@ var developer = new Developer
 <table>
   <tr>
     <td align="center" valign="top">
-      <img src="https://github-readme-stats.vercel.app/api?username=EngMohamedNowar&show_icons=true&hide_border=true&bg_color=161B22&title_color=36BCF7&icon_color=36BCF7&text_color=DFE2E5&ring_color=36BCF7&rank_icon=github" height="180" alt="GitHub Stats" />
+      <img src="https://github-readme-stats.vercel.app/api?username=EngMohamedNowar&show_icons=true&hide_border=true&bg_color=161B22&title_color=36BCF7&icon_color=36BCF7&text_color=DFE2E5&ring_color=36BCF7&rank_icon=default" height="180" alt="GitHub Stats" />
     </td>
     <td align="center" valign="top">
       <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EngMohamedNowar&layout=compact&langs_count=8&hide_border=true&bg_color=161B22&title_color=36BCF7&text_color=DFE2E5" height="180" alt="Top Languages" />
@@ -139,7 +139,6 @@ var developer = new Developer
 </table>
 
 </div>
-
 ---
 
 ## 📌 Pinned Projects
