@@ -7,9 +7,13 @@
 
 <p><code style="color:#36BCF7">ASP.NET Core &nbsp;•&nbsp; C# &nbsp;•&nbsp; EF Core &nbsp;•&nbsp; SQL Server &nbsp;•&nbsp; REST APIs</code></p>
 
-<p><strong>🟢 Open to remote work opportunities</strong></p>
 
 <br/>
+
+<!-- Badges Row -->
+<p>
+  <img src="https://github-view-counter.vercel.app/api?username=EngMohamedNowar&label=PROFILE+VIEWS&base=562&layout=split&style=rounded&bgColor=%2336BCF7&labelBgColor=%23161B22&color=%230E1117&labelColor=%23ffffff&iconColor=%2336BCF7&size=16" alt="Profile Views" height="28" />
+</p>
 
 <!-- Streak Card -->
 <p>
@@ -44,24 +48,39 @@ var developer = new Developer
 <div align="center">
 
 ### Backend & .NET
-<img src="https://skillicons.dev/icons?i=cs,dotnet,aspnet,ef,swagger,postman" />
+<img src="https://skillicons.dev/icons?i=cs,dotnet,aspnet,swagger,postman,graphql,nginx,linux" />
+
+<p>
+  <img src="https://img.shields.io/badge/EF%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+  <img src="https://img.shields.io/badge/LINQ-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+  <img src="https://img.shields.io/badge/ASP.NET%20Identity-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+  <img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" />
+  <img src="https://img.shields.io/badge/Swagger%20%2F%20OpenAPI-85EA2D?style=flat-square&logo=swagger&logoColor=black" />
+  <img src="https://img.shields.io/badge/REST%20APIs-2563EB?style=flat-square&logo=postman&logoColor=white" />
+  <img src="https://img.shields.io/badge/MediatR%20%2F%20CQRS-FF6B35?style=flat-square&logo=dotnet&logoColor=white" />
+  <img src="https://img.shields.io/badge/AutoMapper-F5A623?style=flat-square&logo=dotnet&logoColor=white" />
+  <img src="https://img.shields.io/badge/xUnit-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+</p>
 
 ### Cloud & DevOps
 <img src="https://skillicons.dev/icons?i=azure,docker,kubernetes,githubactions,git,github" />
 
+<p>
+  <img src="https://img.shields.io/badge/Azure%20App%20Service-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" />
+  <img src="https://img.shields.io/badge/Azure%20SQL%20Database-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" />
+  <img src="https://img.shields.io/badge/Azure%20Blob%20Storage-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" />
+  <img src="https://img.shields.io/badge/Azure%20DevOps-0078D7?style=flat-square&logo=azuredevops&logoColor=white" />
+</p>
+
 ### Databases & Messaging
 <img src="https://skillicons.dev/icons?i=postgres,redis,rabbitmq,sqlite" />
 
+<p>
+  <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white" />
+</p>
+
 ### Tools & Extras
-<img src="https://skillicons.dev/icons?i=vs,vscode,python,django,html,css,js" />
-
-<br/><br/>
-
-<img src="https://img.shields.io/badge/Azure%20App%20Service-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" />
-<img src="https://img.shields.io/badge/Azure%20SQL%20Database-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" />
-<img src="https://img.shields.io/badge/Azure%20Blob%20Storage-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" />
-<img src="https://img.shields.io/badge/Azure%20DevOps-0078D7?style=flat-square&logo=azuredevops&logoColor=white" />
-<img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white" />
+<img src="https://skillicons.dev/icons?i=vscode,python,django,html,css,js" />
 
 </div>
 
@@ -96,41 +115,7 @@ var developer = new Developer
 
 <div align="center">
 
-<table>
-  <tr>
-    <td align="center" width="60%">
-      <strong>🌐 API Layer</strong><br/>
-      <sub>Controllers • Middleware • JWT</sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">⬇️</td>
-  </tr>
-  <tr>
-    <td align="center">
-      <strong>⚙️ Application Layer</strong><br/>
-      <sub>Services • DTOs • Interfaces</sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">⬇️</td>
-  </tr>
-  <tr>
-    <td align="center">
-      <strong>📦 Domain Layer</strong><br/>
-      <sub>Entities • Specifications</sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">⬆️</td>
-  </tr>
-  <tr>
-    <td align="center">
-      <strong>🗄️ Infrastructure Layer</strong><br/>
-      <sub>EF Core • Redis • Repositories</sub>
-    </td>
-  </tr>
-</table>
+<img src="assets/architecture.svg" width="100%" alt="Clean Architecture diagram: Clients, API, Application, Domain, Infrastructure, SQL Server, Redis, Azure" />
 
 </div>
 
