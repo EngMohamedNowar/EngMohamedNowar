@@ -60,6 +60,9 @@ var developer = new Developer
   <img src="https://img.shields.io/badge/MediatR%20%2F%20CQRS-FF6B35?style=flat-square&logo=dotnet&logoColor=white" />
   <img src="https://img.shields.io/badge/AutoMapper-F5A623?style=flat-square&logo=dotnet&logoColor=white" />
   <img src="https://img.shields.io/badge/xUnit-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
+  <img src="https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white" />
+  <img src="https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
 </p>
 
 ### Cloud & DevOps
@@ -168,9 +171,11 @@ var developer = new Developer
         <img src="https://img.shields.io/badge/.NET-10-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
         <img src="https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" />
         <img src="https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white" />
+        <img src="https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white" />
         <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+        <img src="https://img.shields.io/badge/tests-182-2FBB4F?style=flat-square&logo=xunit&logoColor=white" />
       </p>
-      <p align="center">Coffee catalogue &amp; basket API on .NET 10 with Clean Architecture, Redis caching, JWT auth, docker-compose, and an xUnit suite. In active development.</p>
+      <p align="center">Coffee e-commerce API on .NET 10 — Clean Architecture, CQRS, Redis baskets &amp; caching, JWT auth, and Stripe payments with signed webhooks. 182 xUnit tests, docker-compose, Swagger.</p>
       <p align="center">
         <a href="https://github.com/EngMohamedNowar/CoffeeStore">
           <img src="https://img.shields.io/badge/View-Repository-181717?style=flat-square&logo=github&logoColor=white" />
@@ -251,6 +256,19 @@ var developer = new Developer
 ## 📱 Screenshots
 
 <div align="center">
+
+### ☕ Coffee Store API — Swagger
+
+<table>
+  <tr>
+    <td align="center"><strong>Addresses • Authentication • Baskets</strong><br/><img loading="lazy" src="screenshots/swagger-coffee-1.png" width="400" alt="Coffee Store Swagger part 1" /></td>
+    <td align="center"><strong>Baskets • Delivery Methods • Order</strong><br/><img loading="lazy" src="screenshots/swagger-coffee-2.png" width="400" alt="Coffee Store Swagger part 2" /></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Order • Payments • Products</strong><br/><img loading="lazy" src="screenshots/swagger-coffee-3.png" width="400" alt="Coffee Store Swagger part 3" /></td>
+    <td align="center"><strong>8 controllers</strong><br/>Auth · Catalogue · Baskets · Orders ·<br/>Stripe Payments · Addresses · Delivery<br/><a href="https://github.com/EngMohamedNowar/CoffeeStore"><img src="https://img.shields.io/badge/View-Repository-181717?style=flat-square&logo=github&logoColor=white" alt="CoffeeStore repo" /></a></td>
+  </tr>
+</table>
 
 ### 🛒 Ecommerce API — Swagger
 
