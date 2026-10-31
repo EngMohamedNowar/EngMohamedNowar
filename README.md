@@ -2,7 +2,7 @@
 
 <!-- Animated Banner -->
 <a href="https://engmohamednowar.github.io/portfolio/">
-  <img src="assets/banner.svg?v=3" width="100%" alt="Mohamed Nowar — .NET Backend Developer" />
+  <img src="assets/banner.svg?v=4" width="100%" alt="Mohamed Nowar — .NET Backend Developer" />
 </a>
 
 <p><code style="color:#36BCF7">ASP.NET Core &nbsp;•&nbsp; C# &nbsp;•&nbsp; EF Core &nbsp;•&nbsp; SQL Server &nbsp;•&nbsp; REST APIs</code></p>
@@ -21,21 +21,21 @@
 </p>
 
 <!-- Animated Highlights -->
-<img src="assets/stats.svg?v=3" width="100%" alt="6+ featured projects · 182 xUnit tests · 8 certifications · 96% HCIA-AI score" />
+<img src="assets/stats.svg?v=4" width="100%" alt="6+ featured projects · 182 xUnit tests · 8 certifications · 96% HCIA-AI score" />
 
 </div>
 
-<img src="assets/divider.svg?v=3" width="100%" alt="" />
+<img src="assets/divider.svg?v=4" width="100%" alt="" />
 
 ## 🧑‍💻 About Me
 
 <div align="center">
-  <img src="assets/about-terminal.svg?v=3" width="100%" alt="var developer = new Developer { Name = Mohamed Nowar, Title = Junior .NET Backend Developer, Location = Benha, Egypt, Stack = C#, ASP.NET Core, EF Core, SQL Server, Learning = Microservices &amp; Cloud-Native, OpenToRemote = true }" />
+  <img src="assets/about-terminal.svg?v=4" width="100%" alt="var developer = new Developer { Name = Mohamed Nowar, Title = Junior .NET Backend Developer, Location = Benha, Egypt, Stack = C#, ASP.NET Core, EF Core, SQL Server, Learning = Microservices &amp; Cloud-Native, OpenToRemote = true }" />
 </div>
 
 <br/>
 
-<img src="assets/divider.svg?v=3" width="100%" alt="" />
+<img src="assets/divider.svg?v=4" width="100%" alt="" />
 
 ## 🛠️ Tech Stack
 
@@ -106,19 +106,19 @@
 
 <br/>
 
-<img src="assets/divider.svg?v=3" width="100%" alt="" />
+<img src="assets/divider.svg?v=4" width="100%" alt="" />
 
 ## 🏗️ Architecture
 
 <div align="center">
 
-<img src="assets/architecture.svg?v=3" width="100%" alt="Clean Architecture diagram: Clients, API, Application, Domain, Infrastructure, SQL Server, Redis, Azure" />
+<img src="assets/architecture.svg?v=4" width="100%" alt="Clean Architecture diagram: Clients, API, Application, Domain, Infrastructure, SQL Server, Redis, Azure" />
 
 </div>
 
 <br/>
 
-<img src="assets/divider.svg?v=3" width="100%" alt="" />
+<img src="assets/divider.svg?v=4" width="100%" alt="" />
 
 ## 📊 GitHub Stats
 
@@ -137,7 +137,7 @@
 
 </div>
 
-<img src="assets/divider.svg?v=3" width="100%" alt="" />
+<img src="assets/divider.svg?v=4" width="100%" alt="" />
 
 ## 📌 Pinned Projects
 
@@ -245,7 +245,7 @@
 
 <br/>
 
-<img src="assets/divider.svg?v=3" width="100%" alt="" />
+<img src="assets/divider.svg?v=4" width="100%" alt="" />
 
 ## 📱 Screenshots
 
@@ -304,7 +304,7 @@
 
 <br/>
 
-<img src="assets/divider.svg?v=3" width="100%" alt="" />
+<img src="assets/divider.svg?v=4" width="100%" alt="" />
 
 ## 🐍 Contribution Snake
 
@@ -320,7 +320,7 @@
 
 <br/>
 
-<img src="assets/divider.svg?v=3" width="100%" alt="" />
+<img src="assets/divider.svg?v=4" width="100%" alt="" />
 
 ## 🎓 Certifications
 
@@ -397,7 +397,7 @@
 
 <br/>
 
-<img src="assets/divider.svg?v=3" width="100%" alt="" />
+<img src="assets/divider.svg?v=4" width="100%" alt="" />
 
 ## 📫 Let's Connect
 
@@ -427,6 +427,6 @@
 
 <br/>
 
-<img src="assets/divider.svg?v=3" width="100%" alt="" />
+<img src="assets/divider.svg?v=4" width="100%" alt="" />
 
-<img src="assets/footer.svg?v=3" width="100%" alt="Building backend systems that are as clean as the code that powers them." />
+<img src="assets/footer.svg?v=4" width="100%" alt="Building backend systems that are as clean as the code that powers them." />

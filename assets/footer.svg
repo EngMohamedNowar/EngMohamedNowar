@@ -3,7 +3,7 @@
   .w1{animation:wv 9s linear infinite} .w2{animation:wv 14s linear infinite reverse} .w3{animation:wv 20s linear infinite}
   .tx{animation:up 1s .3s ease-out both}
   @keyframes wv{to{transform:translateX(-1280px)}}
-  @keyframes up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  @keyframes up{from{transform:translateY(10px)}to{transform:none}}
   @media (prefers-reduced-motion: reduce){*{animation:none!important}}
 </style>
 <defs><linearGradient id="nfG" x1="0" x2="1"><stop offset="0" stop-color="#36BCF7"/><stop offset="1" stop-color="#A78BFA"/></linearGradient></defs>

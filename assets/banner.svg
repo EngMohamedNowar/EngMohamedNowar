@@ -11,9 +11,9 @@
   .orb2{animation:orb 15s ease-in-out infinite reverse}
   .cur{animation:blink 1s steps(1) infinite}
   .sc{animation:scan 6s linear infinite}
-  @keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
-  @keyframes slide{from{opacity:0;transform:translateX(24px)}to{opacity:1;transform:none}}
-  @keyframes rot{0%{opacity:0;transform:translateY(10px)}3%,22%{opacity:1;transform:none}25%,100%{opacity:0;transform:translateY(-10px)}}
+  @keyframes up{from{transform:translateY(16px)}to{transform:none}}
+  @keyframes slide{from{transform:translateX(24px)}to{transform:none}}
+  @keyframes rot{0%,22%{opacity:1;transform:none}25%{opacity:0;transform:translateY(-10px)}97%{opacity:0;transform:translateY(10px)}100%{opacity:1;transform:none}}
   @keyframes hl{0%,100%{stroke-opacity:.3}15%{stroke-opacity:1;fill:#12283A}30%{stroke-opacity:.3}}
   @keyframes flow{to{stroke-dashoffset:-18}}
   @keyframes drift{0%{opacity:0;transform:translateY(0)}20%{opacity:.7}80%{opacity:.5}100%{opacity:0;transform:translateY(-60px)}}
