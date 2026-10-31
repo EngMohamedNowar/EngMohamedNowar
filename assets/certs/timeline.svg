@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="250" viewBox="0 0 1200 250">
+<style>
+  text{font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif}
+  .ev{animation:in .8s cubic-bezier(.2,.7,.2,1) both}
+  .flow{stroke-dasharray:6 8;animation:flow 1.4s linear infinite}
+  .pulse{transform-box:fill-box;transform-origin:center;animation:p 3.6s ease-out infinite}
+  .edge{stroke-dasharray:12 88;animation:edge 9s linear infinite}
+  @keyframes in{from{transform:translateY(10px)}to{transform:none}}
+  @keyframes flow{to{stroke-dashoffset:-28}}
+  @keyframes p{0%{opacity:.9;transform:scale(1)}40%,100%{opacity:0;transform:scale(2.6)}}
+  @keyframes edge{to{stroke-dashoffset:-100}}
+  @media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style>
+<defs>
+  <linearGradient id="tlg" x1="0" x2="1"><stop offset="0" stop-color="#A78BFA"/><stop offset=".5" stop-color="#F59E0B"/><stop offset="1" stop-color="#36BCF7"/></linearGradient>
+  <linearGradient id="tlbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0D1117"/><stop offset="1" stop-color="#0B1B2B"/></linearGradient>
+</defs>
+<rect x="1" y="1" width="1198" height="248" rx="16" fill="url(#tlbg)" stroke="#30363D"/>
+<rect class="edge" x="1" y="1" width="1198" height="248" rx="16" fill="none" stroke="url(#tlg)" stroke-width="2" pathLength="100"/>
+<text x="28" y="34" font-size="13" font-weight="700" letter-spacing="2" fill="#8B949E">LEARNING JOURNEY · 8 CERTIFICATES · 2024 → 2026</text>
+<line x1="115" x2="1085" y1="142" y2="142" stroke="#30363D" stroke-width="4" stroke-linecap="round"/>
+<line class="flow" x1="115" x2="1085" y1="142" y2="142" stroke="url(#tlg)" stroke-width="2.5"/>
+<g class="ev" style="animation-delay:0.30s">
+<line x1="115.0" x2="115.0" y1="142" y2="120" stroke="#A78BFA" stroke-opacity=".5"/>
+<circle class="pulse" style="animation-delay:0.00s" cx="115.0" cy="142" r="9" fill="none" stroke="#A78BFA"/>
+<circle cx="115.0" cy="142" r="9" fill="#0D1117" stroke="#A78BFA" stroke-width="3"/><circle cx="115.0" cy="142" r="3.5" fill="#A78BFA"/>
+<text x="115.0" y="72" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="1" fill="#A78BFA">JUL 2024</text>
+<text x="115.0" y="90" text-anchor="middle" font-size="14" font-weight="700" fill="#E6EDF3">Full Stack Python</text>
+<text x="115.0" y="106" text-anchor="middle" font-size="11.5" fill="#8B949E">ITI</text>
+</g><g class="ev" style="animation-delay:0.48s">
+<line x1="253.6" x2="253.6" y1="142" y2="164" stroke="#F59E0B" stroke-opacity=".5"/>
+<circle class="pulse" style="animation-delay:0.45s" cx="253.6" cy="142" r="9" fill="none" stroke="#F59E0B"/>
+<circle cx="253.6" cy="142" r="9" fill="#0D1117" stroke="#F59E0B" stroke-width="3"/><circle cx="253.6" cy="142" r="3.5" fill="#F59E0B"/>
+<text x="253.6" y="192" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="1" fill="#F59E0B">OCT 2024</text>
+<text x="253.6" y="210" text-anchor="middle" font-size="14" font-weight="700" fill="#E6EDF3">AI Talent Track</text>
+<text x="253.6" y="226" text-anchor="middle" font-size="11.5" fill="#8B949E">NTI × Huawei</text>
+</g><g class="ev" style="animation-delay:0.66s">
+<line x1="392.1" x2="392.1" y1="142" y2="120" stroke="#F43F5E" stroke-opacity=".5"/>
+<circle class="pulse" style="animation-delay:0.90s" cx="392.1" cy="142" r="9" fill="none" stroke="#F43F5E"/>
+<circle cx="392.1" cy="142" r="9" fill="#0D1117" stroke="#F43F5E" stroke-width="3"/><circle cx="392.1" cy="142" r="3.5" fill="#F43F5E"/>
+<text x="392.1" y="72" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="1" fill="#F43F5E">2024</text>
+<text x="392.1" y="90" text-anchor="middle" font-size="14" font-weight="700" fill="#E6EDF3">HCIA-AI V3.5</text>
+<text x="392.1" y="106" text-anchor="middle" font-size="11.5" fill="#8B949E">Huawei</text>
+</g><g class="ev" style="animation-delay:0.84s">
+<line x1="530.7" x2="530.7" y1="142" y2="164" stroke="#60A5FA" stroke-opacity=".5"/>
+<circle class="pulse" style="animation-delay:1.35s" cx="530.7" cy="142" r="9" fill="none" stroke="#60A5FA"/>
+<circle cx="530.7" cy="142" r="9" fill="#0D1117" stroke="#60A5FA" stroke-width="3"/><circle cx="530.7" cy="142" r="3.5" fill="#60A5FA"/>
+<text x="530.7" y="192" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="1" fill="#60A5FA">OCT 2024</text>
+<text x="530.7" y="210" text-anchor="middle" font-size="14" font-weight="700" fill="#E6EDF3">Database</text>
+<text x="530.7" y="226" text-anchor="middle" font-size="11.5" fill="#8B949E">Mahara-Tech</text>
+</g><g class="ev" style="animation-delay:1.02s">
+<line x1="669.3" x2="669.3" y1="142" y2="120" stroke="#FBBF24" stroke-opacity=".5"/>
+<circle class="pulse" style="animation-delay:1.80s" cx="669.3" cy="142" r="9" fill="none" stroke="#FBBF24"/>
+<circle cx="669.3" cy="142" r="9" fill="#0D1117" stroke="#FBBF24" stroke-width="3"/><circle cx="669.3" cy="142" r="3.5" fill="#FBBF24"/>
+<text x="669.3" y="72" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="1" fill="#FBBF24">2025</text>
+<text x="669.3" y="90" text-anchor="middle" font-size="14" font-weight="700" fill="#E6EDF3">B.Sc. Degree</text>
+<text x="669.3" y="106" text-anchor="middle" font-size="11.5" fill="#8B949E">EELU</text>
+</g><g class="ev" style="animation-delay:1.20s">
+<line x1="807.9" x2="807.9" y1="142" y2="164" stroke="#4ADE80" stroke-opacity=".5"/>
+<circle class="pulse" style="animation-delay:2.25s" cx="807.9" cy="142" r="9" fill="none" stroke="#4ADE80"/>
+<circle cx="807.9" cy="142" r="9" fill="#0D1117" stroke="#4ADE80" stroke-width="3"/><circle cx="807.9" cy="142" r="3.5" fill="#4ADE80"/>
+<text x="807.9" y="192" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="1" fill="#4ADE80">OCT 2025</text>
+<text x="807.9" y="210" text-anchor="middle" font-size="14" font-weight="700" fill="#E6EDF3">OOP in C++</text>
+<text x="807.9" y="226" text-anchor="middle" font-size="11.5" fill="#8B949E">Mahara-Tech</text>
+</g><g class="ev" style="animation-delay:1.38s">
+<line x1="946.4" x2="946.4" y1="142" y2="120" stroke="#2DD4BF" stroke-opacity=".5"/>
+<circle class="pulse" style="animation-delay:2.70s" cx="946.4" cy="142" r="9" fill="none" stroke="#2DD4BF"/>
+<circle cx="946.4" cy="142" r="9" fill="#0D1117" stroke="#2DD4BF" stroke-width="3"/><circle cx="946.4" cy="142" r="3.5" fill="#2DD4BF"/>
+<text x="946.4" y="72" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="1" fill="#2DD4BF">OCT 2025</text>
+<text x="946.4" y="90" text-anchor="middle" font-size="14" font-weight="700" fill="#E6EDF3">Clean Code</text>
+<text x="946.4" y="106" text-anchor="middle" font-size="11.5" fill="#8B949E">Mahara-Tech</text>
+</g><g class="ev" style="animation-delay:1.56s">
+<line x1="1085.0" x2="1085.0" y1="142" y2="164" stroke="#36BCF7" stroke-opacity=".5"/>
+<circle class="pulse" style="animation-delay:3.15s" cx="1085.0" cy="142" r="9" fill="none" stroke="#36BCF7"/>
+<circle cx="1085.0" cy="142" r="9" fill="#0D1117" stroke="#36BCF7" stroke-width="3"/><circle cx="1085.0" cy="142" r="3.5" fill="#36BCF7"/>
+<text x="1085.0" y="192" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="1" fill="#36BCF7">JUL 2026</text>
+<text x="1085.0" y="210" text-anchor="middle" font-size="14" font-weight="700" fill="#E6EDF3">ASP.NET Core</text>
+<text x="1085.0" y="226" text-anchor="middle" font-size="11.5" fill="#8B949E">Route</text>
+</g>
+<circle r="6" fill="#FFFFFF"><animateMotion dur="8s" repeatCount="indefinite" path="M115 142 H1085"/></circle>
+<circle r="14" fill="#36BCF7" fill-opacity=".25"><animateMotion dur="8s" repeatCount="indefinite" path="M115 142 H1085"/></circle>
+</svg>

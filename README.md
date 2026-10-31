@@ -329,68 +329,26 @@
 
 </div>
 
+<div align="center">
+  <img src="assets/certs/timeline.svg" width="100%" alt="Learning journey: 8 certificates from 2024 to 2026" />
+</div>
+
 <table>
   <tr>
-    <td align="center" width="33%">
-      <a href="https://drive.google.com/file/d/1KATof9qObGF7jttGQBih6Z8Zl4Jj4Iqj/view?usp=sharing">
-        <img loading="lazy" src="certificates/bachelor-certificate.jpg" width="320" alt="B.Sc. Graduation Certificate" /><br/>
-        <strong>🎓 B.Sc. Graduation Certificate</strong>
-      </a>
-      <br/><sub>Egyptian E-Learning University · 2025</sub>
-    </td>
-    <td align="center" width="33%">
-      <a href="https://drive.google.com/file/d/1EYLlRJlzx50N_8i8D6bMJNSKNTpoiuOB/view?usp=sharing">
-        <img loading="lazy" src="certificates/route-aspnet-core.jpg" width="320" alt="ASP.NET Core Back-End Training" /><br/>
-        <strong>🌐 ASP.NET Core Back-End</strong>
-      </a>
-      <br/><sub>Route Academy · Dec 2025 – Jul 2026</sub>
-    </td>
-    <td align="center" width="33%">
-      <a href="https://drive.google.com/file/d/1Uql1cZfbJ_mJwTDXv5ZWomS8w9iw30lJ/view?usp=sharing">
-        <img loading="lazy" src="certificates/huawei-hcia-ai.jpg" width="320" alt="HCIA-AI V3.5" /><br/>
-        <strong>🤖 HCIA-AI V3.5</strong>
-      </a>
-      <br/><sub>Huawei · Score 96% · 2024</sub>
-    </td>
+    <td width="50%" align="center"><a href="https://drive.google.com/file/d/1KATof9qObGF7jttGQBih6Z8Zl4Jj4Iqj/view?usp=sharing"><img src="assets/certs/bsc.svg" width="100%" alt="B.Sc. Graduation Certificate — Egyptian E-Learning University, 2025" /></a></td>
+    <td width="50%" align="center"><a href="https://drive.google.com/file/d/1EYLlRJlzx50N_8i8D6bMJNSKNTpoiuOB/view?usp=sharing"><img src="assets/certs/route.svg" width="100%" alt="ASP.NET Core Back-End — Route Academy" /></a></td>
   </tr>
   <tr>
-    <td align="center" width="33%">
-      <a href="https://drive.google.com/file/d/19Fk6P6v0B3IubjQlkJDMwB6HSV3vRBOm/view?usp=sharing">
-        <img loading="lazy" src="certificates/nti.jpg" width="320" alt="AI Talent Academy Track" /><br/>
-        <strong>🧠 AI Talent Academy Track</strong>
-      </a>
-      <br/><sub>NTI × Huawei · 80 hrs · Score 96% · 2024</sub>
-    </td>
-    <td align="center" width="33%">
-      <a href="https://drive.google.com/file/d/13mJhYLAQvHMASVqRJ1wvc61cuEPA7h6g/view?usp=sharing">
-        <img loading="lazy" src="certificates/iti-python.jpg" width="320" alt="Full Stack Python" /><br/>
-        <strong>🐍 Full Stack Python</strong>
-      </a>
-      <br/><sub>ITI · 120 Hours · Jul – Aug 2024</sub>
-    </td>
-    <td align="center" width="33%">
-      <a href="https://drive.google.com/file/d/1m_PpMnaFMPOwi3jKf3DjCYNt4sfYoS3r/view?usp=sharing">
-        <img loading="lazy" src="certificates/mastering-oop.jpg" width="320" alt="Mastering OOP using C++" /><br/>
-        <strong>🧩 Mastering OOP using C++</strong>
-      </a>
-      <br/><sub>ITI Platform · Oct 2025</sub>
-    </td>
+    <td width="50%" align="center"><a href="https://drive.google.com/file/d/1Uql1cZfbJ_mJwTDXv5ZWomS8w9iw30lJ/view?usp=sharing"><img src="assets/certs/hcia.svg" width="100%" alt="HCIA-AI V3.5 — Huawei, score 96%" /></a></td>
+    <td width="50%" align="center"><a href="https://drive.google.com/file/d/19Fk6P6v0B3IubjQlkJDMwB6HSV3vRBOm/view?usp=sharing"><img src="assets/certs/nti.svg" width="100%" alt="AI Talent Academy Track — NTI × Huawei, 80 hours, score 96%" /></a></td>
   </tr>
   <tr>
-    <td align="center" width="33%">
-      <a href="https://drive.google.com/file/d/1aBJj-ccxO_rRc7DQUeFpHM9x783MTAe7/view?usp=sharing">
-        <img loading="lazy" src="certificates/clean-code.jpg" width="320" alt="Principles of Writing Clean Code" /><br/>
-        <strong>✨ Principles of Clean Code</strong>
-      </a>
-      <br/><sub>ITI Platform · Oct 2025</sub>
-    </td>
-    <td align="center" width="33%">
-      <a href="https://drive.google.com/file/d/1cxs0XJfog1LW_tvE4f6Igs_CmpSj8fjY/view?usp=sharing">
-        <img loading="lazy" src="certificates/database.jpg" width="320" alt="Database Fundamentals" /><br/>
-        <strong>🗄️ Database Fundamentals</strong>
-      </a>
-      <br/><sub>ITI Platform · Oct 2024</sub>
-    </td>
+    <td width="50%" align="center"><a href="https://drive.google.com/file/d/13mJhYLAQvHMASVqRJ1wvc61cuEPA7h6g/view?usp=sharing"><img src="assets/certs/python.svg" width="100%" alt="Full Stack Python — ITI, 120 hours" /></a></td>
+    <td width="50%" align="center"><a href="https://drive.google.com/file/d/1m_PpMnaFMPOwi3jKf3DjCYNt4sfYoS3r/view?usp=sharing"><img src="assets/certs/oop.svg" width="100%" alt="Mastering OOP using C++ — ITI Mahara-Tech" /></a></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><a href="https://drive.google.com/file/d/1aBJj-ccxO_rRc7DQUeFpHM9x783MTAe7/view?usp=sharing"><img src="assets/certs/cleancode.svg" width="100%" alt="Principles of Clean Code — ITI Mahara-Tech" /></a></td>
+    <td width="50%" align="center"><a href="https://drive.google.com/file/d/1cxs0XJfog1LW_tvE4f6Igs_CmpSj8fjY/view?usp=sharing"><img src="assets/certs/db.svg" width="100%" alt="Database Fundamentals — ITI Mahara-Tech" /></a></td>
   </tr>
 </table>
 
