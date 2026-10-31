@@ -1,8 +1,8 @@
 <div align="center">
 
-<!-- Typing SVG Header -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=110&lines=Hi+%F0%9F%91%8B+I'm+Mohamed+Nowar;Junior+.NET+Backend+Developer;Building+Scalable+Backend+Systems+%E2%9A%A1" alt="Typing SVG" />
+<!-- Animated Banner -->
+<a href="https://engmohamednowar.github.io/portfolio/">
+  <img src="assets/banner.svg" width="100%" alt="Mohamed Nowar — .NET Backend Developer" />
 </a>
 
 <p><code style="color:#36BCF7">ASP.NET Core &nbsp;•&nbsp; C# &nbsp;•&nbsp; EF Core &nbsp;•&nbsp; SQL Server &nbsp;•&nbsp; REST APIs</code></p>
@@ -20,28 +20,22 @@
   <img src="https://streak-stats.demolab.com/?user=EngMohamedNowar&theme=dark&hide_border=true&background=161B22&stroke=36BCF7&ring=36BCF7&fire=36BCF7&currStreakLabel=36BCF7&sideNums=DFE2E5&sideLabels=DFE2E5&currStreakNum=36BCF7&dates=8B949E" alt="GitHub Streak" width="420" />
 </p>
 
+<!-- Animated Highlights -->
+<img src="assets/stats.svg" width="100%" alt="6+ featured projects · 182 xUnit tests · 8 certifications · 96% HCIA-AI score" />
+
 </div>
 
----
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## 🧑‍💻 About Me
 
-```csharp
-var developer = new Developer
-{
-    Name = "Mohamed Nowar",
-    Title = "Junior .NET Backend Developer",
-    Location = "Benha, Egypt",
-    Stack = new[] { "C#", "ASP.NET Core", "EF Core", "SQL Server" },
-    Languages = new[] { "Arabic — Native", "English — Intermediate" },
-    Learning = "Microservices & Cloud-Native",
-    OpenToRemote = true
-};
-```
+<div align="center">
+  <img src="assets/about-terminal.svg" width="100%" alt="var developer = new Developer { Name = Mohamed Nowar, Title = Junior .NET Backend Developer, Location = Benha, Egypt, Stack = C#, ASP.NET Core, EF Core, SQL Server, Learning = Microservices &amp; Cloud-Native, OpenToRemote = true }" />
+</div>
 
 <br/>
 
----
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## 🛠️ Tech Stack
 
@@ -112,19 +106,19 @@ var developer = new Developer
 
 <br/>
 
----
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## 🏗️ Architecture
 
 <div align="center">
 
-<img src="assets/architecture.svg" width="100%" alt="Clean Architecture diagram: Clients, API, Application, Domain, Infrastructure, SQL Server, Redis, Azure" />
+<img src="assets/architecture.svg?v=2" width="100%" alt="Clean Architecture diagram: Clients, API, Application, Domain, Infrastructure, SQL Server, Redis, Azure" />
 
 </div>
 
 <br/>
 
----
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## 📊 GitHub Stats
 
@@ -143,7 +137,7 @@ var developer = new Developer
 
 </div>
 
----
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## 📌 Pinned Projects
 
@@ -251,7 +245,7 @@ var developer = new Developer
 
 <br/>
 
----
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## 📱 Screenshots
 
@@ -310,7 +304,7 @@ var developer = new Developer
 
 <br/>
 
----
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## 🐍 Contribution Snake
 
@@ -326,7 +320,7 @@ var developer = new Developer
 
 <br/>
 
----
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## 🎓 Certifications
 
@@ -403,7 +397,7 @@ var developer = new Developer
 
 <br/>
 
----
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## 📫 Let's Connect
 
@@ -433,10 +427,6 @@ var developer = new Developer
 
 <br/>
 
----
+<img src="assets/divider.svg" width="100%" alt="" />
 
-<div align="center">
-
-### *Building backend systems that are as clean as the code that powers them.* 🚀
-
-</div>
+<img src="assets/footer.svg" width="100%" alt="Building backend systems that are as clean as the code that powers them." />

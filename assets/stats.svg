@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="140" viewBox="0 0 1160 140">
+<style>
+  text{font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif}
+  .c{opacity:0;animation:up .8s cubic-bezier(.2,.7,.2,1) forwards}
+  .ring{animation:ring 1.6s cubic-bezier(.3,.8,.3,1) forwards}
+  .edge{stroke-dasharray:18 82;stroke-opacity:.8;animation:edge 6s linear infinite}
+  .dot{transform-box:fill-box;transform-origin:center;animation:p 2s ease-in-out infinite}
+  @keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  @keyframes ring{to{stroke-dashoffset:0}}
+  @keyframes edge{to{stroke-dashoffset:-100}}
+  @keyframes p{50%{transform:scale(1.8);opacity:.5}}
+  @media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style>
+<g class="c" style="animation-delay:0.00s">
+<rect x="10" y="10" width="270" height="120" rx="14" fill="#161B22" stroke="#30363D"/>
+<rect class="edge" style="animation-delay:0.00s" x="10" y="10" width="270" height="120" rx="14" fill="none" stroke="#36BCF7" pathLength="100"/>
+<circle cx="236" cy="70" r="22" fill="none" stroke="#30363D" stroke-width="4"/>
+<circle class="ring" style="animation-delay:0.30s" cx="236" cy="70" r="22" fill="none" stroke="#36BCF7" stroke-width="4" stroke-linecap="round" stroke-dasharray="138.2" stroke-dashoffset="138.2" transform="rotate(-90 236 70)"/>
+<circle class="dot" style="animation-delay:0.00s" cx="236" cy="70" r="4" fill="#36BCF7"/>
+<text x="32" y="66" font-size="38" font-weight="800" fill="#E6EDF3">6+</text>
+<text x="32" y="92" font-size="14" font-weight="600" fill="#36BCF7">Featured projects</text>
+<text x="32" y="112" font-size="12" fill="#8B949E">API · MVC · WPF</text>
+</g><g class="c" style="animation-delay:0.25s">
+<rect x="300" y="10" width="270" height="120" rx="14" fill="#161B22" stroke="#30363D"/>
+<rect class="edge" style="animation-delay:0.25s" x="300" y="10" width="270" height="120" rx="14" fill="none" stroke="#36BCF7" pathLength="100"/>
+<circle cx="526" cy="70" r="22" fill="none" stroke="#30363D" stroke-width="4"/>
+<circle class="ring" style="animation-delay:0.55s" cx="526" cy="70" r="22" fill="none" stroke="#36BCF7" stroke-width="4" stroke-linecap="round" stroke-dasharray="138.2" stroke-dashoffset="138.2" transform="rotate(-90 526 70)"/>
+<circle class="dot" style="animation-delay:0.25s" cx="526" cy="70" r="4" fill="#36BCF7"/>
+<text x="322" y="66" font-size="38" font-weight="800" fill="#E6EDF3">182</text>
+<text x="322" y="92" font-size="14" font-weight="600" fill="#36BCF7">xUnit tests</text>
+<text x="322" y="112" font-size="12" fill="#8B949E">CoffeeStore API</text>
+</g><g class="c" style="animation-delay:0.50s">
+<rect x="590" y="10" width="270" height="120" rx="14" fill="#161B22" stroke="#30363D"/>
+<rect class="edge" style="animation-delay:0.50s" x="590" y="10" width="270" height="120" rx="14" fill="none" stroke="#36BCF7" pathLength="100"/>
+<circle cx="816" cy="70" r="22" fill="none" stroke="#30363D" stroke-width="4"/>
+<circle class="ring" style="animation-delay:0.80s" cx="816" cy="70" r="22" fill="none" stroke="#36BCF7" stroke-width="4" stroke-linecap="round" stroke-dasharray="138.2" stroke-dashoffset="138.2" transform="rotate(-90 816 70)"/>
+<circle class="dot" style="animation-delay:0.50s" cx="816" cy="70" r="4" fill="#36BCF7"/>
+<text x="612" y="66" font-size="38" font-weight="800" fill="#E6EDF3">8</text>
+<text x="612" y="92" font-size="14" font-weight="600" fill="#36BCF7">Certifications</text>
+<text x="612" y="112" font-size="12" fill="#8B949E">Route · ITI · Huawei</text>
+</g><g class="c" style="animation-delay:0.75s">
+<rect x="880" y="10" width="270" height="120" rx="14" fill="#161B22" stroke="#30363D"/>
+<rect class="edge" style="animation-delay:0.75s" x="880" y="10" width="270" height="120" rx="14" fill="none" stroke="#36BCF7" pathLength="100"/>
+<circle cx="1106" cy="70" r="22" fill="none" stroke="#30363D" stroke-width="4"/>
+<circle class="ring" style="animation-delay:1.05s" cx="1106" cy="70" r="22" fill="none" stroke="#36BCF7" stroke-width="4" stroke-linecap="round" stroke-dasharray="138.2" stroke-dashoffset="138.2" transform="rotate(-90 1106 70)"/>
+<circle class="dot" style="animation-delay:0.75s" cx="1106" cy="70" r="4" fill="#36BCF7"/>
+<text x="902" y="66" font-size="38" font-weight="800" fill="#E6EDF3">96%</text>
+<text x="902" y="92" font-size="14" font-weight="600" fill="#36BCF7">HCIA-AI score</text>
+<text x="902" y="112" font-size="12" fill="#8B949E">Huawei · 2024</text>
+</g>
+</svg>

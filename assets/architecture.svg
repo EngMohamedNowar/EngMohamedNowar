@@ -1,67 +1,43 @@
-<svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Helvetica, Arial, sans-serif" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo3Njc5YTZjYy0wOWYzLTRkNGYtYTM3Zi0yYTExYWQxZTQ5MTQAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaN6ZqMqNvx6924P0I46i728AAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDpkMTRiMzlhYS0yYTNkLTRhNTctOTI0OS1kYWY4ZTg5YTE1ZTdscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoFiBdbKgWPsAwNx0gSxS6uQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggJUAQAN1tGXm1ek+cNOVhFbLxWIW/3u+obAbIiu8wddqkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaPVdxUjWX382xIFo4IqqqdgAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCCX4wrEubpetPyygYeIz9FtrPIzVqSyr2HngO0C4vyiqGRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBiyZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjc2NzlhNmNjLTA5ZjMtNGQ0Zi1hMzdmLTJhMTFhZDFlNDkxNC9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjkwMzEyYTI5LTEzOTgtNGE0Zi1iMWQ0LWE1YmE1YjZkM2U0NXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCAlQBAA3W0ZebV6T5w05WEVsvFYhb/e76hsBsiK7zB12qJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFgg3C230K16DoT+w1jhIFnHk8tpnQwWUVQuB/Y2uiOqSF2iY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggQlulQoIFiGfCRJzZOChdubaEThF+YGjwasdMJ3Vrze10Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQEoi6zvilH/PiDE8aNs4KP2U4DmTaBz289IHxd5chGPKPHa7eGXcKOvkGEypzCaLBvJM2PYxhj7mFt/GYsafqcQ=</c2pa:manifest></metadata>
-  <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0 0 L10 5 L0 10 z" fill="#8B949E"/>
-    </marker>
-  </defs>
+<svg viewBox="0 0 900 520" width="900" height="520" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<style>
+  .bx{opacity:0;animation:up .7s cubic-bezier(.2,.7,.2,1) forwards}
+  .pulse{stroke-opacity:0;animation:pl 3.6s ease-in-out infinite}
+  .fl path{stroke-dasharray:5 6;animation:flow 1s linear infinite}
+  .ttl{animation:up .7s ease-out forwards}
+  .grid{animation:gm 20s linear infinite}
+  @keyframes up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  @keyframes pl{0%,100%{stroke-opacity:0;stroke-width:2}20%{stroke-opacity:.9;stroke-width:6}40%{stroke-opacity:0;stroke-width:10}}
+  @keyframes flow{to{stroke-dashoffset:-22}}
+  @keyframes gm{to{transform:translateY(30px)}}
+  @media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style>
+<defs>
+  <marker id="naArr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8B949E"/></marker>
+  <pattern id="naGrid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#FFFFFF" stroke-opacity=".035"/></pattern>
+  <clipPath id="naClip"><rect x="1" y="1" width="898" height="518" rx="16"/></clipPath>
+</defs>
+<rect x="1" y="1" width="898" height="518" rx="16" fill="#0D1117"/>
+<g clip-path="url(#naClip)"><rect class="grid" x="0" y="-30" width="900" height="580" fill="url(#naGrid)"/></g>
+<rect x="1" y="1" width="898" height="518" rx="16" fill="none" stroke="#30363D"/>
+<text class="ttl" x="450" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#E6EDF3">Clean Architecture — Request Flow</text>
 
-  <rect x="1" y="1" width="898" height="518" rx="16" fill="#0D1117" stroke="#30363D"/>
-  <text x="450" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#E6EDF3">Clean Architecture - Request Flow</text>
-
-  <!-- Clients -->
-  <rect x="50" y="70" width="400" height="60" rx="12" fill="#161B22" stroke="#8B949E"/>
-  <text x="250" y="97" text-anchor="middle" font-size="16" font-weight="700" fill="#E6EDF3">Clients</text>
-  <text x="250" y="116" text-anchor="middle" font-size="12" fill="#8B949E">Web  •  Mobile  •  Swagger  •  Postman</text>
-
-  <!-- API -->
-  <rect x="50" y="165" width="400" height="80" rx="12" fill="#161B22" stroke="#36BCF7" stroke-width="2"/>
-  <text x="250" y="198" text-anchor="middle" font-size="16" font-weight="700" fill="#36BCF7">API Layer</text>
-  <text x="250" y="220" text-anchor="middle" font-size="12" fill="#8B949E">Controllers  •  Middleware  •  JWT Auth</text>
-
-  <!-- Application -->
-  <rect x="50" y="280" width="400" height="80" rx="12" fill="#161B22" stroke="#7C3AED" stroke-width="2"/>
-  <text x="250" y="313" text-anchor="middle" font-size="16" font-weight="700" fill="#A78BFA">Application Layer</text>
-  <text x="250" y="335" text-anchor="middle" font-size="12" fill="#8B949E">Services  •  DTOs  •  Interfaces  •  AutoMapper</text>
-
-  <!-- Domain -->
-  <rect x="50" y="395" width="400" height="80" rx="12" fill="#161B22" stroke="#22C55E" stroke-width="2"/>
-  <text x="250" y="428" text-anchor="middle" font-size="16" font-weight="700" fill="#4ADE80">Domain Layer</text>
-  <text x="250" y="450" text-anchor="middle" font-size="12" fill="#8B949E">Entities  •  Specifications  •  Business Rules</text>
-
-  <!-- Vertical arrows -->
-  <line x1="250" y1="130" x2="250" y2="163" stroke="#8B949E" stroke-width="2" marker-end="url(#arrow)"/>
-  <line x1="250" y1="245" x2="250" y2="278" stroke="#8B949E" stroke-width="2" marker-end="url(#arrow)"/>
-  <line x1="250" y1="360" x2="250" y2="393" stroke="#8B949E" stroke-width="2" marker-end="url(#arrow)"/>
-
-  <!-- Infrastructure -->
-  <rect x="520" y="280" width="330" height="80" rx="12" fill="#161B22" stroke="#F59E0B" stroke-width="2"/>
-  <text x="685" y="313" text-anchor="middle" font-size="16" font-weight="700" fill="#FBBF24">Infrastructure Layer</text>
-  <text x="685" y="335" text-anchor="middle" font-size="12" fill="#8B949E">EF Core  •  Repositories  •  Unit of Work</text>
-
-  <!-- Infrastructure implements Application -->
-  <line x1="518" y1="320" x2="452" y2="320" stroke="#F59E0B" stroke-width="2" marker-end="url(#arrow)"/>
-  <text x="485" y="311" text-anchor="middle" font-size="11" fill="#8B949E">implements</text>
-
-  <!-- DI registration -->
-  <path d="M452 205 H685 V278" fill="none" stroke="#36BCF7" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
-  <text x="570" y="196" text-anchor="middle" font-size="11" fill="#8B949E">DI registration</text>
-
-  <!-- Infrastructure to external services -->
-  <line x1="685" y1="360" x2="685" y2="385" stroke="#8B949E" stroke-width="2"/>
-  <line x1="578" y1="385" x2="792" y2="385" stroke="#8B949E" stroke-width="2"/>
-  <line x1="578" y1="385" x2="578" y2="403" stroke="#8B949E" stroke-width="2" marker-end="url(#arrow)"/>
-  <line x1="685" y1="385" x2="685" y2="403" stroke="#8B949E" stroke-width="2" marker-end="url(#arrow)"/>
-  <line x1="792" y1="385" x2="792" y2="403" stroke="#8B949E" stroke-width="2" marker-end="url(#arrow)"/>
-
-  <rect x="520" y="405" width="116" height="70" rx="12" fill="#161B22" stroke="#CC2927" stroke-width="2"/>
-  <text x="578" y="436" text-anchor="middle" font-size="14" font-weight="700" fill="#F87171">SQL Server</text>
-  <text x="578" y="456" text-anchor="middle" font-size="11" fill="#8B949E">Database</text>
-
-  <rect x="627" y="405" width="116" height="70" rx="12" fill="#161B22" stroke="#FF4438" stroke-width="2"/>
-  <text x="685" y="436" text-anchor="middle" font-size="14" font-weight="700" fill="#FB7185">Redis</text>
-  <text x="685" y="456" text-anchor="middle" font-size="11" fill="#8B949E">Caching</text>
-
-  <rect x="734" y="405" width="116" height="70" rx="12" fill="#161B22" stroke="#0078D4" stroke-width="2"/>
-  <text x="792" y="436" text-anchor="middle" font-size="14" font-weight="700" fill="#38BDF8">Azure</text>
-  <text x="792" y="456" text-anchor="middle" font-size="11" fill="#8B949E">Cloud Hosting</text>
+<g stroke="#30363D" stroke-width="2" fill="none">
+  <path d="M250 130 V163"/><path d="M250 245 V278"/><path d="M250 360 V393"/>
+  <path d="M518 320 H452"/><path d="M452 205 H685 V278"/>
+  <path d="M685 360 V385 M572 385 H798 M572 385 V403 M685 385 V403 M798 385 V403"/>
+</g>
+<g fill="none" stroke-width="2" class="fl">
+  <path stroke="#36BCF7" d="M250 130 V163" marker-end="url(#naArr)"/>
+  <path stroke="#36BCF7" d="M250 245 V278" marker-end="url(#naArr)"/>
+  <path stroke="#36BCF7" d="M250 360 V393" marker-end="url(#naArr)"/>
+  <path stroke="#F59E0B" d="M518 320 H452" marker-end="url(#naArr)"/>
+  <path stroke="#36BCF7" d="M452 205 H685 V278" marker-end="url(#naArr)"/>
+  <path stroke="#8B949E" d="M685 360 V385 H572 V403"/>
+  <path stroke="#8B949E" d="M685 360 V403"/>
+  <path stroke="#8B949E" d="M685 360 V385 H798 V403"/>
+</g>
+<text x="485" y="311" text-anchor="middle" font-size="11" fill="#8B949E">implements</text>
+<text x="570" y="196" text-anchor="middle" font-size="11" fill="#8B949E">DI registration</text>
+<g class="bx" style="animation-delay:0.00s"><rect x="50" y="70" width="400" height="60" rx="12" fill="#161B22" stroke="#8B949E" stroke-width="2"/><rect class="pulse " style="animation-delay:0.00s" x="50" y="70" width="400" height="60" rx="12" fill="none" stroke="#8B949E" stroke-width="2"/><text x="250.0" y="96.0" text-anchor="middle" font-size="16" font-weight="700" fill="#E6EDF3">Clients</text><text x="250.0" y="116.0" text-anchor="middle" font-size="12" fill="#8B949E">Web  •  Mobile  •  Swagger  •  Postman</text></g><g class="bx" style="animation-delay:0.60s"><rect x="50" y="165" width="400" height="80" rx="12" fill="#161B22" stroke="#36BCF7" stroke-width="2"/><rect class="pulse " style="animation-delay:0.60s" x="50" y="165" width="400" height="80" rx="12" fill="none" stroke="#36BCF7" stroke-width="2"/><text x="250.0" y="201.0" text-anchor="middle" font-size="16" font-weight="700" fill="#36BCF7">API Layer</text><text x="250.0" y="221.0" text-anchor="middle" font-size="12" fill="#8B949E">Controllers  •  Middleware  •  JWT Auth</text></g><g class="bx" style="animation-delay:1.20s"><rect x="50" y="280" width="400" height="80" rx="12" fill="#161B22" stroke="#7C3AED" stroke-width="2"/><rect class="pulse " style="animation-delay:1.20s" x="50" y="280" width="400" height="80" rx="12" fill="none" stroke="#7C3AED" stroke-width="2"/><text x="250.0" y="316.0" text-anchor="middle" font-size="16" font-weight="700" fill="#A78BFA">Application Layer</text><text x="250.0" y="336.0" text-anchor="middle" font-size="12" fill="#8B949E">Services  •  DTOs  •  Interfaces  •  AutoMapper</text></g><g class="bx" style="animation-delay:1.80s"><rect x="50" y="395" width="400" height="80" rx="12" fill="#161B22" stroke="#22C55E" stroke-width="2"/><rect class="pulse " style="animation-delay:1.80s" x="50" y="395" width="400" height="80" rx="12" fill="none" stroke="#22C55E" stroke-width="2"/><text x="250.0" y="431.0" text-anchor="middle" font-size="16" font-weight="700" fill="#4ADE80">Domain Layer</text><text x="250.0" y="451.0" text-anchor="middle" font-size="12" fill="#8B949E">Entities  •  Specifications  •  Business Rules</text></g><g class="bx" style="animation-delay:2.40s"><rect x="520" y="280" width="330" height="80" rx="12" fill="#161B22" stroke="#F59E0B" stroke-width="2"/><rect class="pulse " style="animation-delay:2.40s" x="520" y="280" width="330" height="80" rx="12" fill="none" stroke="#F59E0B" stroke-width="2"/><text x="685.0" y="316.0" text-anchor="middle" font-size="16" font-weight="700" fill="#FBBF24">Infrastructure Layer</text><text x="685.0" y="336.0" text-anchor="middle" font-size="12" fill="#8B949E">EF Core  •  Repositories  •  Unit of Work</text></g><g class="bx" style="animation-delay:3.00s"><rect x="520" y="405" width="104" height="70" rx="12" fill="#161B22" stroke="#CC2927" stroke-width="2"/><rect class="pulse " style="animation-delay:3.00s" x="520" y="405" width="104" height="70" rx="12" fill="none" stroke="#CC2927" stroke-width="2"/><text x="572.0" y="438.0" text-anchor="middle" font-size="14" font-weight="700" fill="#F87171">SQL Server</text><text x="572.0" y="458.0" text-anchor="middle" font-size="11" fill="#8B949E">Database</text></g><g class="bx" style="animation-delay:3.20s"><rect x="633" y="405" width="104" height="70" rx="12" fill="#161B22" stroke="#FF4438" stroke-width="2"/><rect class="pulse " style="animation-delay:3.20s" x="633" y="405" width="104" height="70" rx="12" fill="none" stroke="#FF4438" stroke-width="2"/><text x="685.0" y="438.0" text-anchor="middle" font-size="14" font-weight="700" fill="#FB7185">Redis</text><text x="685.0" y="458.0" text-anchor="middle" font-size="11" fill="#8B949E">Caching</text></g><g class="bx" style="animation-delay:3.40s"><rect x="746" y="405" width="104" height="70" rx="12" fill="#161B22" stroke="#0078D4" stroke-width="2"/><rect class="pulse " style="animation-delay:3.40s" x="746" y="405" width="104" height="70" rx="12" fill="none" stroke="#0078D4" stroke-width="2"/><text x="798.0" y="438.0" text-anchor="middle" font-size="14" font-weight="700" fill="#38BDF8">Azure</text><text x="798.0" y="458.0" text-anchor="middle" font-size="11" fill="#8B949E">Cloud Hosting</text></g>
+<circle r="9.9" fill="#36BCF7" fill-opacity=".22"><animateMotion dur="1.2s" begin="0s" repeatCount="indefinite" path="M250 131 V163"/></circle><circle r="4.5" fill="#36BCF7"><animateMotion dur="1.2s" begin="0s" repeatCount="indefinite" path="M250 131 V163"/></circle><circle r="9.9" fill="#36BCF7" fill-opacity=".22"><animateMotion dur="1.2s" begin="-0.4s" repeatCount="indefinite" path="M250 246 V278"/></circle><circle r="4.5" fill="#36BCF7"><animateMotion dur="1.2s" begin="-0.4s" repeatCount="indefinite" path="M250 246 V278"/></circle><circle r="9.9" fill="#36BCF7" fill-opacity=".22"><animateMotion dur="1.2s" begin="-0.8s" repeatCount="indefinite" path="M250 361 V393"/></circle><circle r="4.5" fill="#36BCF7"><animateMotion dur="1.2s" begin="-0.8s" repeatCount="indefinite" path="M250 361 V393"/></circle><circle r="7.700000000000001" fill="#36BCF7" fill-opacity=".22"><animateMotion dur="3s" begin="-0.8s" repeatCount="indefinite" path="M452 205 H685 V280"/></circle><circle r="3.5" fill="#36BCF7"><animateMotion dur="3s" begin="-0.8s" repeatCount="indefinite" path="M452 205 H685 V280"/></circle><circle r="7.700000000000001" fill="#FBBF24" fill-opacity=".22"><animateMotion dur="1.6s" begin="0s" repeatCount="indefinite" path="M520 320 H452"/></circle><circle r="3.5" fill="#FBBF24"><animateMotion dur="1.6s" begin="0s" repeatCount="indefinite" path="M520 320 H452"/></circle><circle r="9.9" fill="#F87171" fill-opacity=".22"><animateMotion dur="2.4s" begin="0s" repeatCount="indefinite" path="M685 362 V385 H572 V405"/></circle><circle r="4.5" fill="#F87171"><animateMotion dur="2.4s" begin="0s" repeatCount="indefinite" path="M685 362 V385 H572 V405"/></circle><circle r="9.9" fill="#FB7185" fill-opacity=".22"><animateMotion dur="2.4s" begin="-0.8s" repeatCount="indefinite" path="M685 362 V405"/></circle><circle r="4.5" fill="#FB7185"><animateMotion dur="2.4s" begin="-0.8s" repeatCount="indefinite" path="M685 362 V405"/></circle><circle r="9.9" fill="#38BDF8" fill-opacity=".22"><animateMotion dur="2.4s" begin="-1.6s" repeatCount="indefinite" path="M685 362 V385 H798 V405"/></circle><circle r="4.5" fill="#38BDF8"><animateMotion dur="2.4s" begin="-1.6s" repeatCount="indefinite" path="M685 362 V385 H798 V405"/></circle>
 </svg>

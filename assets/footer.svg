@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="150" viewBox="0 0 1280 150" preserveAspectRatio="none">
+<style>
+  .w1{animation:wv 9s linear infinite} .w2{animation:wv 14s linear infinite reverse} .w3{animation:wv 20s linear infinite}
+  .tx{opacity:0;animation:up 1s .3s ease-out forwards}
+  @keyframes wv{to{transform:translateX(-1280px)}}
+  @keyframes up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style>
+<defs><linearGradient id="nfG" x1="0" x2="1"><stop offset="0" stop-color="#36BCF7"/><stop offset="1" stop-color="#A78BFA"/></linearGradient></defs>
+<g class="w3" opacity=".25"><path fill="url(#nfG)" d="M0 90 Q160 50 320 90 T640 90 T960 90 T1280 90 T1600 90 T1920 90 T2240 90 T2560 90 V150 H0Z"/></g>
+<g class="w2" opacity=".45"><path fill="url(#nfG)" d="M0 105 Q160 75 320 105 T640 105 T960 105 T1280 105 T1600 105 T1920 105 T2240 105 T2560 105 V150 H0Z"/></g>
+<g class="w1" opacity=".9"><path fill="url(#nfG)" d="M0 122 Q160 100 320 122 T640 122 T960 122 T1280 122 T1600 122 T1920 122 T2240 122 T2560 122 V150 H0Z"/></g>
+<text class="tx" x="640" y="52" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="600" fill="#36BCF7">Building backend systems that are as clean as the code that powers them.</text>
+</svg>
