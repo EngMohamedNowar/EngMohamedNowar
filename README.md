@@ -124,18 +124,17 @@
 
 <div align="center">
 
-<table>
-  <tr>
-    <td align="center" valign="top">
-      <img src="https://github-readme-stats.vercel.app/api?username=EngMohamedNowar&show_icons=true&hide_border=true&bg_color=161B22&title_color=36BCF7&icon_color=36BCF7&text_color=DFE2E5&ring_color=36BCF7&rank_icon=default" height="180" alt="GitHub Stats" />
-    </td>
-    <td align="center" valign="top">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EngMohamedNowar&layout=compact&langs_count=8&hide_border=true&bg_color=161B22&title_color=36BCF7&text_color=DFE2E5" height="180" alt="Top Languages" />
-    </td>
-  </tr>
-</table>
+<img src="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/metrics/stats-overview.svg" width="100%" alt="GitHub stats: contributions, commits, pull requests, repositories, active days, best day" />
+
+<img src="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/metrics/stats-activity.svg" width="100%" alt="Daily contribution activity, last 90 days" />
+
+<img src="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/metrics/stats-languages.svg" width="100%" alt="Most used languages by code size" />
+
+<sub>Self-hosted cards, regenerated every 6 hours by <a href=".github/workflows/stats.yml">a GitHub Action</a>.</sub>
 
 </div>
+
+<br/>
 
 <img src="assets/divider.svg?v=4" width="100%" alt="" />
 
