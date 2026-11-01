@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+<title>architecture</title>
+<style>
+.tile{animation:tile 7s ease-in-out infinite;animation-delay:1.10s}
+@keyframes tile{0%,20%,100%{stroke-opacity:.45}9%{stroke-opacity:1}}
+.m-bob,.m-lift{animation:bob 7s ease-in-out infinite;animation-delay:1.10s}
+@keyframes bob{0%,20%,100%{transform:translateY(0)}10%{transform:translateY(-2.5px)}}
+.m-swing{transform-box:fill-box;transform-origin:50% 0;animation:swing 7s ease-in-out infinite;animation-delay:1.10s}
+@keyframes swing{0%,22%,100%{transform:rotate(0)}6%{transform:rotate(-12deg)}13%{transform:rotate(9deg)}18%{transform:rotate(-3deg)}}
+.m-fly{animation:fly 7s ease-in-out infinite;animation-delay:1.10s}
+@keyframes fly{0%,20%,100%{transform:translate(0,0)}10%{transform:translate(3px,-3px)}}
+.m-pulse{transform-box:fill-box;transform-origin:center;animation:pulse 7s ease-in-out infinite;animation-delay:1.10s}
+@keyframes pulse{0%,20%,100%{transform:scale(1)}10%{transform:scale(1.14)}}
+.m-tilt{transform-box:fill-box;transform-origin:center;animation:tilt 7s ease-in-out infinite;animation-delay:1.10s}
+@keyframes tilt{0%,20%,100%{transform:rotate(0)}10%{transform:rotate(14deg)}}
+.m-roll{animation:roll 7s ease-in-out infinite;animation-delay:1.10s}
+@keyframes roll{0%,20%,100%{transform:translateX(0)}10%{transform:translateX(3px)}}
+.m-print{animation:print 7s ease-in-out infinite;animation-delay:1.10s}
+@keyframes print{0%,20%,100%{transform:translateY(0)}10%{transform:translateY(2.5px)}}
+.m-rise{animation:rise 7s ease-in-out infinite;animation-delay:1.10s}
+@keyframes rise{0%,20%,100%{transform:translateY(0)}10%{transform:translateY(-3px)}}
+.m-scan{animation:scan 7s ease-in-out infinite;animation-delay:1.10s}
+@keyframes scan{0%,24%,100%{transform:translateY(0)}12%{transform:translateY(7px)}}
+.m-flow{stroke-dasharray:3 3;animation:mflow 1.4s linear infinite;animation-delay:1.10s}
+@keyframes mflow{to{stroke-dashoffset:-12}}
+.m-bar{transform-box:fill-box;transform-origin:50% 100%;animation:bar 7s ease-in-out infinite;animation-delay:1.10s}
+.b2{animation-delay:1.25s}.b3{animation-delay:1.40s}
+@keyframes bar{0%,22%,100%{transform:scaleY(1)}10%{transform:scaleY(.5)}}
+.m-clap{transform-box:fill-box;transform-origin:0 100%;animation:clap 7s ease-in-out infinite;animation-delay:1.10s}
+@keyframes clap{0%,20%,100%{transform:rotate(0)}8%{transform:rotate(-14deg)}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
+<defs><linearGradient id="t" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#36BCF7"/><stop offset="1" stop-color="#A78BFA"/></linearGradient></defs>
+<rect x="1" y="1" width="46" height="46" rx="13" fill="#36BCF7" fill-opacity=".12"/>
+<rect class="tile" x="1.5" y="1.5" width="45" height="45" rx="12.5" fill="none" stroke="url(#t)" stroke-width="1.6"/>
+<g transform="translate(12 12)" fill="none" stroke="#36BCF7" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="5" rx="1"/><rect x="2" y="17" width="6" height="5" rx="1"/><rect x="16" y="17" width="6" height="5" rx="1"/><path class="m-flow" d="M12 7v5M5 17v-5h14v5"/></g>
+</svg>

@@ -14,13 +14,11 @@ OUT = sys.argv[1] if len(sys.argv) > 1 else "dist"
 LOGIN = sys.argv[2] if len(sys.argv) > 2 else os.environ.get("GH_LOGIN", "EngMohamedNowar")
 TOKEN = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
 
+ACC, ACC2 = "#36BCF7", "#A78BFA"
+BG1, BG2, CARD, LINE = "#0D1117", "#0B1B2B", "#161B22", "#30363D"
+FG, SUB, OK = "#E6EDF3", "#8B949E", "#4ADE80"
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from brand import CYAN, FONT, FONT_FACE, PURPLE_SOFT, THEMES  # noqa: E402  (Syne + #804199/#20AACF)
-
-_T = THEMES["dark"]
-ACC, ACC2 = CYAN, PURPLE_SOFT
-BG1, BG2, CARD, LINE = _T["bg1"], _T["bg2"], _T["card"], _T["line"]
-FG, SUB, OK = _T["text"], _T["muted"], _T["ok"]
+from brand import FONT, FONT_FACE  # noqa: E402  (Syne, embedded)
 RM = "@media (prefers-reduced-motion: reduce){*{animation:none!important}}"
 
 QUERY = """
@@ -112,8 +110,8 @@ def frame(wd, ht, uid, title, subtitle, body, extra_css=""):
 <rect x="1" y="1" width="{wd-2}" height="{ht-2}" rx="16" fill="none" stroke="{LINE}"/>
 <rect class="edge" x="1" y="1" width="{wd-2}" height="{ht-2}" rx="16" fill="none" stroke="url(#{uid}acc)" stroke-width="2" pathLength="100"/>
 <rect x="32" y="30" width="4" height="26" rx="2" fill="{ACC}"/>
-<text x="46" y="50" font-size="20" font-weight="800" fill="{FG}">{title}</text>
-<text x="{wd-32}" y="50" text-anchor="end" font-size="13" fill="{SUB}">{subtitle}</text>
+<text x="46" y="50" font-size="26" font-weight="800" fill="{FG}">{title}</text>
+<text x="{wd-32}" y="50" text-anchor="end" font-size="16" fill="{SUB}">{subtitle}</text>
 {body}
 </svg>
 '''
@@ -155,9 +153,9 @@ def overview(u, days):
 <circle cx="{x+44}" cy="{y+th/2}" r="26" fill="{ACC}" fill-opacity=".12" stroke="{ACC}" stroke-opacity=".4"/>
 <circle class="halo" style="animation-delay:{i*0.4:.1f}s" cx="{x+44}" cy="{y+th/2}" r="26" fill="none" stroke="{ACC}"/>
 <g transform="translate({x+32} {y+th/2-12})" fill="none" stroke="{ACC}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="{ICONS[ic]}"/></g>
-<text x="{x+88}" y="{y+40}" font-size="14" font-weight="600" fill="{SUB}">{label}</text>
+<text x="{x+88}" y="{y+40}" font-size="17" font-weight="600" fill="{SUB}">{label}</text>
 {odometer(f"ov{i}", val, x+88, y+82, 38, FG, delay=0.3+d)}
-<text x="{x+tw-18}" y="{y+82}" text-anchor="end" font-size="12" fill="{SUB}">{sub}</text>
+<text x="{x+tw-18}" y="{y+82}" text-anchor="end" font-size="15" fill="{SUB}">{sub}</text>
 </g>'''
     H = y0 + 2 * th + gy + 32
     css = (".hl{stroke-opacity:0;animation:hl 4.2s ease-in-out infinite}"
@@ -179,7 +177,7 @@ def activity(days):
         v = round(mx * k / 4)
         y = bottom - (bottom - top) * k / 4
         body += f'<line x1="{left}" x2="{W-right}" y1="{y:.1f}" y2="{y:.1f}" stroke="#FFFFFF" stroke-opacity=".06"/>'
-        body += f'<text x="{left-10}" y="{y+4:.1f}" text-anchor="end" font-size="11" fill="{SUB}">{v}</text>'
+        body += f'<text x="{left-10}" y="{y+4:.1f}" text-anchor="end" font-size="14" fill="{SUB}">{v}</text>'
     pts = []
     for i, (t, d) in enumerate(zip(totals, days)):
         x = left + i * cw
@@ -193,7 +191,7 @@ def activity(days):
             body += f'<rect x="{x+cw*0.15:.1f}" y="{bottom-2}" width="{cw*0.7:.1f}" height="2" rx="1" fill="#FFFFFF" fill-opacity=".08"/>'
         dd = dt.date.fromisoformat(d["date"])
         if dd.day in (1, 15):
-            body += f'<text x="{x+cw/2:.1f}" y="{bottom+22}" text-anchor="middle" font-size="11" fill="{SUB}">{dd:%d %b}</text>'
+            body += f'<text x="{x+cw/2:.1f}" y="{bottom+22}" text-anchor="middle" font-size="14" fill="{SUB}">{dd:%d %b}</text>'
     line = "M" + " L".join(f"{x:.1f} {y:.1f}" for x, y in pts)
     area = line + f" L{pts[-1][0]:.1f} {bottom} L{pts[0][0]:.1f} {bottom} Z"
     lx, ly = pts[-1]
@@ -245,8 +243,8 @@ def languages(u):
         d = 0.3 + i * 0.12
         body += f'''<g class="in" style="animation-delay:{d:.2f}s">
 <circle cx="{x+7}" cy="{y+6}" r="6" fill="{col}"/>
-<text x="{x+22}" y="{y+11}" font-size="15" font-weight="600" fill="{FG}">{n}</text>
-<text x="{x+rw}" y="{y+11}" text-anchor="end" font-size="14" font-weight="800" fill="{ACC}">{pct:.1f}%</text>
+<text x="{x+22}" y="{y+11}" font-size="18" font-weight="600" fill="{FG}">{n}</text>
+<text x="{x+rw}" y="{y+11}" text-anchor="end" font-size="17" font-weight="800" fill="{ACC}">{pct:.1f}%</text>
 <rect x="{x}" y="{y+20}" width="{rw:.1f}" height="8" rx="4" fill="{CARD}"/>
 <clipPath id="slf{i}"><rect x="{x}" y="{y+20}" width="{fw:.1f}" height="8" rx="4"/></clipPath>
 <rect class="fillbar" style="animation-delay:{d+.2:.2f}s" x="{x}" y="{y+20}" width="{fw:.1f}" height="8" rx="4" fill="{col}"/>

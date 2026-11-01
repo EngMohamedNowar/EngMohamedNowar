@@ -1,6 +1,7 @@
-"""Brand tokens shared by every SVG generator in this repo.
+"""Design tokens shared by every SVG generator in this repo.
 
-Palette : purple #804199 + cyan #20AACF (plus lighter tints for text on dark backgrounds)
+Palette : the profile's original colours, cyan #36BCF7 + violet #A78BFA on GitHub-dark surfaces
+          (with deeper equivalents for the light theme so text keeps its contrast).
 Type    : Syne (display / UI, weights 400-800) and Syne Mono (code), SIL Open Font License
           (scripts/fonts/OFL.txt).
 
@@ -9,6 +10,9 @@ each face is inlined as a base64 data URI. Rebuild a subset with
   https://fonts.googleapis.com/css2?family=Syne:wght@400..800&text=<url-encoded chars>
   https://fonts.googleapis.com/css2?family=Syne+Mono&text=<url-encoded chars>
 (send a desktop Chrome User-Agent so Google returns woff2).
+
+Font sizes: a 1280-wide README image is shown about 850px wide on GitHub (scale ~0.66), so
+artwork sizes are chosen to land at >= 12px rendered for labels and >= 13px for body text.
 Stdlib only: gen_stats.py imports this on a bare GitHub Actions runner.
 """
 import base64
@@ -16,20 +20,12 @@ import os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
-PURPLE = "#804199"
-CYAN = "#20AACF"
-PURPLE_SOFT = "#B57FCB"   # purple tint readable on dark backgrounds
-CYAN_SOFT = "#7FD3EA"
+CYAN = "#36BCF7"      # primary accent (original profile colour)
+VIOLET = "#A78BFA"    # secondary accent
+GREEN = "#4ADE80"
 
 FONT = "Syne, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
 MONO = "'Syne Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
-
-# Weight scale used across the artwork
-W_DISPLAY = 800   # name, headline numbers, card titles
-W_BOLD = 700      # sub-titles
-W_SEMI = 600      # eyebrows (uppercase, tracked), chips, labels
-W_MEDIUM = 500    # taglines
-W_BODY = 400      # body copy
 
 
 def _b64(name):
@@ -45,17 +41,16 @@ MONO_FACE = ("@font-face{font-family:'Syne Mono';font-style:normal;font-weight:4
 REDUCED = "@media (prefers-reduced-motion: reduce){*{animation:none!important}}"
 
 THEMES = {
-    "dark": dict(bg1="#0C0A18", bg2="#1A1233", card="#15112A", card2="#1C1736", line="#2E2650",
-                 grid="#FFFFFF", grid_op=".045", title="#FFFFFF", text="#E2DCEF", muted="#A79CC0",
-                 accent=CYAN, accent2=PURPLE_SOFT, ok="#4ADE80"),
-    "light": dict(bg1="#FBF9FD", bg2="#EEE6F5", card="#FFFFFF", card2="#F7F2FA", line="#E2D6EC",
-                  grid="#1B1030", grid_op=".05", title="#1B1030", text="#2F2545", muted="#5D536F",
-                  accent=PURPLE, accent2="#1688A8", ok="#15803D"),
+    "dark": dict(bg1="#0D1117", bg2="#0B1B2B", card="#161B22", card2="#1C2330", line="#30363D",
+                 grid="#FFFFFF", grid_op=".04", title="#FFFFFF", text="#E6EDF3", muted="#8B949E",
+                 c1=CYAN, c2=VIOLET, ok=GREEN, str="#A5D6FF", glow=".30"),
+    "light": dict(bg1="#FFFFFF", bg2="#EAF6FD", card="#FFFFFF", card2="#F6F8FA", line="#D0D7DE",
+                  grid="#1F2328", grid_op=".05", title="#1F2328", text="#24292F", muted="#57606A",
+                  c1="#0A85C2", c2="#7C3AED", ok="#1A7F37", str="#0A3069", glow=".16"),
 }
 
 
-def brand_gradient(gid, x1="0", y1="0", x2="1", y2="0", op1="1", op2="1"):
-    """Purple-to-cyan linear gradient definition."""
+def grad(gid, t, x1="0", y1="0", x2="1", y2="0"):
+    """Cyan-to-violet linear gradient definition for theme t."""
     return (f'<linearGradient id="{gid}" x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}">'
-            f'<stop offset="0" stop-color="{PURPLE}" stop-opacity="{op1}"/>'
-            f'<stop offset="1" stop-color="{CYAN}" stop-opacity="{op2}"/></linearGradient>')
+            f'<stop offset="0" stop-color="{t["c1"]}"/><stop offset="1" stop-color="{t["c2"]}"/></linearGradient>')
