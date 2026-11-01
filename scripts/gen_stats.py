@@ -127,7 +127,7 @@ ICONS = {  # 24px stroke icons
 }
 
 
-def overview(u, days):
+def overview(u, days, mobile=False):
     cc = u["contributionsCollection"]
     active = sum(1 for d in days if d["contributionCount"] > 0)
     best = max((d["contributionCount"] for d in days), default=0)
@@ -140,8 +140,12 @@ def overview(u, days):
         ("cal", "Active Days", active, "last 12 months"),
         ("star", "Best Day", best, "contributions"),
     ]
-    W, cols = 1160, 3
-    tw, th, gx, gy, x0, y0 = 352, 112, 20, 18, 32, 78
+    if mobile:  # phone layout: 2 columns, no side note, served via <picture media="(max-width: 700px)">
+        W, cols = 480, 2
+        tw, th, gx, gy, x0, y0 = 202, 112, 12, 12, 24, 74
+    else:
+        W, cols = 1160, 3
+        tw, th, gx, gy, x0, y0 = 352, 112, 20, 18, 32, 78
     body = ""
     for i, (ic, label, val, sub) in enumerate(tiles):
         c, r = i % cols, i // cols
@@ -150,19 +154,21 @@ def overview(u, days):
         body += f'''<g class="in" style="animation-delay:{d:.2f}s">
 <rect x="{x}" y="{y}" width="{tw}" height="{th}" rx="14" fill="{CARD}" stroke="{LINE}"/>
 <rect class="hl" style="animation-delay:{i*0.7:.1f}s" x="{x}" y="{y}" width="{tw}" height="{th}" rx="14" fill="none" stroke="{ACC}"/>
-<circle cx="{x+44}" cy="{y+th/2}" r="26" fill="{ACC}" fill-opacity=".12" stroke="{ACC}" stroke-opacity=".4"/>
-<circle class="halo" style="animation-delay:{i*0.4:.1f}s" cx="{x+44}" cy="{y+th/2}" r="26" fill="none" stroke="{ACC}"/>
-<g transform="translate({x+32} {y+th/2-12})" fill="none" stroke="{ACC}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="{ICONS[ic]}"/></g>
-<text x="{x+88}" y="{y+40}" font-size="17" font-weight="600" fill="{SUB}">{label}</text>
-{odometer(f"ov{i}", val, x+88, y+82, 38, FG, delay=0.3+d)}
-<text x="{x+tw-18}" y="{y+82}" text-anchor="end" font-size="15" fill="{SUB}">{sub}</text>
+<circle cx="{x+(34 if mobile else 44)}" cy="{y+(34 if mobile else th/2)}" r="{18 if mobile else 26}" fill="{ACC}" fill-opacity=".12" stroke="{ACC}" stroke-opacity=".4"/>
+<circle class="halo" style="animation-delay:{i*0.4:.1f}s" cx="{x+(34 if mobile else 44)}" cy="{y+(34 if mobile else th/2)}" r="{18 if mobile else 26}" fill="none" stroke="{ACC}"/>
+<g transform="translate({x+(22 if mobile else 32)} {y+(22 if mobile else th/2-12)})" fill="none" stroke="{ACC}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="{ICONS[ic]}"/></g>
+<text x="{x+(62 if mobile else 88)}" y="{y+40}" font-size="{16 if mobile else 17}" font-weight="600" fill="{SUB}">{label}</text>
+{odometer(f"ov{i}{'m' if mobile else ''}", val, x+(22 if mobile else 88), y+(92 if mobile else 82), 34 if mobile else 38, FG, delay=0.3+d)}
+{"" if mobile else f'<text x="{x+tw-18}" y="{y+82}" text-anchor="end" font-size="15" fill="{SUB}">{sub}</text>'}
 </g>'''
-    H = y0 + 2 * th + gy + 32
+    rows = (len(tiles) + cols - 1) // cols
+    H = y0 + rows * th + (rows - 1) * gy + 28
     css = (".hl{stroke-opacity:0;animation:hl 4.2s ease-in-out infinite}"
            "@keyframes hl{0%,100%{stroke-opacity:0}15%{stroke-opacity:.9}35%{stroke-opacity:0}}"
            ".halo{transform-box:fill-box;transform-origin:center;stroke-opacity:0;animation:halo 2.8s ease-out infinite}"
            "@keyframes halo{0%{stroke-opacity:.7;transform:scale(1)}100%{stroke-opacity:0;transform:scale(1.5)}}")
-    return frame(W, H, "so", "GitHub Stats", f"@{LOGIN} · updated {dt.date.today():%d %b %Y}", body, css)
+    sub = f"updated {dt.date.today():%d %b}" if mobile else f"@{LOGIN} · updated {dt.date.today():%d %b %Y}"
+    return frame(W, H, "som" if mobile else "so", "GitHub Stats", sub, body, css)
 
 
 def activity(days):
@@ -263,6 +269,7 @@ if __name__ == "__main__":
     u = fetch()
     days = [d for wk in u["contributionsCollection"]["contributionCalendar"]["weeks"] for d in wk["contributionDays"]]
     w("stats-overview.svg", overview(u, days))
+    w("stats-overview-m.svg", overview(u, days, mobile=True))
     w("stats-activity.svg", activity(days))
     w("stats-languages.svg", languages(u))
     print("wrote", sorted(os.listdir(OUT)))

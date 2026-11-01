@@ -12,6 +12,15 @@ from brand import FONT, FONT_FACE, thin  # noqa: E402  (Syne, embedded, light we
 OUT = "assets/certs"
 os.makedirs(OUT, exist_ok=True)
 FG, SUB, CARD, LINE, BG = "#E6EDF3", "#8B949E", "#161B22", "#30363D", "#0D1117"
+# timeline colours (original palette)
+PURPLE = "#A78BFA"
+AMBER = "#F59E0B"
+ROSE = "#F43F5E"
+BLUE = "#60A5FA"
+GOLDC = "#FBBF24"
+GREEN = "#4ADE80"
+TEAL = "#2DD4BF"
+CYANC = "#36BCF7"
 RM = "@media (prefers-reduced-motion: reduce){*{animation:none!important}}"
 
 # slug, image, title, issuer, meta, category, accent, highlight
@@ -181,9 +190,50 @@ def timeline():
 '''
 
 
+def timeline_mobile():
+    """Vertical timeline for phone widths (served via <picture media="(max-width: 700px)">)."""
+    ev = [("Jul 2024", "Full Stack Python", "ITI", PURPLE), ("Oct 2024", "AI Talent Track", "NTI × Huawei", AMBER),
+          ("2024", "HCIA-AI V3.5 · 96%", "Huawei", ROSE), ("Oct 2024", "Database", "Mahara-Tech", BLUE),
+          ("2025", "B.Sc. Degree", "EELU", GOLDC), ("Oct 2025", "OOP in C++", "Mahara-Tech", GREEN),
+          ("Oct 2025", "Clean Code", "Mahara-Tech", TEAL), ("Jul 2026", "ASP.NET Core", "Route", CYANC)]
+    W, row, top = 480, 64, 78
+    H = top + len(ev) * row + 10
+    g = ""
+    for i, (d, t, org, c) in enumerate(ev):
+        y = top + i * row
+        g += f'''<g class="ev" style="animation-delay:{0.2+i*0.12:.2f}s">
+<circle class="pulse" style="animation-delay:{i*0.45:.2f}s" cx="40" cy="{y}" r="8" fill="none" stroke="{c}"/>
+<circle cx="40" cy="{y}" r="8" fill="{BG}" stroke="{c}" stroke-width="3"/><circle cx="40" cy="{y}" r="3" fill="{c}"/>
+<text x="68" y="{y - 6}" font-size="13" font-weight="800" letter-spacing="1.2" fill="{c}">{esc(d.upper())}</text>
+<text x="68" y="{y + 18}" font-size="18" font-weight="800" fill="{FG}">{esc(t)} <tspan font-size="14" font-weight="400" fill="{SUB}">· {esc(org)}</tspan></text>
+</g>'''
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">
+<style>
+  {FONT_FACE}
+  text{{font-family:{FONT}}}
+  .ev{{animation:in .8s cubic-bezier(.2,.7,.2,1) both}}
+  .flow{{stroke-dasharray:6 8;animation:flow 1.4s linear infinite}}
+  .pulse{{transform-box:fill-box;transform-origin:center;animation:p 3.6s ease-out infinite}}
+  @keyframes in{{from{{transform:translateX(-10px)}}to{{transform:none}}}}
+  @keyframes flow{{to{{stroke-dashoffset:-28}}}}
+  @keyframes p{{0%{{opacity:.9;transform:scale(1)}}40%,100%{{opacity:0;transform:scale(2.4)}}}}
+  {RM}
+</style>
+<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="16" fill="{BG}" stroke="{LINE}"/>
+<text x="24" y="40" font-size="14" font-weight="800" letter-spacing="2" fill="{SUB}">LEARNING JOURNEY · 8 CERTIFICATES</text>
+<line x1="40" x2="40" y1="{top}" y2="{top + (len(ev)-1)*row}" stroke="{LINE}" stroke-width="4" stroke-linecap="round"/>
+<line class="flow" x1="40" x2="40" y1="{top}" y2="{top + (len(ev)-1)*row}" stroke="#36BCF7" stroke-width="2.5"/>
+{g}
+<circle r="5" fill="#FFFFFF"><animateMotion dur="8s" repeatCount="indefinite" path="M40 {top} V{top + (len(ev)-1)*row}"/></circle>
+</svg>
+'''
+
+
 for i, c in enumerate(CERTS):
     with open(os.path.join(OUT, f"{c[0]}.svg"), "w", encoding="utf-8", newline="\n") as f:
         f.write(thin(card(i, *c)))
+with open(os.path.join(OUT, "timeline-m.svg"), "w", encoding="utf-8", newline="\n") as f:
+    f.write(thin(timeline_mobile()))
 with open(os.path.join(OUT, "timeline.svg"), "w", encoding="utf-8", newline="\n") as f:
     f.write(thin(timeline()))
 for n in sorted(os.listdir(OUT)):

@@ -54,10 +54,13 @@ BASE_CSS = """
 @keyframes edge{to{stroke-dashoffset:-100}}"""
 
 
-def svg(w, h, body, css, t, defs="", mono=False, title=""):
+def svg(w, h, body, css, t, defs="", mono=False, title="", disp=None):
+    """disp: intrinsic display width (the viewBox stays w x h). Used for cards placed in the README
+    without a width attribute, so they sit side by side on desktop and fill the screen on phones."""
     faces = FONT_FACE + ("\n" + MONO_FACE if mono else "")
     head = f"<title>{e(title)}</title>\n" if title else ""
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" font-family="{FONT}">
+    dw, dh = (disp, round(h * disp / w)) if disp else (w, h)
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{dw}" height="{dh}" viewBox="0 0 {w} {h}" font-family="{FONT}">
 {head}<style>
 {faces}
 .mono{{font-family:{MONO}}}
@@ -189,87 +192,110 @@ NOW = [("NOW", "Software Engineer", "J. Servo LLC · since Jun 2026"),
        ("EXPLORING", "Microservices", "RabbitMQ · Azure Service Bus")]
 
 
-def about(mode):
-    t = THEMES[mode]
-    kw, ty, st, pu = t["c2"], t["c1"], t["str"], t["muted"]
-    K = lambda s: (s, kw)          # noqa: E731
-    T = lambda s: (s, ty)          # noqa: E731
-    S = lambda s: (f'"{s}"', st)   # noqa: E731
-    P = lambda s: (s, pu)          # noqa: E731
-    X = lambda s: (s, t["text"])   # noqa: E731
+def json_lines(t, compact=False):
+    """The About card as a JSON response: list of lines, each a list of (text, colour)."""
+    k, st, pu, num = t["c1"], t["str"], t["muted"], t["c2"]
 
-    def arr(*items):
-        out = [P("[")]
-        for i, it in enumerate(items):
-            out.append(S(it))
-            if i < len(items) - 1:
-                out.append(P(", "))
-        return out + [P("]")]
+    def kv(key, val, last=False):
+        segs = [("  ", pu), (f'"{key}"', k), (": ", pu)]
+        if isinstance(val, list):
+            segs.append(("[", pu))
+            for i, v in enumerate(val):
+                segs.append((f'"{v}"', st))
+                if i < len(val) - 1:
+                    segs.append((", ", pu))
+            segs.append(("]", pu))
+        elif isinstance(val, bool):
+            segs.append(("true" if val else "false", num))
+        else:
+            segs.append((f'"{val}"', st))
+        if not last:
+            segs.append((",", pu))
+        return segs
 
-    def prop(name, *val):
-        return [X("    " + name.ljust(9)), P("= ")] + list(val) + [P(",")]
-
-    lines = [
-        [K("using "), T("Nowar"), P("."), T("Engineering"), P(";")],
-        [],
-        [K("var "), X("engineer "), P("= "), K("new "), T("SoftwareEngineer")],
-        [P("{")],
-        prop("Name", S("Mohamed Nowar")),
-        prop("Role", S("Software Engineer @ J. Servo")),
-        prop("Focus", S(".NET backend · REST APIs")),
-        prop("Stack", *arr("C#", "ASP.NET Core", "EF Core", "SQL")),
-        prop("Patterns", *arr("Clean Arch", "CQRS", "UoW")),
-        prop("Testing", *arr("xUnit", "NSubstitute")),
-        prop("Location", S("Cairo, Egypt")),
-        prop("OpenTo", *arr("Remote", "Hybrid", "Freelance")),
-        [P("};")],
-        [("// Build succeeded · 0 warnings · 0 errors ✔", t["ok"])],
+    stack = ["C#", ".NET", "EF Core", "SQL"] if compact else ["C#", "ASP.NET Core", "EF Core", "SQL Server"]
+    return [
+        [("{", pu)],
+        kv("name", "Mohamed Nowar"),
+        kv("role", "Software Engineer @ J. Servo"),
+        kv("focus", ".NET backend · REST APIs"),
+        kv("stack", stack),
+        kv("patterns", ["Clean Arch", "CQRS", "UoW"]),
+        kv("testing", ["xUnit", "NSubstitute"]),
+        kv("ai", "Claude Code"),
+        kv("client", "Diar Al Manasik"),
+        kv("location", "Cairo, Egypt"),
+        kv("open_to_work", True, last=True),
+        [("}", pu)],
     ]
-    W, FS, LH, top = 1280, 19, 31, 106
-    H = top + len(lines) * LH + 30
+
+
+NOW = [("NOW", "Software Engineer", "J. Servo LLC · since Jun 2026"),
+       ("LEARNING", "Elevate Bootcamp", "Backend Advanced · .NET track"),
+       ("BUILDING", "Accounting Platform", "ASP.NET Core · React · EF Core"),
+       ("EXPLORING", "Microservices", "RabbitMQ · Azure Service Bus")]
+
+
+def about(mode, mobile=False):
+    """About card in the JSON style: a request line, a 200 OK response and the profile as JSON."""
+    t = THEMES[mode]
+    lines = json_lines(t, compact=mobile)
+    W = 480 if mobile else 1280
+    FS, LH = (15, 26) if mobile else (19, 31)
+    top = 140 if mobile else 150
+    H = top + (len(lines) - 1) * LH + 34 if mobile else top + len(lines) * LH + 30
     defs, back = backdrop(W, H, t, rx=20)
     css = """
 .hl{animation:hl 9s ease-in-out infinite}
 @keyframes hl{0%{transform:translateY(0)}100%{transform:translateY(SPANpx)}}
+.ok{animation:ok 2.4s ease-in-out infinite}
+@keyframes ok{0%,100%{fill-opacity:.14}50%{fill-opacity:.3}}
 .node{transform-box:fill-box;transform-origin:center;animation:node 6s ease-in-out infinite}
 @keyframes node{0%,20%,100%{transform:scale(1)}10%{transform:scale(1.35)}}""".replace("SPAN", str((len(lines) - 1) * LH))
+    code_w = W - 4 if mobile else 770
+    bar = 52 if mobile else 60
     b = [back,
-         f'<rect x="1" y="1" width="{W - 2}" height="60" rx="20" fill="{t["card"]}" fill-opacity=".9"/>',
-         f'<rect x="1" y="40" width="{W - 2}" height="21" fill="{t["card"]}" fill-opacity=".9"/>',
-         f'<line x1="1" y1="61" x2="{W - 1}" y2="61" stroke="{t["line"]}"/>',
-         f'<circle cx="32" cy="31" r="7.5" fill="#FF5F57"/><circle cx="57" cy="31" r="7.5" fill="#FEBC2E"/><circle cx="82" cy="31" r="7.5" fill="#28C840"/>',
-         f'<text x="{W / 2:.0f}" y="37" font-size="17" font-weight="600" letter-spacing="1" text-anchor="middle" fill="{t["muted"]}">Engineer.cs  —  dotnet run</text>',
-         f'<text x="{W - 30}" y="37" font-size="15" font-weight="700" letter-spacing="2.5" text-anchor="end" fill="{t["c1"]}">C# · .NET</text>',
-         f'<rect class="hl" x="2" y="{top - 22}" width="770" height="{LH}" fill="{t["c1"]}" fill-opacity=".07"/>',
-         '<g class="in">']
+         f'<rect x="1" y="1" width="{W - 2}" height="{bar}" rx="20" fill="{t["card"]}" fill-opacity=".9"/>',
+         f'<rect x="1" y="{bar - 20}" width="{W - 2}" height="20" fill="{t["card"]}" fill-opacity=".9"/>',
+         f'<line x1="1" y1="{bar}" x2="{W - 1}" y2="{bar}" stroke="{t["line"]}"/>',
+         f'<circle cx="28" cy="{bar / 2}" r="6.5" fill="#FF5F57"/><circle cx="50" cy="{bar / 2}" r="6.5" fill="#FEBC2E"/><circle cx="72" cy="{bar / 2}" r="6.5" fill="#28C840"/>',
+         f'<text x="{(W + 60) / 2 if mobile else W / 2:.0f}" y="{bar / 2 + 6}" font-size="{14 if mobile else 17}" letter-spacing="1" text-anchor="middle" fill="{t["muted"]}">about.json</text>']
+    # request + status line
+    ry = bar + (40 if mobile else 48)
+    req_fs = 15 if mobile else 19
+    b += ['<g class="in">',
+          f'<text class="mono" x="24" y="{ry}" font-size="{req_fs}" fill="{t["muted"]}"><tspan fill="{t["ok"]}">$</tspan> curl <tspan fill="{t["text"]}">api.nowar.dev/whoami</tspan></text>',
+          f'<rect class="ok" x="{(W - 120) if mobile else 640}" y="{ry - 21}" width="96" height="28" rx="14" fill="{t["ok"]}" fill-opacity=".14" stroke="{t["ok"]}" stroke-opacity=".6"/>',
+          f'<text class="mono" x="{(W - 72) if mobile else 688}" y="{ry - 2}" font-size="14" text-anchor="middle" fill="{t["ok"]}">200 OK</text>',
+          '</g>',
+          f'<rect class="hl" x="2" y="{top - LH + 8}" width="{code_w}" height="{LH}" fill="{t["c1"]}" fill-opacity=".07"/>',
+          f'<g class="in"{delay(.15)}>']
     for i, segs in enumerate(lines):
         y = top + i * LH
-        b.append(f'<text class="mono" x="52" y="{y}" font-size="16" text-anchor="end" fill="{t["muted"]}" fill-opacity=".6">{i + 1}</text>')
-        if segs:
-            spans = "".join(f'<tspan fill="{c}">{e(s)}</tspan>' for s, c in segs)
-            b.append(f'<text class="mono" x="74" y="{y}" font-size="{FS}" xml:space="preserve">{spans}</text>')
+        b.append(f'<text class="mono" x="{36 if mobile else 50}" y="{y}" font-size="{FS - 3}" text-anchor="end" fill="{t["muted"]}" fill-opacity=".6">{i + 1}</text>')
+        spans = "".join(f'<tspan fill="{c}">{e(x)}</tspan>' for x, c in segs)
+        b.append(f'<text class="mono" x="{48 if mobile else 70}" y="{y}" font-size="{FS}" xml:space="preserve">{spans}</text>')
     b.append('</g>')
     last = top + (len(lines) - 1) * LH
-    chars = sum(len(s) for s, _ in lines[-1])
-    b.append(f'<rect class="caret" x="{74 + chars * FS * CHAR_W + 8:.0f}" y="{last - 18}" width="11" height="23" fill="{t["c1"]}"/>')
-    # right column
-    px = 820
-    b += [f'<line x1="{px - 36}" y1="84" x2="{px - 36}" y2="{H - 30}" stroke="{t["line"]}"/>',
-          f'<g class="in"{delay(.2)}>',
-          f'<text x="{px}" y="{top}" font-size="15" font-weight="600" letter-spacing="3.5" fill="{t["muted"]}">RIGHT NOW</text>',
-          f'<line x1="{px + 9}" y1="{top + 40}" x2="{px + 9}" y2="{top + 40 + 3 * 92}" stroke="{t["line"]}" stroke-width="2"/>',
-          f'<line class="flow" x1="{px + 9}" y1="{top + 40}" x2="{px + 9}" y2="{top + 40 + 3 * 92}" stroke="url(#accv)" stroke-width="2"/>']
-    for k, (tag, head, sub) in enumerate(NOW):
-        y = top + 46 + k * 92
-        col = t["c2"] if k % 2 else t["c1"]
-        b += [f'<circle cx="{px + 9}" cy="{y - 6}" r="8" fill="{t["card"]}" stroke="{col}" stroke-width="3"/>',
-              f'<circle class="node"{delay(k * 1.5)} cx="{px + 9}" cy="{y - 6}" r="3.5" fill="{col}"/>',
-              f'<text x="{px + 34}" y="{y}" font-size="14" font-weight="700" letter-spacing="2.6" fill="{col}">{e(tag)}</text>',
-              f'<text x="{px + 34}" y="{y + 28}" font-size="22" font-weight="800" fill="{t["title"]}">{e(head)}</text>',
-              f'<text x="{px + 34}" y="{y + 52}" font-size="18" fill="{t["muted"]}">{e(sub)}</text>']
-    b.append('</g>')
+    b.append(f'<rect class="caret" x="{(48 if mobile else 70) + FS * CHAR_W + 6:.0f}" y="{last - FS + 2}" width="{FS * .55:.0f}" height="{FS + 4}" fill="{t["c1"]}"/>')
+    if not mobile:
+        px = 830
+        b += [f'<line x1="{px - 36}" y1="{bar + 24}" x2="{px - 36}" y2="{H - 30}" stroke="{t["line"]}"/>',
+              f'<g class="in"{delay(.25)}>',
+              f'<text x="{px}" y="{top - 8}" font-size="15" font-weight="600" letter-spacing="3.5" fill="{t["muted"]}">RIGHT NOW</text>',
+              f'<line x1="{px + 9}" y1="{top + 32}" x2="{px + 9}" y2="{top + 32 + 3 * 92}" stroke="{t["line"]}" stroke-width="2"/>',
+              f'<line class="flow" x1="{px + 9}" y1="{top + 32}" x2="{px + 9}" y2="{top + 32 + 3 * 92}" stroke="url(#accv)" stroke-width="2"/>']
+        for k, (tag, head, sub) in enumerate(NOW):
+            y = top + 38 + k * 92
+            col = t["c2"] if k % 2 else t["c1"]
+            b += [f'<circle cx="{px + 9}" cy="{y - 6}" r="8" fill="{t["card"]}" stroke="{col}" stroke-width="3"/>',
+                  f'<circle class="node"{delay(k * 1.5)} cx="{px + 9}" cy="{y - 6}" r="3.5" fill="{col}"/>',
+                  f'<text x="{px + 34}" y="{y}" font-size="14" font-weight="700" letter-spacing="2.6" fill="{col}">{e(tag)}</text>',
+                  f'<text x="{px + 34}" y="{y + 28}" font-size="22" font-weight="800" fill="{t["title"]}">{e(head)}</text>',
+                  f'<text x="{px + 34}" y="{y + 52}" font-size="18" fill="{t["muted"]}">{e(sub)}</text>']
+        b.append('</g>')
     return svg(W, H, "\n".join(b), css, t, defs, mono=True,
-               title="Mohamed Nowar: Software Engineer at J. Servo LLC, .NET backend, Cairo, Egypt")
+               title="about.json — Mohamed Nowar, Software Engineer at J. Servo LLC, .NET backend, Cairo, Egypt")
 
 
 # --------------------------------------------------------------------------- stats strip
@@ -443,7 +469,7 @@ def trust(mode, i, eyebrow, name, mark, note=None):
           f'<g clip-path="url(#c)"><rect class="sw" x="0" y="0" width="140" height="{H}" fill="url(#sheen)"/></g>']
     if note:
         b.append(f'<text x="{W - 56}" y="64" font-size="20" text-anchor="end" fill="{t["muted"]}">{e(note)}</text>')
-    return svg(W, H, "\n".join(b), css, t, title=f"J. SERVO on {name}")
+    return svg(W, H, "\n".join(b), css, t, title=f"J. SERVO on {name}", disp=(820 if note else 270))
 
 
 # --------------------------------------------------------------------------- animated icons (theme neutral)
@@ -619,7 +645,7 @@ def gallery(mode):
     """Device showcase: a large centre browser window with two windows tucked behind it.
     Screenshots are base64-embedded because <img> SVGs can't load external files."""
     t = THEMES[mode]
-    W, H = 1280, 540
+    W, H = 1280, 470
     css = """
 .fl{animation:fl 8s ease-in-out infinite}
 @keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
@@ -627,7 +653,7 @@ def gallery(mode):
 @keyframes cap{0%,20%,100%{transform:translateY(0)}10%{transform:translateY(-3px)}}"""
     defs = [f'<filter id="sh" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000" flood-opacity="{.5 if mode == "dark" else .22}"/></filter>',
             f'<radialGradient id="halo" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="{GOLD[mode]}" stop-opacity=".22"/><stop offset="1" stop-color="{GOLD[mode]}" stop-opacity="0"/></radialGradient>']
-    b = [f'<ellipse cx="{W / 2}" cy="260" rx="560" ry="220" fill="url(#halo)"/>']
+    b = [f'<ellipse cx="{W / 2}" cy="230" rx="560" ry="200" fill="url(#halo)"/>']
     # (screen index, x, y, width, delay) — side windows first so the centre one sits on top
     frames = [(1, 20, 110, 440, -2.5), (2, W - 20 - 440, 110, 440, -5.0), (0, 330, 40, 620, 0.0)]
     for idx, x, y, fw, dl in frames:
@@ -654,6 +680,82 @@ def gallery(mode):
                  f'<text x="{cx_}" y="{H - 27}" font-size="17" text-anchor="middle" fill="{t["text"]}">{e(cap)}</text></g>')
     return svg(W, H, "\n".join(b), css, t, "\n".join(defs),
                title="Diar Al Manasik live site: English home page, Arabic home page, Makkah hotels sorted by walking distance")
+
+
+# --------------------------------------------------------------------------- Diar CRM (illustrative mockup, demo data only)
+CRM_NAV = ["Dashboard", "Leads", "Contacts", "Opportunities", "Calls", "Emails", "Tasks", "Reports"]
+CRM_STAGES = [("Prospecting", [("Umrah group", "24 pax · Makkah"), ("Family stay", "5 pax · Madinah")]),
+              ("Proposal", [("Ramadan block", "40 rooms · Makkah"), ("Travel agent", "Quote sent")]),
+              ("Negotiation", [("Corporate trip", "12 pax · both cities")]),
+              ("Closed Won", [("Family stay", "Confirmed"), ("Umrah group", "Confirmed")])]
+CRM_KPIS = [("New leads", "128"), ("Open deals", "36"), ("Won this month", "19"), ("Avg. reply", "4 min")]
+
+
+def crm(mode):
+    t = THEMES[mode]
+    dark = mode == "dark"
+    W, H = 1280, 520
+    css = """
+.fl{animation:fl 9s ease-in-out infinite}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.mv{animation:mv 7s ease-in-out infinite}
+@keyframes mv{0%,30%,100%{transform:translateX(0)}12%,18%{transform:translateX(10px)}}
+.hl{animation:hl 7s ease-in-out infinite}
+@keyframes hl{0%,100%{fill-opacity:.0}50%{fill-opacity:.12}}"""
+    side = "#1B2433" if dark else "#25324A"
+    page = t["bg1"] if dark else "#F4F6FA"
+    defs = [f'<filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000" flood-opacity="{.5 if dark else .2}"/></filter>',
+            '<clipPath id="win"><rect x="40" y="20" width="1200" height="470" rx="16"/></clipPath>']
+    b = [f'<g class="fl"><g filter="url(#sh)"><rect x="40" y="20" width="1200" height="470" rx="16" fill="{page}" stroke="{t["line"]}"/></g>',
+         '<g clip-path="url(#win)">',
+         # browser bar
+         f'<rect x="40" y="20" width="1200" height="44" fill="{t["card2"]}"/>',
+         '<circle cx="64" cy="42" r="7" fill="#FF5F57"/><circle cx="86" cy="42" r="7" fill="#FEBC2E"/><circle cx="108" cy="42" r="7" fill="#28C840"/>',
+         f'<rect x="134" y="30" width="520" height="24" rx="12" fill="{t["card"]}"/>',
+         f'<text x="152" y="47" font-size="15" fill="{t["muted"]}">crm.diarmanasik.cloud</text>',
+         f'<rect x="{1240 - 330}" y="29" width="310" height="26" rx="13" fill="{t["c2"]}" fill-opacity=".14" stroke="{t["c2"]}" stroke-opacity=".6"/>',
+         f'<text x="{1240 - 175}" y="47" font-size="13" font-weight="700" letter-spacing="1.5" text-anchor="middle" fill="{t["c2"]}">ILLUSTRATIVE MOCKUP · DEMO DATA</text>',
+         # sidebar
+         f'<rect x="40" y="64" width="220" height="426" fill="{side}"/>',
+         f'<text x="64" y="104" font-size="22" font-weight="800" fill="#FFFFFF">Diar CRM</text>',
+         f'<text x="64" y="126" font-size="13" fill="#9AA7BD">EspoCRM · by J. Servo</text>']
+    for k, item in enumerate(CRM_NAV):
+        y = 160 + k * 40
+        active = item == "Opportunities"
+        if active:
+            b.append(f'<rect x="52" y="{y - 24}" width="196" height="38" rx="10" fill="{t["c1"]}" fill-opacity=".22"/>')
+        b += [f'<circle cx="74" cy="{y - 5}" r="5" fill="{t["c1"] if active else "#5B6B85"}"/>',
+              f'<text x="92" y="{y}" font-size="17" fill="{"#FFFFFF" if active else "#C9D2E3"}">{item}</text>']
+    # header + KPIs
+    mx = 290
+    b += [f'<text x="{mx}" y="108" font-size="26" font-weight="800" fill="{t["title"]}">Opportunities</text>',
+          f'<text x="{mx}" y="134" font-size="15" fill="{t["muted"]}">Sales pipeline · Kanban</text>']
+    kw = (1240 - mx - 30 - 3 * 14) / 4
+    for k, (lab, val) in enumerate(CRM_KPIS):
+        x = mx + k * (kw + 14)
+        b += [f'<rect x="{x:.0f}" y="152" width="{kw:.0f}" height="74" rx="12" fill="{t["card"]}" stroke="{t["line"]}"/>',
+              f'<text x="{x + 18:.0f}" y="182" font-size="14" fill="{t["muted"]}">{lab}</text>',
+              f'<text x="{x + 18:.0f}" y="212" font-size="26" font-weight="800" fill="{t["c1"] if k % 2 == 0 else t["c2"]}">{val}</text>']
+    # kanban
+    cw = (1240 - mx - 30 - 3 * 14) / 4
+    for k, (stage, cards) in enumerate(CRM_STAGES):
+        x = mx + k * (cw + 14)
+        won = stage == "Closed Won"
+        col = t["ok"] if won else (t["c2"] if k % 2 else t["c1"])
+        b += [f'<rect x="{x:.0f}" y="244" width="{cw:.0f}" height="230" rx="12" fill="{t["card2"]}" stroke="{t["line"]}"/>',
+              f'<rect x="{x:.0f}" y="244" width="{cw:.0f}" height="5" rx="2.5" fill="{col}"/>',
+              f'<text x="{x + 16:.0f}" y="278" font-size="17" font-weight="700" fill="{t["title"]}">{stage}</text>',
+              f'<text x="{x + cw - 16:.0f}" y="278" font-size="15" text-anchor="end" fill="{t["muted"]}">{len(cards)}</text>']
+        for j, (title, sub) in enumerate(cards):
+            y = 294 + j * 86
+            cls = ' class="mv"' if (k == 1 and j == 0) else ""
+            b += [f'<g{cls}><rect x="{x + 12:.0f}" y="{y}" width="{cw - 24:.0f}" height="74" rx="10" fill="{t["card"]}" stroke="{t["line"]}"/>',
+                  f'<rect x="{x + 12:.0f}" y="{y + 14}" width="4" height="50" rx="2" fill="{col}"/>',
+                  f'<text x="{x + 28:.0f}" y="{y + 32}" font-size="17" font-weight="700" fill="{t["title"]}">{title}</text>',
+                  f'<text x="{x + 28:.0f}" y="{y + 58}" font-size="14" fill="{t["muted"]}">{sub}</text></g>']
+    b += ['</g></g>']
+    return svg(W, H, "\n".join(b), css, t, "\n".join(defs),
+               title="Diar CRM (EspoCRM, engineered by J. Servo): illustrative mockup of the sales pipeline with demo data")
 
 
 # --------------------------------------------------------------------------- project cards (one SVG per card so each links to its repo)
@@ -694,7 +796,7 @@ def project(mode, i, slug, icon_name, title, desc, chips):
         x += w + 10
     b.append(f'<g clip-path="url(#c)"><g transform="skewX(-18)"><rect class="sw" x="0" y="0" width="140" height="{H}" fill="url(#sheen)"/></g></g>')
     defs = f'<linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{t["card"]}"/><stop offset="1" stop-color="{t["bg2"]}"/></linearGradient>'
-    return svg(W, H, "\n".join(b), css, t, defs, title=f"{title}: {desc}")
+    return svg(W, H, "\n".join(b), css, t, defs, title=f"{title}: {desc}", disp=410)
 
 
 # --------------------------------------------------------------------------- AI-assisted engineering (Claude Code)
@@ -798,6 +900,7 @@ def main():
     for mode in THEMES:
         write(os.path.join(ASSETS, f"jservo-{mode}.svg"), jservo(mode))
         write(os.path.join(ASSETS, f"gallery-{mode}.svg"), gallery(mode))
+        write(os.path.join(ASSETS, f"crm-{mode}.svg"), crm(mode))
         os.makedirs(os.path.join(ASSETS, "projects"), exist_ok=True)
         for i, (slug, icon_name, title, desc, chips) in enumerate(PROJECTS):
             write(os.path.join(ASSETS, "projects", f"{slug}-{mode}.svg"), project(mode, i, slug, icon_name, title, desc, chips))
