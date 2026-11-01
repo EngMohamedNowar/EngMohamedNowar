@@ -461,6 +461,7 @@ ICONS = {
     "stats": ('<path d="M3 21h18"/><path class="m-bar" d="M6 18V11"/><path class="m-bar b2" d="M12 18V5"/><path class="m-bar b3" d="M18 18v-9"/>', 5),
     "certificates": ('<g class="m-swing"><circle cx="12" cy="9" r="6"/><path d="M8.2 13.6 7 22l5-3 5 3-1.2-8.4"/><path d="M10 9l1.5 1.5L14.5 7.5"/></g>', 6),
     "work": ('<g class="m-bob"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></g>', 7),
+    "ai": ('<g class="m-tilt"><path d="M12 2l2.2 6.8L21 11l-6.8 2.2L12 20l-2.2-6.8L3 11l6.8-2.2z"/></g><path class="m-pulse" d="M19 17.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/>', 9),
     "connect": ('<g class="m-fly"><path d="M22 2 11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></g>', 8),
     # capability cards
     "cap-architecture": ('<g class="m-tilt"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/></g>', 0),
@@ -592,6 +593,79 @@ def diar(mode):
                title="Diar Al Manasik: bilingual hotel platform for pilgrims in Makkah and Madinah, built at J. Servo LLC")
 
 
+# --------------------------------------------------------------------------- AI-assisted engineering (Claude Code)
+CLAUDE = {"dark": "#E08A6C", "light": "#C15F3C"}   # Claude's terracotta, tuned per theme for contrast
+STEPS = [("01", "Plan"), ("02", "Refactor"), ("03", "Test"), ("04", "Review")]
+
+
+def claude(mode):
+    t = THEMES[mode]
+    cc = CLAUDE[mode]
+    W, H = 1280, 450
+    defs, back = backdrop(W, H, t)
+    css = f"""
+.spark{{transform-box:fill-box;transform-origin:center;animation:spark 6s ease-in-out infinite}}
+@keyframes spark{{0%,100%{{transform:rotate(0) scale(1)}}12%{{transform:rotate(45deg) scale(1.15)}}24%{{transform:rotate(90deg) scale(1)}}}}
+.step{{animation:step 8s ease-in-out infinite}}
+@keyframes step{{0%,14%,100%{{transform:translateY(0)}}7%{{transform:translateY(-5px)}}}}
+.run{{transform-box:fill-box;transform-origin:left;animation:run 8s ease-in-out infinite}}
+@keyframes run{{0%,100%{{transform:scaleX(1)}}50%{{transform:scaleX(.35)}}}}
+.dot{{animation:dot 1.2s ease-in-out infinite}}
+@keyframes dot{{0%,100%{{fill-opacity:1}}50%{{fill-opacity:.25}}}}"""
+    spark = "M12 2l2.2 6.8L21 11l-6.8 2.2L12 20l-2.2-6.8L3 11l6.8-2.2z"
+    b = [back, '<g class="inx">',
+         f'<g transform="translate(64 44)"><g class="spark"><path d="{spark}" transform="scale(1.5)" fill="{cc}"/></g></g>',
+         f'<text x="112" y="72" font-size="17" font-weight="600" letter-spacing="4" fill="{t["c1"]}">AI-ASSISTED ENGINEERING</text>',
+         f'<text x="60" y="146" font-size="52" font-weight="800" letter-spacing="-.5" fill="{t["title"]}">Shipping with</text>',
+         f'<text x="60" y="206" font-size="52" font-weight="800" letter-spacing="-.5" fill="{cc}">Claude Code</text>',
+         f'<text x="64" y="250" font-size="22" font-weight="500" fill="{t["text"]}">An AI pair programmer in my terminal</text>',
+         f'<text x="64" y="282" font-size="18" fill="{t["muted"]}">for C# and ASP.NET Core code and tests</text>',
+         '</g>']
+    x = 64
+    for k, (num, lab) in enumerate(STEPS):
+        w = round(len(lab) * 10 + 62)
+        col = t["c2"] if k % 2 else t["c1"]
+        b.append(f'<g class="step"{delay(k * .5)}><rect x="{x}" y="320" width="{w}" height="44" rx="22" fill="{col}" fill-opacity=".12" stroke="{col}" stroke-opacity=".6"/>'
+                 f'<text class="mono" x="{x + 18}" y="348" font-size="15" fill="{col}">{num}</text>'
+                 f'<text x="{x + 46}" y="349" font-size="18" font-weight="700" fill="{t["title"]}">{lab}</text></g>')
+        if k < len(STEPS) - 1:
+            b.append(f'<path d="M{x + w + 6} 342 h12" stroke="{t["muted"]}" stroke-width="2" stroke-linecap="round"/>')
+        x += w + 24
+    b.append(f'<text x="64" y="404" font-size="15" font-weight="600" letter-spacing="1.5" fill="{t["muted"]}">CLAUDE PROPOSES THE DIFF · I REVIEW, TEST AND OWN IT</text>')
+    # terminal (illustrative session)
+    tx, ty, tw, th = 650, 40, 590, 370
+    b += [f'<g class="in"{delay(.2)}>',
+          f'<rect x="{tx}" y="{ty}" width="{tw}" height="{th}" rx="16" fill="{t["card"]}" stroke="{t["line"]}"/>',
+          f'<rect x="{tx}" y="{ty}" width="{tw}" height="44" rx="16" fill="{t["card2"]}"/><rect x="{tx}" y="{ty + 28}" width="{tw}" height="16" fill="{t["card2"]}"/>',
+          f'<line x1="{tx}" y1="{ty + 44}" x2="{tx + tw}" y2="{ty + 44}" stroke="{t["line"]}"/>',
+          f'<circle cx="{tx + 24}" cy="{ty + 22}" r="6.5" fill="#FF5F57"/><circle cx="{tx + 46}" cy="{ty + 22}" r="6.5" fill="#FEBC2E"/><circle cx="{tx + 68}" cy="{ty + 22}" r="6.5" fill="#28C840"/>',
+          f'<text x="{tx + tw / 2:.0f}" y="{ty + 28}" font-size="14" font-weight="600" letter-spacing="1" text-anchor="middle" fill="{t["muted"]}">claude — ~/src/CoffeeStore</text>',
+          f'<text x="{tx + tw - 18}" y="{ty + 28}" font-size="11" font-weight="700" letter-spacing="1.5" text-anchor="end" fill="{t["muted"]}">ILLUSTRATIVE</text>']
+    lines = [
+        [("✻ ", cc), ("Claude Code", t["title"])],
+        [("> ", cc), ("move order logic into CQRS handlers", t["text"])],
+        [("  ", t["text"]), ("and cover it with xUnit tests", t["text"])],
+        [("● ", t["c1"]), ("Read  ", t["muted"]), ("OrderService.cs", t["text"])],
+        [("● ", t["c1"]), ("Edit  ", t["muted"]), ("CreateOrderCommandHandler.cs", t["text"])],
+        [("● ", t["c2"]), ("Write ", t["muted"]), ("CreateOrderHandlerTests.cs", t["text"])],
+        [("● ", t["ok"]), ("Bash  ", t["muted"]), ("dotnet test", t["text"])],
+        [("  ✔ ", t["ok"]), ("build succeeded · tests green", t["ok"])],
+        [("> ", cc), ("review the diff before commit", t["text"])],
+    ]
+    for i, segs in enumerate(lines):
+        y = ty + 78 + i * 30
+        spans = "".join(f'<tspan fill="{c}">{e(s)}</tspan>' for s, c in segs)
+        b.append(f'<text class="mono" x="{tx + 24}" y="{y}" font-size="17" xml:space="preserve">{spans}</text>')
+    last = ty + 78 + (len(lines) - 1) * 30
+    chars = sum(len(s) for s, _ in lines[-1])
+    b += [f'<rect class="caret" x="{tx + 24 + chars * 17 * CHAR_W + 6:.0f}" y="{last - 16}" width="10" height="21" fill="{cc}"/>',
+          f'<rect x="{tx + 24}" y="{ty + th - 22}" width="{tw - 48}" height="4" rx="2" fill="{t["line"]}"/>',
+          f'<rect class="run" x="{tx + 24}" y="{ty + th - 22}" width="{tw - 48}" height="4" rx="2" fill="url(#acc)"/>',
+          '</g>']
+    return svg(W, H, "\n".join(b), css, t, defs, mono=True,
+               title="AI-assisted engineering: Mohamed Nowar uses Claude Code to write and refactor C# / ASP.NET Core code and tests")
+
+
 # --------------------------------------------------------------------------- header nav icons
 LINKEDIN = ("M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046"
             "c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063"
@@ -619,6 +693,7 @@ def main():
     write(os.path.join(ASSETS, "divider.svg"), divider())
     for mode in THEMES:
         write(os.path.join(ASSETS, f"diar-{mode}.svg"), diar(mode))
+        write(os.path.join(ASSETS, f"claude-{mode}.svg"), claude(mode))
     nav_out = os.path.join(ASSETS, "nav")
     os.makedirs(nav_out, exist_ok=True)
     for name, (glyph, slot) in NAV.items():
