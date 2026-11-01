@@ -61,9 +61,9 @@ def w(name, s):
 def odometer(uid, value, x, y, fs, fill, delay=0.0, anchor_end=False):
     """Rolling-digit counter. Base transforms hold the final value, so static renderers show it."""
     s = f"{value:,}"
-    # Syne 800 digits are proportional and ~1.1em wide: give each digit a centred 1.16em cell
-    cw, h = fs * 1.16, fs * 1.25
-    width = sum(cw if ch.isdigit() else fs * 0.34 for ch in s)
+    # Syne at the thin weight (500 after brand.thin) has proportional digits up to ~0.63em: centred 0.68em cells
+    cw, h = fs * 0.68, fs * 1.25
+    width = sum(cw if ch.isdigit() else fs * 0.3 for ch in s)
     x0 = x - width if anchor_end else x
     out = f'<clipPath id="{uid}"><rect x="{x0}" y="{y-fs}" width="{width+4:.1f}" height="{h:.1f}"/></clipPath><g clip-path="url(#{uid})" font-size="{fs}" font-weight="800" fill="{fill}">'
     cx = x0
@@ -72,7 +72,7 @@ def odometer(uid, value, x, y, fs, fill, delay=0.0, anchor_end=False):
     for ch in s:
         if not ch.isdigit():
             out += f'<text x="{cx:.1f}" y="{y}">{ch}</text>'
-            cx += fs * 0.34
+            cx += fs * 0.3
             continue
         d = int(ch)
         idx = 10 + d

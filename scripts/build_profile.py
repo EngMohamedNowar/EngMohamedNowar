@@ -608,6 +608,7 @@ def _shot(name, width=720):
     import io
     from PIL import Image
     im = Image.open(os.path.join(ROOT, "screenshots", name)).convert("RGB")
+    im = im.crop((0, 0, im.width, round(im.height * .86)))  # drop the white strip below the hero
     im.thumbnail((width, width))
     buf = io.BytesIO()
     im.save(buf, "JPEG", quality=72, optimize=True, progressive=True)
@@ -615,31 +616,85 @@ def _shot(name, width=720):
 
 
 def gallery(mode):
-    """Three browser windows with live-site screenshots embedded (img SVGs can't load external files)."""
+    """Device showcase: a large centre browser window with two windows tucked behind it.
+    Screenshots are base64-embedded because <img> SVGs can't load external files."""
     t = THEMES[mode]
-    W, H = 1280, 400
-    fw, gap = 396, 46
+    W, H = 1280, 540
     css = """
-.fl{animation:fl 7s ease-in-out infinite}
-@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}"""
-    b, defs = [], ['<filter id="sh" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity=".35"/></filter>']
-    for i, (fn, url, cap) in enumerate(SCREENS):
-        src, (iw, ih) = _shot(fn)
-        x = 24 + i * (fw + gap)
-        y = 20 if i == 1 else 40
-        bar = 34
+.fl{animation:fl 8s ease-in-out infinite}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.cap{animation:cap 8s ease-in-out infinite}
+@keyframes cap{0%,20%,100%{transform:translateY(0)}10%{transform:translateY(-3px)}}"""
+    defs = [f'<filter id="sh" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000" flood-opacity="{.5 if mode == "dark" else .22}"/></filter>',
+            f'<radialGradient id="halo" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="{GOLD[mode]}" stop-opacity=".22"/><stop offset="1" stop-color="{GOLD[mode]}" stop-opacity="0"/></radialGradient>']
+    b = [f'<ellipse cx="{W / 2}" cy="260" rx="560" ry="220" fill="url(#halo)"/>']
+    # (screen index, x, y, width, delay) — side windows first so the centre one sits on top
+    frames = [(1, 20, 110, 440, -2.5), (2, W - 20 - 440, 110, 440, -5.0), (0, 330, 40, 620, 0.0)]
+    for idx, x, y, fw, dl in frames:
+        fn, url, cap = SCREENS[idx]
+        src, (iw, ih) = _shot(fn, 1000 if fw > 600 else 760)
+        bar = 38 if fw > 600 else 32
         vh = round(fw * ih / iw)
-        defs.append(f'<clipPath id="v{i}"><rect x="{x}" y="{y + bar}" width="{fw}" height="{vh}" rx="0"/></clipPath>')
-        b += [f'<g class="fl"{delay(-i * 2.3)}><g filter="url(#sh)">',
-              f'<rect x="{x}" y="{y}" width="{fw}" height="{bar + vh}" rx="12" fill="{t["card2"]}" stroke="{t["line"]}"/></g>',
-              f'<circle cx="{x + 16}" cy="{y + 17}" r="5" fill="#FF5F57"/><circle cx="{x + 32}" cy="{y + 17}" r="5" fill="#FEBC2E"/><circle cx="{x + 48}" cy="{y + 17}" r="5" fill="#28C840"/>',
-              f'<rect x="{x + 64}" y="{y + 8}" width="{fw - 80}" height="18" rx="9" fill="{t["card"]}"/>',
-              f'<text x="{x + 76}" y="{y + 21.5}" font-size="12" fill="{t["muted"]}">{e(url)}</text>',
-              f'<image href="{src}" x="{x}" y="{y + bar}" width="{fw}" height="{vh}" clip-path="url(#v{i})" preserveAspectRatio="xMidYMin slice"/>',
-              f'<text x="{x + fw / 2}" y="{y + bar + vh + 40}" font-size="18" text-anchor="middle" fill="{t["text"]}">{e(cap)}</text>',
+        defs.append(f'<clipPath id="v{idx}"><rect x="{x}" y="{y + bar}" width="{fw}" height="{vh}" rx="0"/></clipPath>')
+        r = 7 if fw > 600 else 6
+        b += [f'<g class="fl"{delay(dl)}><g filter="url(#sh)">',
+              f'<rect x="{x}" y="{y}" width="{fw}" height="{bar + vh}" rx="14" fill="{t["card2"]}" stroke="{t["line"]}"/></g>',
+              f'<circle cx="{x + 20}" cy="{y + bar / 2}" r="{r}" fill="#FF5F57"/><circle cx="{x + 40}" cy="{y + bar / 2}" r="{r}" fill="#FEBC2E"/><circle cx="{x + 60}" cy="{y + bar / 2}" r="{r}" fill="#28C840"/>',
+              f'<rect x="{x + 82}" y="{y + bar / 2 - 11}" width="{fw - 102}" height="22" rx="11" fill="{t["card"]}"/>',
+              f'<text x="{x + 98}" y="{y + bar / 2 + 5}" font-size="{15 if fw > 600 else 13}" fill="{t["muted"]}">{e(url)}</text>',
+              f'<image href="{src}" x="{x}" y="{y + bar}" width="{fw}" height="{vh}" clip-path="url(#v{idx})" preserveAspectRatio="xMidYMin slice"/>',
               '</g>']
+    # caption chips along the bottom
+    caps = [SCREENS[1][2], SCREENS[0][2], SCREENS[2][2]]
+    xs = [240, 640, 1040]
+    for k, (cx_, cap) in enumerate(zip(xs, caps)):
+        w = len(cap) * 10 + 44
+        col = GOLD[mode] if k == 1 else t["c1"]
+        b.append(f'<g class="cap"{delay(k * .6)}><rect x="{cx_ - w / 2:.0f}" y="{H - 52}" width="{w}" height="38" rx="19" fill="{t["card"]}" stroke="{col}" stroke-opacity=".6"/>'
+                 f'<text x="{cx_}" y="{H - 27}" font-size="17" text-anchor="middle" fill="{t["text"]}">{e(cap)}</text></g>')
     return svg(W, H, "\n".join(b), css, t, "\n".join(defs),
-               title="Diar Al Manasik live site: English home, Arabic home, Makkah hotels sorted by distance")
+               title="Diar Al Manasik live site: English home page, Arabic home page, Makkah hotels sorted by walking distance")
+
+
+# --------------------------------------------------------------------------- project cards (one SVG per card so each links to its repo)
+PROJECTS = [
+    ("accounting", "p-accounting", "Accounting Platform", "Client & accounting workflow, secure uploads", ["ASP.NET Core", "React", "EF Core", "xUnit"]),
+    ("coffee", "p-coffee", "Coffee Store API", "Clean Architecture API with Stripe webhooks", [".NET 10", "CQRS", "Redis", "182 tests"]),
+    ("ecommerce", "p-ecommerce", "E-commerce API", "Catalogue, cart, orders and inventory", ["ASP.NET Core", "EF Core", "SQL Server", "JWT"]),
+    ("pos", "p-pos", "Restaurant POS", "Production desktop POS, Arabic receipts", ["WPF", "ESC/POS", "Win32"]),
+    ("todo", "p-todo", "My Tasks", "Notion-style task manager with Pomodoro", ["WPF", "MVVM", "SQLite", "50 tests"]),
+    ("gym", "p-gym", "Gym Management", "Members, trainers, sessions, memberships", ["ASP.NET MVC", "EF Core", "Bootstrap"]),
+]
+
+
+def project(mode, i, slug, icon_name, title, desc, chips):
+    t = THEMES[mode]
+    W, H = 640, 210
+    glyph = ICONS[icon_name][0]
+    css = ICON_CSS.replace("infinite}", f"infinite;animation-delay:{i * .55:.2f}s}}") + f"""
+.sw{{animation:sw 8s ease-in-out infinite;animation-delay:{i * .7:.1f}s}}
+@keyframes sw{{0%{{transform:translateX(-200px)}}45%,100%{{transform:translateX(900px)}}}}
+.ar{{animation:ar 7s ease-in-out infinite;animation-delay:{i * .55:.2f}s}}
+@keyframes ar{{0%,20%,100%{{transform:translate(0,0)}}10%{{transform:translate(3px,-3px)}}}}"""
+    b = [f'<clipPath id="c"><rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="20"/></clipPath>',
+         f'<rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="20" fill="url(#pbg)" stroke="{t["line"]}"/>',
+         f'<rect class="edge"{delay(-i * 1.5)} x="1.5" y="1.5" width="{W - 3}" height="{H - 3}" rx="19.5" fill="none" stroke="url(#accd)" stroke-width="2" pathLength="100"/>',
+         f'<rect x="28" y="28" width="72" height="72" rx="20" fill="{t["c1"]}" fill-opacity=".12"/>',
+         f'<rect class="tile" x="28.5" y="28.5" width="71" height="71" rx="19.5" fill="none" stroke="url(#accd)" stroke-width="1.8"/>',
+         f'<g transform="translate(40 40) scale(2)" fill="none" stroke="{t["c1"]}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">{glyph}</g>',
+         f'<text x="122" y="60" font-size="30" font-weight="800" fill="{t["title"]}">{e(title)}</text>',
+         f'<text x="122" y="95" font-size="20" fill="{t["muted"]}">{e(desc)}</text>',
+         f'<g class="ar"><path d="M{W - 44} 46 l12 -12 M{W - 41} 34 h9 v9" fill="none" stroke="{t["c1"]}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g>']
+    x = 28
+    for k, c in enumerate(chips):
+        w = round(len(c) * 10.5 + 36)
+        col = t["c2"] if k % 2 else t["c1"]
+        b.append(f'<rect x="{x}" y="138" width="{w}" height="38" rx="19" fill="{col}" fill-opacity=".1" stroke="{col}" stroke-opacity=".5"/>'
+                 f'<text x="{x + w / 2:.0f}" y="164" font-size="18" font-weight="600" text-anchor="middle" fill="{t["text"]}">{e(c)}</text>')
+        x += w + 10
+    b.append(f'<g clip-path="url(#c)"><g transform="skewX(-18)"><rect class="sw" x="0" y="0" width="140" height="{H}" fill="url(#sheen)"/></g></g>')
+    defs = f'<linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{t["card"]}"/><stop offset="1" stop-color="{t["bg2"]}"/></linearGradient>'
+    return svg(W, H, "\n".join(b), css, t, defs, title=f"{title}: {desc}")
 
 
 # --------------------------------------------------------------------------- AI-assisted engineering (Claude Code)
@@ -743,6 +798,9 @@ def main():
     for mode in THEMES:
         write(os.path.join(ASSETS, f"jservo-{mode}.svg"), jservo(mode))
         write(os.path.join(ASSETS, f"gallery-{mode}.svg"), gallery(mode))
+        os.makedirs(os.path.join(ASSETS, "projects"), exist_ok=True)
+        for i, (slug, icon_name, title, desc, chips) in enumerate(PROJECTS):
+            write(os.path.join(ASSETS, "projects", f"{slug}-{mode}.svg"), project(mode, i, slug, icon_name, title, desc, chips))
         write(os.path.join(ASSETS, f"claude-{mode}.svg"), claude(mode))
     nav_out = os.path.join(ASSETS, "nav")
     os.makedirs(nav_out, exist_ok=True)
