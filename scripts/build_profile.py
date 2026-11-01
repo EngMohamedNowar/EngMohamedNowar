@@ -20,10 +20,8 @@ sys.path.insert(0, os.path.join(ROOT, "scripts"))
 from brand import CYAN, FONT, FONT_FACE, MONO, MONO_FACE, REDUCED, THEMES, VIOLET, grad, thin  # noqa: E402
 
 ASSETS = os.path.join(ROOT, "assets")
-TRUST_OUT = os.path.join(ASSETS, "trust")
 ICON_OUT = os.path.join(ASSETS, "icons")
-for d in (TRUST_OUT, ICON_OUT):
-    os.makedirs(d, exist_ok=True)
+os.makedirs(ICON_OUT, exist_ok=True)
 
 CHAR_W = 0.569  # Syne Mono advance in em (measured with getBBox)
 
@@ -185,13 +183,7 @@ def divider():
 '''
 
 
-# --------------------------------------------------------------------------- about (code card + now)
-NOW = [("NOW", "Software Engineer", "J. Servo LLC · since Jun 2026"),
-       ("LEARNING", "Elevate Bootcamp", "Backend Advanced · .NET track"),
-       ("BUILDING", "Accounting Platform", "ASP.NET Core · React · EF Core"),
-       ("EXPLORING", "Microservices", "RabbitMQ · Azure Service Bus")]
-
-
+# --------------------------------------------------------------------------- about (JSON card + "right now")
 def json_lines(t, compact=False):
     """The About card as a JSON response: list of lines, each a list of (text, colour)."""
     k, st, pu, num = t["c1"], t["str"], t["muted"], t["c2"]
@@ -335,74 +327,6 @@ def stats(mode):
                title="7 shipped projects · 583 automated tests · 8 certifications · 96% HCIA-AI score")
 
 
-# --------------------------------------------------------------------------- architecture
-CORE = [("01", "Clients", "Web · Mobile · Swagger · Postman"),
-        ("02", "API layer", "Controllers · Middleware · JWT · Rate limiting"),
-        ("03", "Application layer", "CQRS · MediatR · DTOs · Validation"),
-        ("04", "Domain layer", "Entities · Specifications · Business rules")]
-STORES = [("SQL Server", "Relational data"), ("Redis", "Cache · Baskets"), ("Azure", "Cloud hosting")]
-
-
-def architecture(mode):
-    t = THEMES[mode]
-    W, H = 1280, 620
-    defs, back = backdrop(W, H, t)
-    css = """
-.ly{animation:ly 6s ease-in-out infinite}
-@keyframes ly{0%,24%,100%{stroke-opacity:.4}10%{stroke-opacity:1}}"""
-    b = [back, '<g class="inx">',
-         f'<text x="48" y="64" font-size="16" font-weight="600" letter-spacing="3.5" fill="{t["muted"]}">CLEAN ARCHITECTURE  ·  REQUEST FLOW</text>',
-         f'<text x="48" y="106" font-size="36" font-weight="800" fill="{t["title"]}">How my APIs are <tspan fill="url(#acc)">layered</tspan></text>',
-         f'<text x="{W - 48}" y="64" font-size="16" font-weight="600" letter-spacing="2.5" text-anchor="end" fill="{t["c1"]}">ASP.NET CORE · .NET 10</text>',
-         '</g>']
-    cx, cw, bh = 48, 600, 92
-    ys = [140 + i * 116 for i in range(4)]
-    mid = cx + cw / 2
-    for i in range(3):
-        y1, y2 = ys[i] + bh, ys[i + 1]
-        b += [f'<line x1="{mid}" y1="{y1}" x2="{mid}" y2="{y2}" stroke="{t["line"]}" stroke-width="2"/>',
-              f'<line class="flow" x1="{mid}" y1="{y1}" x2="{mid}" y2="{y2}" stroke="{t["c1"]}" stroke-width="2"/>',
-              f'<path d="M{mid - 7} {y2 - 9} l7 8 7 -8" fill="none" stroke="{t["c1"]}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>']
-    b.append(f'<circle r="7" fill="{t["c1"]}"><animateMotion dur="5s" repeatCount="indefinite" path="M{mid} {ys[0] + bh} V{ys[3]}"/></circle>')
-    for i, (idx, name, sub) in enumerate(CORE):
-        y = ys[i]
-        col = t["c2"] if i % 2 else t["c1"]
-        b += [f'<g class="in"{delay(.1 + i * .12)}>',
-              f'<rect x="{cx}" y="{y}" width="{cw}" height="{bh}" rx="16" fill="{t["card"]}"/>',
-              f'<rect class="ly"{delay(i * 1.2)} x="{cx + .5}" y="{y + .5}" width="{cw - 1}" height="{bh - 1}" rx="15.5" fill="none" stroke="{col}" stroke-opacity=".4" stroke-width="1.6"/>',
-              f'<rect x="{cx}" y="{y + 20}" width="5" height="{bh - 40}" rx="2.5" fill="url(#accv)"/>',
-              f'<text class="mono" x="{cx + 28}" y="{y + 54}" font-size="19" fill="{col}">{idx}</text>',
-              f'<text x="{cx + 76}" y="{y + 41}" font-size="25" font-weight="800" fill="{t["title"]}">{e(name)}</text>',
-              f'<text x="{cx + 76}" y="{y + 69}" font-size="18" fill="{t["muted"]}">{e(sub)}</text>',
-              '</g>']
-    ix, iw, iy = 760, 472, ys[2]
-    b += [f'<g class="in"{delay(.45)}>',
-          f'<rect x="{ix}" y="{iy}" width="{iw}" height="{bh}" rx="16" fill="{t["card"]}"/>',
-          f'<rect class="ly"{delay(2.4)} x="{ix + .5}" y="{iy + .5}" width="{iw - 1}" height="{bh - 1}" rx="15.5" fill="none" stroke="{t["c1"]}" stroke-opacity=".4" stroke-width="1.6"/>',
-          f'<text class="mono" x="{ix + 24}" y="{iy + 54}" font-size="19" fill="{t["c1"]}">05</text>',
-          f'<text x="{ix + 70}" y="{iy + 41}" font-size="25" font-weight="800" fill="{t["title"]}">Infrastructure</text>',
-          f'<text x="{ix + 70}" y="{iy + 69}" font-size="18" fill="{t["muted"]}">EF Core · Repositories · UoW</text>',
-          '</g>',
-          f'<line class="flow" x1="{ix}" y1="{iy + bh / 2}" x2="{cx + cw + 10}" y2="{iy + bh / 2}" stroke="{t["c2"]}" stroke-width="2"/>',
-          f'<path d="M{cx + cw + 18} {iy + bh / 2 - 7} l-8 7 8 7" fill="none" stroke="{t["c2"]}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>',
-          f'<text x="{(ix + cx + cw) / 2 + 4:.0f}" y="{iy + bh / 2 - 12}" font-size="11" font-weight="700" letter-spacing=".8" text-anchor="middle" fill="{t["muted"]}">IMPLEMENTS</text>',
-          f'<path class="flow" d="M{cx + cw} {ys[1] + bh / 2} H{ix + iw / 2} V{iy - 10}" fill="none" stroke="{t["c1"]}" stroke-width="2"/>',
-          f'<path d="M{ix + iw / 2 - 7} {iy - 17} l7 8 7 -8" fill="none" stroke="{t["c1"]}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>',
-          f'<text x="{ix + iw / 2 + 14}" y="{ys[1] + bh / 2 - 12}" font-size="14" font-weight="700" letter-spacing="1.5" fill="{t["muted"]}">DI REGISTRATION</text>']
-    sy = ys[3]
-    sw = (iw - 24) / 3
-    for k, (name, sub) in enumerate(STORES):
-        x = ix + k * (sw + 12)
-        b += [f'<line class="flow" x1="{x + sw / 2:.1f}" y1="{iy + bh}" x2="{x + sw / 2:.1f}" y2="{sy}" stroke="{t["muted"]}" stroke-opacity=".7" stroke-width="1.6"/>',
-              f'<g class="in"{delay(.6 + k * .1)}>',
-              f'<rect x="{x:.1f}" y="{sy}" width="{sw:.1f}" height="{bh}" rx="14" fill="{t["card2"]}" stroke="{t["line"]}"/>',
-              f'<text x="{x + sw / 2:.1f}" y="{sy + 40}" font-size="15" font-weight="800" text-anchor="middle" fill="{t["title"]}">{e(name)}</text>',
-              f'<text x="{x + sw / 2:.1f}" y="{sy + 66}" font-size="14" text-anchor="middle" fill="{t["muted"]}">{e(sub)}</text>',
-              '</g>']
-    return svg(W, H, "\n".join(b), css, t, defs, mono=True,
-               title="Clean Architecture request flow: Clients, API, Application, Domain, Infrastructure, SQL Server, Redis, Azure")
-
-
 # --------------------------------------------------------------------------- footer
 def footer(mode):
     t = THEMES[mode]
@@ -421,57 +345,6 @@ def footer(mode):
     return svg(W, H, "\n".join(b), css, t, title="Building backend systems as clean as the code behind them.")
 
 
-# --------------------------------------------------------------------------- trust badges (J. SERVO review platforms)
-TRUSTPILOT = ("M17.227 16.67l2.19 6.742-7.413-5.388 5.223-1.354zM24 9.31h-9.165L12.005.589l-2.84 8.723L0 9.3"
-              "l7.422 5.397-2.84 8.714 7.422-5.388 4.583-3.326L24 9.311z")
-WIKIDATA = ("M0 4.583v14.833h.865V4.583zm1.788 0v14.833h2.653V4.583zm3.518 0v14.832H7.96V4.583zm3.547 0v14.834h.866V4.583z"
-            "m1.789 0v14.833h.865V4.583zm1.759 0v14.834h2.653V4.583zm3.518 0v14.834h.923V4.583zm1.788 0v14.833h2.653V4.583z"
-            "m3.64 0v14.834h.865V4.583zm1.788 0v14.834H24V4.583Z")
-TRUST = [
-    ("trustpilot", "REVIEWS ON", "Trustpilot", ("path", TRUSTPILOT)),
-    ("clutch", "REVIEWS ON", "Clutch", ("mono", "C")),
-    ("goodfirms", "REVIEWS ON", "GoodFirms", ("mono", "GF")),
-    ("techbehemoths", "VERIFIED ON", "TechBehemoths", ("mono", "TB")),
-    ("sortlist", "LISTED ON", "Sortlist", ("mono", "S")),
-    ("f6s", "PROFILE ON", "F6S", ("mono", "F6S")),
-    ("wikidata", "J. SERVO · ENTITY Q141189697", "Wikidata", ("path", WIKIDATA),
-     "Structured company data for search engines and AI assistants"),
-]
-
-
-def trust(mode, i, eyebrow, name, mark, note=None):
-    t = THEMES[mode]
-    W, H = (1180 if note else 380), 96
-    css = f'''
-.sw{{animation:sw 7s ease-in-out infinite;animation-delay:{i * .6:.1f}s}}
-@keyframes sw{{0%{{transform:translateX(-200px)}}45%,100%{{transform:translateX({1400 if note else 560}px)}}}}
-.tile{{animation:tile 7s ease-in-out infinite;animation-delay:{i * .6:.1f}s}}
-@keyframes tile{{0%,16%,100%{{stroke-opacity:.5}}7%{{stroke-opacity:1}}}}
-.mk{{transform-box:fill-box;transform-origin:center;animation:mk 7s ease-in-out infinite;animation-delay:{i * .6:.1f}s}}
-@keyframes mk{{0%,16%,100%{{transform:scale(1)}}8%{{transform:scale(1.15)}}}}
-.ar{{animation:ar 7s ease-in-out infinite;animation-delay:{i * .6:.1f}s}}
-@keyframes ar{{0%,16%,100%{{transform:translate(0,0)}}8%{{transform:translate(3px,-3px)}}}}'''
-    b = [f'<clipPath id="c"><rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="18"/></clipPath>',
-         f'<rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="18" fill="{t["card"]}" stroke="{t["line"]}"/>',
-         f'<rect class="edge"{delay(-i * 1.3)} x="1.5" y="1.5" width="{W - 3}" height="{H - 3}" rx="17.5" fill="none" stroke="url(#accd)" stroke-width="2" pathLength="100"/>',
-         f'<rect x="20" y="20" width="56" height="56" rx="15" fill="{t["c1"]}" fill-opacity=".12"/>',
-         f'<rect class="tile" x="20.5" y="20.5" width="55" height="55" rx="14.5" fill="none" stroke="url(#accd)" stroke-width="1.6"/>']
-    kind, val = mark
-    if kind == "path":
-        b.append(f'<g class="mk"><g transform="translate(34 34) scale(1.17)"><path d="{val}" fill="{t["c1"]}"/></g></g>')
-    else:
-        size = {1: 27, 2: 21, 3: 15}[len(val)]
-        b.append(f'<g class="mk"><text x="48" y="{48 + size * .36:.1f}" font-size="{size}" font-weight="800" text-anchor="middle" fill="{t["c1"]}">{e(val)}</text></g>')
-    name_fs = 19 if len(name) > 11 else 24
-    b += [f'<text x="94" y="42" font-size="14" font-weight="600" letter-spacing="2.4" fill="{t["muted"]}">{e(eyebrow)}</text>',
-          f'<text x="93" y="72" font-size="{name_fs}" font-weight="800" fill="{t["title"]}">{e(name)}</text>',
-          f'<g class="ar"><path d="M{W - 32} 30 l10 -10 M{W - 30} 20 h8 v8" fill="none" stroke="{t["c1"]}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></g>',
-          f'<g clip-path="url(#c)"><rect class="sw" x="0" y="0" width="140" height="{H}" fill="url(#sheen)"/></g>']
-    if note:
-        b.append(f'<text x="{W - 56}" y="64" font-size="20" text-anchor="end" fill="{t["muted"]}">{e(note)}</text>')
-    return svg(W, H, "\n".join(b), css, t, title=f"J. SERVO on {name}", disp=(740 if note else 240))
-
-
 # --------------------------------------------------------------------------- animated icons (theme neutral)
 # name: (glyph svg on a 24 grid, motion class). Glyph strokes use the accent; the tile is translucent,
 # so one file reads on both GitHub themes. Every icon in a group loops in 7s with a staggered delay,
@@ -479,29 +352,18 @@ def trust(mode, i, eyebrow, name, mark, note=None):
 ICONS = {
     # section headings
     "about": ('<g class="m-bob"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></g>', 0),
-    "stack": ('<path d="M3 12l9 5 9-5"/><path d="M3 16.5l9 5 9-5"/><g class="m-lift"><path d="M12 2.5 3 7.5l9 5 9-5z"/></g>', 1),
-    "architecture": ('<rect x="9" y="2" width="6" height="5" rx="1"/><rect x="2" y="17" width="6" height="5" rx="1"/><rect x="16" y="17" width="6" height="5" rx="1"/>'
-                     '<path class="m-flow" d="M12 7v5M5 17v-5h14v5"/>', 2),
     "projects": ('<g class="m-bob"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M10 11l-2 2 2 2M14 11l2 2-2 2"/></g>', 3),
-    "screenshots": ('<rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path class="m-scan" d="M5 7h14" stroke-opacity=".7"/>', 4),
     "stats": ('<path d="M3 21h18"/><path class="m-bar" d="M6 18V11"/><path class="m-bar b2" d="M12 18V5"/><path class="m-bar b3" d="M18 18v-9"/>', 5),
     "certificates": ('<g class="m-swing"><circle cx="12" cy="9" r="6"/><path d="M8.2 13.6 7 22l5-3 5 3-1.2-8.4"/><path d="M10 9l1.5 1.5L14.5 7.5"/></g>', 6),
     "work": ('<g class="m-bob"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></g>', 7),
     "ai": ('<g class="m-tilt"><path d="M12 2l2.2 6.8L21 11l-6.8 2.2L12 20l-2.2-6.8L3 11l6.8-2.2z"/></g><path class="m-pulse" d="M19 17.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/>', 9),
-    "connect": ('<g class="m-fly"><path d="M22 2 11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></g>', 8),
-    # capability cards
-    "cap-architecture": ('<g class="m-tilt"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/></g>', 0),
-    "cap-security": ('<g class="m-pulse"><path d="M12 2l8 3v6c0 5-3.5 9.5-8 11-4.5-1.5-8-6-8-11V5z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></g>', 1),
-    "cap-data": ('<g class="m-bob"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></g>', 2),
-    "cap-testing": ('<path d="M9 2h6M10 2v6L4 20a1.5 1.5 0 0 0 1.3 2h13.4a1.5 1.5 0 0 0 1.3-2L14 8V2"/><g class="m-rise"><circle cx="10" cy="17" r="1"/><circle cx="14" cy="15" r="1"/></g>', 3),
-    # featured projects
+    # project-card glyphs (drawn inside the project cards, not written as files)
     "p-accounting": ('<rect x="5" y="2" width="14" height="20" rx="2"/><rect class="m-pulse" x="8" y="5" width="8" height="4" rx="1"/><path d="M8.5 13h.01M12 13h.01M15.5 13h.01M8.5 17h.01M12 17h.01M15.5 17h.01" stroke-width="2.6"/>', 0),
     "p-coffee": ('<path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 10.5h1.5a2.5 2.5 0 0 1 0 5H17"/><g class="m-rise"><path d="M8 2.5c-1 1 1 2 0 3.5M12 2.5c-1 1 1 2 0 3.5"/></g>', 1),
     "p-ecommerce": ('<g class="m-roll"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.7 12.4a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 2-1.6L22 7H6"/></g>', 2),
     "p-pos": ('<g class="m-print"><path d="M5 2h14v20l-3-2-2 2-2-2-2 2-2-2-3 2z"/><path d="M9 7h6M9 11h6M9 15h4"/></g>', 3),
     "p-todo": ('<path d="M10 6h11M10 12h11M10 18h11"/><g class="m-pulse"><path d="M3 6l1.5 1.5L7 5M3 12l1.5 1.5L7 11M3 18l1.5 1.5L7 17"/></g>', 4),
     "p-gym": ('<g class="m-lift"><path d="M6 7v10M18 7v10M3 9v6M21 9v6M6 12h12"/></g>', 5),
-    "p-cinema": ('<rect x="2" y="9" width="20" height="12" rx="2"/><g class="m-clap"><path d="M2 9 20.5 4.5l.8 3.2L2.8 12.2z"/><path d="M7 7.8l2 3M12 6.6l2 3M17 5.4l2 3"/></g>', 6),
 }
 
 ICON_CSS = """
@@ -877,12 +739,14 @@ LINKEDIN = ("M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0
             "c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063"
             " 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0"
             " .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z")
+X_MARK = ("M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z")
 NAV = {
     "portfolio": ('<circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><g class="m-spin"><ellipse cx="12" cy="12" rx="4" ry="10"/></g>', 0),
     "linkedin": (f'<g class="m-pulse"><path d="{LINKEDIN}" fill="{CYAN}" stroke="none"/></g>', 1),
     "projects": (ICONS["projects"][0], 2),
     "certifications": (ICONS["certificates"][0], 3),
     "jservo": (ICONS["work"][0], 4),
+    "x": (f'<g class="m-pulse"><path d="{X_MARK}" fill="{CYAN}" stroke="none"/></g>', 6),
     "contact": ('<rect x="2" y="5" width="20" height="15" rx="2"/><g class="m-flap"><path d="M2.5 6.5 12 13l9.5-6.5"/></g>', 5),
 }
 
@@ -892,7 +756,6 @@ def main():
         write(os.path.join(ASSETS, f"banner-{mode}.svg"), banner(mode))
         write(os.path.join(ASSETS, f"about-{mode}.svg"), about(mode))
         write(os.path.join(ASSETS, f"stats-{mode}.svg"), stats(mode))
-        write(os.path.join(ASSETS, f"architecture-{mode}.svg"), architecture(mode))
         write(os.path.join(ASSETS, f"footer-{mode}.svg"), footer(mode))
     write(os.path.join(ASSETS, "divider.svg"), divider())
     for mode in THEMES:
@@ -908,8 +771,9 @@ def main():
     for name, (glyph, slot) in NAV.items():
         write(os.path.join(nav_out, f"{name}.svg"), icon(name, glyph, slot))
     for name, (glyph, slot) in ICONS.items():
-        write(os.path.join(ICON_OUT, f"{name}.svg"), icon(name, glyph, slot))
-    print("wrote", len(THEMES) * (5 + len(TRUST)) + 1 + len(ICONS), "SVGs")
+        if not name.startswith("p-"):
+            write(os.path.join(ICON_OUT, f"{name}.svg"), icon(name, glyph, slot))
+    print("artwork written to assets/")
 
 
 if __name__ == "__main__":
