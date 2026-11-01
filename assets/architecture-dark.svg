@@ -41,9 +41,9 @@
 <rect x="1.5" y="1.5" width="1277" height="617" rx="21.5" fill="none" stroke="#30363D"/>
 <rect class="edge" x="1.5" y="1.5" width="1277" height="617" rx="21.5" fill="none" stroke="url(#accd)" stroke-width="2" pathLength="100"/>
 <g class="inx">
-<text x="48" y="64" font-size="16" font-weight="600" letter-spacing="3.5" fill="#8B949E">CLEAN ARCHITECTURE  ·  REQUEST FLOW</text>
-<text x="48" y="106" font-size="36" font-weight="800" fill="#FFFFFF">How my APIs are <tspan fill="url(#acc)">layered</tspan></text>
-<text x="1232" y="64" font-size="16" font-weight="600" letter-spacing="2.5" text-anchor="end" fill="#36BCF7">ASP.NET CORE · .NET 10</text>
+<text x="48" y="64" font-size="16" font-weight="400" letter-spacing="3.5" fill="#8B949E">CLEAN ARCHITECTURE  ·  REQUEST FLOW</text>
+<text x="48" y="106" font-size="36" font-weight="500" fill="#FFFFFF">How my APIs are <tspan fill="url(#acc)">layered</tspan></text>
+<text x="1232" y="64" font-size="16" font-weight="400" letter-spacing="2.5" text-anchor="end" fill="#36BCF7">ASP.NET CORE · .NET 10</text>
 </g>
 <line x1="348.0" y1="232" x2="348.0" y2="256" stroke="#30363D" stroke-width="2"/>
 <line class="flow" x1="348.0" y1="232" x2="348.0" y2="256" stroke="#36BCF7" stroke-width="2"/>
@@ -60,7 +60,7 @@
 <rect class="ly" style="animation-delay:0.00s" x="48.5" y="140.5" width="599" height="91" rx="15.5" fill="none" stroke="#36BCF7" stroke-opacity=".4" stroke-width="1.6"/>
 <rect x="48" y="160" width="5" height="52" rx="2.5" fill="url(#accv)"/>
 <text class="mono" x="76" y="194" font-size="19" fill="#36BCF7">01</text>
-<text x="124" y="181" font-size="25" font-weight="800" fill="#FFFFFF">Clients</text>
+<text x="124" y="181" font-size="25" font-weight="500" fill="#FFFFFF">Clients</text>
 <text x="124" y="209" font-size="18" fill="#8B949E">Web · Mobile · Swagger · Postman</text>
 </g>
 <g class="in" style="animation-delay:0.22s">
@@ -68,7 +68,7 @@
 <rect class="ly" style="animation-delay:1.20s" x="48.5" y="256.5" width="599" height="91" rx="15.5" fill="none" stroke="#A78BFA" stroke-opacity=".4" stroke-width="1.6"/>
 <rect x="48" y="276" width="5" height="52" rx="2.5" fill="url(#accv)"/>
 <text class="mono" x="76" y="310" font-size="19" fill="#A78BFA">02</text>
-<text x="124" y="297" font-size="25" font-weight="800" fill="#FFFFFF">API layer</text>
+<text x="124" y="297" font-size="25" font-weight="500" fill="#FFFFFF">API layer</text>
 <text x="124" y="325" font-size="18" fill="#8B949E">Controllers · Middleware · JWT · Rate limiting</text>
 </g>
 <g class="in" style="animation-delay:0.34s">
@@ -76,7 +76,7 @@
 <rect class="ly" style="animation-delay:2.40s" x="48.5" y="372.5" width="599" height="91" rx="15.5" fill="none" stroke="#36BCF7" stroke-opacity=".4" stroke-width="1.6"/>
 <rect x="48" y="392" width="5" height="52" rx="2.5" fill="url(#accv)"/>
 <text class="mono" x="76" y="426" font-size="19" fill="#36BCF7">03</text>
-<text x="124" y="413" font-size="25" font-weight="800" fill="#FFFFFF">Application layer</text>
+<text x="124" y="413" font-size="25" font-weight="500" fill="#FFFFFF">Application layer</text>
 <text x="124" y="441" font-size="18" fill="#8B949E">CQRS · MediatR · DTOs · Validation</text>
 </g>
 <g class="in" style="animation-delay:0.46s">
@@ -84,38 +84,38 @@
 <rect class="ly" style="animation-delay:3.60s" x="48.5" y="488.5" width="599" height="91" rx="15.5" fill="none" stroke="#A78BFA" stroke-opacity=".4" stroke-width="1.6"/>
 <rect x="48" y="508" width="5" height="52" rx="2.5" fill="url(#accv)"/>
 <text class="mono" x="76" y="542" font-size="19" fill="#A78BFA">04</text>
-<text x="124" y="529" font-size="25" font-weight="800" fill="#FFFFFF">Domain layer</text>
+<text x="124" y="529" font-size="25" font-weight="500" fill="#FFFFFF">Domain layer</text>
 <text x="124" y="557" font-size="18" fill="#8B949E">Entities · Specifications · Business rules</text>
 </g>
 <g class="in" style="animation-delay:0.45s">
 <rect x="760" y="372" width="472" height="92" rx="16" fill="#161B22"/>
 <rect class="ly" style="animation-delay:2.40s" x="760.5" y="372.5" width="471" height="91" rx="15.5" fill="none" stroke="#36BCF7" stroke-opacity=".4" stroke-width="1.6"/>
 <text class="mono" x="784" y="426" font-size="19" fill="#36BCF7">05</text>
-<text x="830" y="413" font-size="25" font-weight="800" fill="#FFFFFF">Infrastructure</text>
+<text x="830" y="413" font-size="25" font-weight="500" fill="#FFFFFF">Infrastructure</text>
 <text x="830" y="441" font-size="18" fill="#8B949E">EF Core · Repositories · UoW</text>
 </g>
 <line class="flow" x1="760" y1="418.0" x2="658" y2="418.0" stroke="#A78BFA" stroke-width="2"/>
 <path d="M666 411.0 l-8 7 8 7" fill="none" stroke="#A78BFA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="708" y="406.0" font-size="11" font-weight="700" letter-spacing=".8" text-anchor="middle" fill="#8B949E">IMPLEMENTS</text>
+<text x="708" y="406.0" font-size="11" font-weight="500" letter-spacing=".8" text-anchor="middle" fill="#8B949E">IMPLEMENTS</text>
 <path class="flow" d="M648 302.0 H996.0 V362" fill="none" stroke="#36BCF7" stroke-width="2"/>
 <path d="M989.0 355 l7 8 7 -8" fill="none" stroke="#36BCF7" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="1010.0" y="290.0" font-size="14" font-weight="700" letter-spacing="1.5" fill="#8B949E">DI REGISTRATION</text>
+<text x="1010.0" y="290.0" font-size="14" font-weight="500" letter-spacing="1.5" fill="#8B949E">DI REGISTRATION</text>
 <line class="flow" x1="834.7" y1="464" x2="834.7" y2="488" stroke="#8B949E" stroke-opacity=".7" stroke-width="1.6"/>
 <g class="in" style="animation-delay:0.60s">
 <rect x="760.0" y="488" width="149.3" height="92" rx="14" fill="#1C2330" stroke="#30363D"/>
-<text x="834.7" y="528" font-size="15" font-weight="800" text-anchor="middle" fill="#FFFFFF">SQL Server</text>
+<text x="834.7" y="528" font-size="15" font-weight="500" text-anchor="middle" fill="#FFFFFF">SQL Server</text>
 <text x="834.7" y="554" font-size="14" text-anchor="middle" fill="#8B949E">Relational data</text>
 </g>
 <line class="flow" x1="996.0" y1="464" x2="996.0" y2="488" stroke="#8B949E" stroke-opacity=".7" stroke-width="1.6"/>
 <g class="in" style="animation-delay:0.70s">
 <rect x="921.3" y="488" width="149.3" height="92" rx="14" fill="#1C2330" stroke="#30363D"/>
-<text x="996.0" y="528" font-size="15" font-weight="800" text-anchor="middle" fill="#FFFFFF">Redis</text>
+<text x="996.0" y="528" font-size="15" font-weight="500" text-anchor="middle" fill="#FFFFFF">Redis</text>
 <text x="996.0" y="554" font-size="14" text-anchor="middle" fill="#8B949E">Cache · Baskets</text>
 </g>
 <line class="flow" x1="1157.3" y1="464" x2="1157.3" y2="488" stroke="#8B949E" stroke-opacity=".7" stroke-width="1.6"/>
 <g class="in" style="animation-delay:0.80s">
 <rect x="1082.7" y="488" width="149.3" height="92" rx="14" fill="#1C2330" stroke="#30363D"/>
-<text x="1157.3" y="528" font-size="15" font-weight="800" text-anchor="middle" fill="#FFFFFF">Azure</text>
+<text x="1157.3" y="528" font-size="15" font-weight="500" text-anchor="middle" fill="#FFFFFF">Azure</text>
 <text x="1157.3" y="554" font-size="14" text-anchor="middle" fill="#8B949E">Cloud hosting</text>
 </g>
 </svg>

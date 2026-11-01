@@ -18,7 +18,7 @@ ACC, ACC2 = "#36BCF7", "#A78BFA"
 BG1, BG2, CARD, LINE = "#0D1117", "#0B1B2B", "#161B22", "#30363D"
 FG, SUB, OK = "#E6EDF3", "#8B949E", "#4ADE80"
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from brand import FONT, FONT_FACE  # noqa: E402  (Syne, embedded)
+from brand import FONT, FONT_FACE, thin  # noqa: E402  (Syne, embedded, light weights)
 RM = "@media (prefers-reduced-motion: reduce){*{animation:none!important}}"
 
 QUERY = """
@@ -55,7 +55,7 @@ def fetch():
 def w(name, s):
     os.makedirs(OUT, exist_ok=True)
     with open(os.path.join(OUT, name), "w", encoding="utf-8", newline="\n") as f:
-        f.write(s)
+        f.write(thin(s))
 
 
 def odometer(uid, value, x, y, fs, fill, delay=0.0, anchor_end=False):

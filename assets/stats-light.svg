@@ -39,9 +39,9 @@
 <g class="in" style="animation-delay:0.00s">
 <rect x="1.0" y="1" width="303.0" height="198" rx="18" fill="#FFFFFF" stroke="#D0D7DE"/>
 <rect class="edge" style="animation-delay:0.00s" x="1.5" y="1.5" width="302.0" height="197" rx="17.5" fill="none" stroke="url(#accd)" stroke-width="2" pathLength="100"/>
-<g class="num" style="animation-delay:0.00s"><text x="30.0" y="88" font-size="64" font-weight="800" letter-spacing="-1" fill="url(#acc)">7</text></g>
-<text x="30.0" y="126" font-size="22" font-weight="700" fill="#1F2328">Shipped projects</text>
-<text x="30.0" y="154" font-size="14" font-weight="600" letter-spacing="2" fill="#57606A">API · MVC · WPF · REACT</text>
+<g class="num" style="animation-delay:0.00s"><text x="30.0" y="88" font-size="64" font-weight="500" letter-spacing="-1" fill="url(#acc)">7</text></g>
+<text x="30.0" y="126" font-size="22" font-weight="500" fill="#1F2328">Shipped projects</text>
+<text x="30.0" y="154" font-size="14" font-weight="400" letter-spacing="2" fill="#57606A">API · MVC · WPF · REACT</text>
 <rect x="30.0" y="172" width="245.0" height="5" rx="2.5" fill="#D0D7DE"/>
 <rect class="bar" style="animation-delay:0.00s" x="30.0" y="172" width="245.0" height="5" rx="2.5" fill="url(#acc)"/>
 <g clip-path="url(#c0)"><g transform="translate(0.0 0)"><rect class="sw" style="animation-delay:0.00s" x="0" y="0" width="120" height="200" fill="url(#sheen)"/></g></g>
@@ -49,9 +49,9 @@
 <g class="in" style="animation-delay:0.12s">
 <rect x="326.0" y="1" width="303.0" height="198" rx="18" fill="#FFFFFF" stroke="#D0D7DE"/>
 <rect class="edge" style="animation-delay:-2.20s" x="326.5" y="1.5" width="302.0" height="197" rx="17.5" fill="none" stroke="url(#accd)" stroke-width="2" pathLength="100"/>
-<g class="num" style="animation-delay:0.70s"><text x="355.0" y="88" font-size="64" font-weight="800" letter-spacing="-1" fill="url(#acc)">583</text></g>
-<text x="355.0" y="126" font-size="22" font-weight="700" fill="#1F2328">Automated tests</text>
-<text x="355.0" y="154" font-size="14" font-weight="600" letter-spacing="2" fill="#57606A">XUNIT · NSUBSTITUTE</text>
+<g class="num" style="animation-delay:0.70s"><text x="355.0" y="88" font-size="64" font-weight="500" letter-spacing="-1" fill="url(#acc)">583</text></g>
+<text x="355.0" y="126" font-size="22" font-weight="500" fill="#1F2328">Automated tests</text>
+<text x="355.0" y="154" font-size="14" font-weight="400" letter-spacing="2" fill="#57606A">XUNIT · NSUBSTITUTE</text>
 <rect x="355.0" y="172" width="245.0" height="5" rx="2.5" fill="#D0D7DE"/>
 <rect class="bar" style="animation-delay:0.70s" x="355.0" y="172" width="245.0" height="5" rx="2.5" fill="url(#acc)"/>
 <g clip-path="url(#c1)"><g transform="translate(325.0 0)"><rect class="sw" style="animation-delay:0.70s" x="0" y="0" width="120" height="200" fill="url(#sheen)"/></g></g>
@@ -59,9 +59,9 @@
 <g class="in" style="animation-delay:0.24s">
 <rect x="651.0" y="1" width="303.0" height="198" rx="18" fill="#FFFFFF" stroke="#D0D7DE"/>
 <rect class="edge" style="animation-delay:-4.40s" x="651.5" y="1.5" width="302.0" height="197" rx="17.5" fill="none" stroke="url(#accd)" stroke-width="2" pathLength="100"/>
-<g class="num" style="animation-delay:1.40s"><text x="680.0" y="88" font-size="64" font-weight="800" letter-spacing="-1" fill="url(#acc)">8</text></g>
-<text x="680.0" y="126" font-size="22" font-weight="700" fill="#1F2328">Certifications</text>
-<text x="680.0" y="154" font-size="14" font-weight="600" letter-spacing="2" fill="#57606A">ROUTE · ITI · HUAWEI</text>
+<g class="num" style="animation-delay:1.40s"><text x="680.0" y="88" font-size="64" font-weight="500" letter-spacing="-1" fill="url(#acc)">8</text></g>
+<text x="680.0" y="126" font-size="22" font-weight="500" fill="#1F2328">Certifications</text>
+<text x="680.0" y="154" font-size="14" font-weight="400" letter-spacing="2" fill="#57606A">ROUTE · ITI · HUAWEI</text>
 <rect x="680.0" y="172" width="245.0" height="5" rx="2.5" fill="#D0D7DE"/>
 <rect class="bar" style="animation-delay:1.40s" x="680.0" y="172" width="245.0" height="5" rx="2.5" fill="url(#acc)"/>
 <g clip-path="url(#c2)"><g transform="translate(650.0 0)"><rect class="sw" style="animation-delay:1.40s" x="0" y="0" width="120" height="200" fill="url(#sheen)"/></g></g>
@@ -69,9 +69,9 @@
 <g class="in" style="animation-delay:0.36s">
 <rect x="976.0" y="1" width="303.0" height="198" rx="18" fill="#FFFFFF" stroke="#D0D7DE"/>
 <rect class="edge" style="animation-delay:-6.60s" x="976.5" y="1.5" width="302.0" height="197" rx="17.5" fill="none" stroke="url(#accd)" stroke-width="2" pathLength="100"/>
-<g class="num" style="animation-delay:2.10s"><text x="1005.0" y="88" font-size="64" font-weight="800" letter-spacing="-1" fill="url(#acc)">96%</text></g>
-<text x="1005.0" y="126" font-size="22" font-weight="700" fill="#1F2328">HCIA-AI score</text>
-<text x="1005.0" y="154" font-size="14" font-weight="600" letter-spacing="2" fill="#57606A">HUAWEI · 2024</text>
+<g class="num" style="animation-delay:2.10s"><text x="1005.0" y="88" font-size="64" font-weight="500" letter-spacing="-1" fill="url(#acc)">96%</text></g>
+<text x="1005.0" y="126" font-size="22" font-weight="500" fill="#1F2328">HCIA-AI score</text>
+<text x="1005.0" y="154" font-size="14" font-weight="400" letter-spacing="2" fill="#57606A">HUAWEI · 2024</text>
 <rect x="1005.0" y="172" width="245.0" height="5" rx="2.5" fill="#D0D7DE"/>
 <rect class="bar" style="animation-delay:2.10s" x="1005.0" y="172" width="245.0" height="5" rx="2.5" fill="url(#acc)"/>
 <g clip-path="url(#c3)"><g transform="translate(975.0 0)"><rect class="sw" style="animation-delay:2.10s" x="0" y="0" width="120" height="200" fill="url(#sheen)"/></g></g>

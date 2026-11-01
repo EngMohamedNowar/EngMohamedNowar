@@ -17,6 +17,7 @@ Stdlib only: gen_stats.py imports this on a bare GitHub Actions runner.
 """
 import base64
 import os
+import re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
@@ -54,3 +55,14 @@ def grad(gid, t, x1="0", y1="0", x2="1", y2="0"):
     """Cyan-to-violet linear gradient definition for theme t."""
     return (f'<linearGradient id="{gid}" x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}">'
             f'<stop offset="0" stop-color="{t["c1"]}"/><stop offset="1" stop-color="{t["c2"]}"/></linearGradient>')
+
+
+# Light type scale: the artwork is drawn with semantic weights (800 display, 700 titles, 600 labels,
+# 500 taglines) and thin() maps them onto Syne's lighter end, so the whole profile reads thin.
+THIN = {"800": "500", "700": "500", "600": "400", "500": "400"}
+
+
+def thin(svg_text):
+    """Lighten every font-weight in an SVG string (attributes and inline CSS)."""
+    svg_text = re.sub(r'font-weight="(\d+)"', lambda m: f'font-weight="{THIN.get(m.group(1), m.group(1))}"', svg_text)
+    return re.sub(r'font-weight:(\d+)', lambda m: f'font-weight:{THIN.get(m.group(1), m.group(1))}', svg_text)

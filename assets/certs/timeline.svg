@@ -18,64 +18,64 @@
 </defs>
 <rect x="1" y="1" width="1198" height="288" rx="16" fill="url(#tlbg)" stroke="#30363D"/>
 <rect class="edge" x="1" y="1" width="1198" height="288" rx="16" fill="none" stroke="url(#tlg)" stroke-width="2" pathLength="100"/>
-<text x="28" y="38" font-size="16" font-weight="800" letter-spacing="2.4" fill="#8B949E">LEARNING JOURNEY · 8 CERTIFICATES · 2024 → 2026</text>
+<text x="28" y="38" font-size="16" font-weight="500" letter-spacing="2.4" fill="#8B949E">LEARNING JOURNEY · 8 CERTIFICATES · 2024 → 2026</text>
 <line x1="140" x2="1060" y1="166" y2="166" stroke="#30363D" stroke-width="4" stroke-linecap="round"/>
 <line class="flow" x1="140" x2="1060" y1="166" y2="166" stroke="url(#tlg)" stroke-width="2.5"/>
 <g class="ev" style="animation-delay:0.30s">
 <line x1="140.0" x2="140.0" y1="166" y2="144" stroke="#A78BFA" stroke-opacity=".5"/>
 <circle class="pulse" style="animation-delay:0.00s" cx="140.0" cy="166" r="9" fill="none" stroke="#A78BFA"/>
 <circle cx="140.0" cy="166" r="9" fill="#0D1117" stroke="#A78BFA" stroke-width="3"/><circle cx="140.0" cy="166" r="3.5" fill="#A78BFA"/>
-<text x="140.0" y="86" text-anchor="middle" font-size="14" font-weight="800" letter-spacing="1.2" fill="#A78BFA">JUL 2024</text>
-<text x="140.0" y="108" text-anchor="middle" font-size="17" font-weight="800" fill="#E6EDF3">Full Stack Python</text>
+<text x="140.0" y="86" text-anchor="middle" font-size="14" font-weight="500" letter-spacing="1.2" fill="#A78BFA">JUL 2024</text>
+<text x="140.0" y="108" text-anchor="middle" font-size="17" font-weight="500" fill="#E6EDF3">Full Stack Python</text>
 <text x="140.0" y="128" text-anchor="middle" font-size="16" fill="#8B949E">ITI</text>
 </g><g class="ev" style="animation-delay:0.48s">
 <line x1="271.4" x2="271.4" y1="166" y2="188" stroke="#F59E0B" stroke-opacity=".5"/>
 <circle class="pulse" style="animation-delay:0.45s" cx="271.4" cy="166" r="9" fill="none" stroke="#F59E0B"/>
 <circle cx="271.4" cy="166" r="9" fill="#0D1117" stroke="#F59E0B" stroke-width="3"/><circle cx="271.4" cy="166" r="3.5" fill="#F59E0B"/>
-<text x="271.4" y="220" text-anchor="middle" font-size="14" font-weight="800" letter-spacing="1.2" fill="#F59E0B">OCT 2024</text>
-<text x="271.4" y="242" text-anchor="middle" font-size="17" font-weight="800" fill="#E6EDF3">AI Talent Track</text>
+<text x="271.4" y="220" text-anchor="middle" font-size="14" font-weight="500" letter-spacing="1.2" fill="#F59E0B">OCT 2024</text>
+<text x="271.4" y="242" text-anchor="middle" font-size="17" font-weight="500" fill="#E6EDF3">AI Talent Track</text>
 <text x="271.4" y="262" text-anchor="middle" font-size="16" fill="#8B949E">NTI × Huawei</text>
 </g><g class="ev" style="animation-delay:0.66s">
 <line x1="402.9" x2="402.9" y1="166" y2="144" stroke="#F43F5E" stroke-opacity=".5"/>
 <circle class="pulse" style="animation-delay:0.90s" cx="402.9" cy="166" r="9" fill="none" stroke="#F43F5E"/>
 <circle cx="402.9" cy="166" r="9" fill="#0D1117" stroke="#F43F5E" stroke-width="3"/><circle cx="402.9" cy="166" r="3.5" fill="#F43F5E"/>
-<text x="402.9" y="86" text-anchor="middle" font-size="14" font-weight="800" letter-spacing="1.2" fill="#F43F5E">2024</text>
-<text x="402.9" y="108" text-anchor="middle" font-size="17" font-weight="800" fill="#E6EDF3">HCIA-AI V3.5</text>
+<text x="402.9" y="86" text-anchor="middle" font-size="14" font-weight="500" letter-spacing="1.2" fill="#F43F5E">2024</text>
+<text x="402.9" y="108" text-anchor="middle" font-size="17" font-weight="500" fill="#E6EDF3">HCIA-AI V3.5</text>
 <text x="402.9" y="128" text-anchor="middle" font-size="16" fill="#8B949E">Huawei</text>
 </g><g class="ev" style="animation-delay:0.84s">
 <line x1="534.3" x2="534.3" y1="166" y2="188" stroke="#60A5FA" stroke-opacity=".5"/>
 <circle class="pulse" style="animation-delay:1.35s" cx="534.3" cy="166" r="9" fill="none" stroke="#60A5FA"/>
 <circle cx="534.3" cy="166" r="9" fill="#0D1117" stroke="#60A5FA" stroke-width="3"/><circle cx="534.3" cy="166" r="3.5" fill="#60A5FA"/>
-<text x="534.3" y="220" text-anchor="middle" font-size="14" font-weight="800" letter-spacing="1.2" fill="#60A5FA">OCT 2024</text>
-<text x="534.3" y="242" text-anchor="middle" font-size="17" font-weight="800" fill="#E6EDF3">Database</text>
+<text x="534.3" y="220" text-anchor="middle" font-size="14" font-weight="500" letter-spacing="1.2" fill="#60A5FA">OCT 2024</text>
+<text x="534.3" y="242" text-anchor="middle" font-size="17" font-weight="500" fill="#E6EDF3">Database</text>
 <text x="534.3" y="262" text-anchor="middle" font-size="16" fill="#8B949E">Mahara-Tech</text>
 </g><g class="ev" style="animation-delay:1.02s">
 <line x1="665.7" x2="665.7" y1="166" y2="144" stroke="#FBBF24" stroke-opacity=".5"/>
 <circle class="pulse" style="animation-delay:1.80s" cx="665.7" cy="166" r="9" fill="none" stroke="#FBBF24"/>
 <circle cx="665.7" cy="166" r="9" fill="#0D1117" stroke="#FBBF24" stroke-width="3"/><circle cx="665.7" cy="166" r="3.5" fill="#FBBF24"/>
-<text x="665.7" y="86" text-anchor="middle" font-size="14" font-weight="800" letter-spacing="1.2" fill="#FBBF24">2025</text>
-<text x="665.7" y="108" text-anchor="middle" font-size="17" font-weight="800" fill="#E6EDF3">B.Sc. Degree</text>
+<text x="665.7" y="86" text-anchor="middle" font-size="14" font-weight="500" letter-spacing="1.2" fill="#FBBF24">2025</text>
+<text x="665.7" y="108" text-anchor="middle" font-size="17" font-weight="500" fill="#E6EDF3">B.Sc. Degree</text>
 <text x="665.7" y="128" text-anchor="middle" font-size="16" fill="#8B949E">EELU</text>
 </g><g class="ev" style="animation-delay:1.20s">
 <line x1="797.1" x2="797.1" y1="166" y2="188" stroke="#4ADE80" stroke-opacity=".5"/>
 <circle class="pulse" style="animation-delay:2.25s" cx="797.1" cy="166" r="9" fill="none" stroke="#4ADE80"/>
 <circle cx="797.1" cy="166" r="9" fill="#0D1117" stroke="#4ADE80" stroke-width="3"/><circle cx="797.1" cy="166" r="3.5" fill="#4ADE80"/>
-<text x="797.1" y="220" text-anchor="middle" font-size="14" font-weight="800" letter-spacing="1.2" fill="#4ADE80">OCT 2025</text>
-<text x="797.1" y="242" text-anchor="middle" font-size="17" font-weight="800" fill="#E6EDF3">OOP in C++</text>
+<text x="797.1" y="220" text-anchor="middle" font-size="14" font-weight="500" letter-spacing="1.2" fill="#4ADE80">OCT 2025</text>
+<text x="797.1" y="242" text-anchor="middle" font-size="17" font-weight="500" fill="#E6EDF3">OOP in C++</text>
 <text x="797.1" y="262" text-anchor="middle" font-size="16" fill="#8B949E">Mahara-Tech</text>
 </g><g class="ev" style="animation-delay:1.38s">
 <line x1="928.6" x2="928.6" y1="166" y2="144" stroke="#2DD4BF" stroke-opacity=".5"/>
 <circle class="pulse" style="animation-delay:2.70s" cx="928.6" cy="166" r="9" fill="none" stroke="#2DD4BF"/>
 <circle cx="928.6" cy="166" r="9" fill="#0D1117" stroke="#2DD4BF" stroke-width="3"/><circle cx="928.6" cy="166" r="3.5" fill="#2DD4BF"/>
-<text x="928.6" y="86" text-anchor="middle" font-size="14" font-weight="800" letter-spacing="1.2" fill="#2DD4BF">OCT 2025</text>
-<text x="928.6" y="108" text-anchor="middle" font-size="17" font-weight="800" fill="#E6EDF3">Clean Code</text>
+<text x="928.6" y="86" text-anchor="middle" font-size="14" font-weight="500" letter-spacing="1.2" fill="#2DD4BF">OCT 2025</text>
+<text x="928.6" y="108" text-anchor="middle" font-size="17" font-weight="500" fill="#E6EDF3">Clean Code</text>
 <text x="928.6" y="128" text-anchor="middle" font-size="16" fill="#8B949E">Mahara-Tech</text>
 </g><g class="ev" style="animation-delay:1.56s">
 <line x1="1060.0" x2="1060.0" y1="166" y2="188" stroke="#36BCF7" stroke-opacity=".5"/>
 <circle class="pulse" style="animation-delay:3.15s" cx="1060.0" cy="166" r="9" fill="none" stroke="#36BCF7"/>
 <circle cx="1060.0" cy="166" r="9" fill="#0D1117" stroke="#36BCF7" stroke-width="3"/><circle cx="1060.0" cy="166" r="3.5" fill="#36BCF7"/>
-<text x="1060.0" y="220" text-anchor="middle" font-size="14" font-weight="800" letter-spacing="1.2" fill="#36BCF7">JUL 2026</text>
-<text x="1060.0" y="242" text-anchor="middle" font-size="17" font-weight="800" fill="#E6EDF3">ASP.NET Core</text>
+<text x="1060.0" y="220" text-anchor="middle" font-size="14" font-weight="500" letter-spacing="1.2" fill="#36BCF7">JUL 2026</text>
+<text x="1060.0" y="242" text-anchor="middle" font-size="17" font-weight="500" fill="#E6EDF3">ASP.NET Core</text>
 <text x="1060.0" y="262" text-anchor="middle" font-size="16" fill="#8B949E">Route</text>
 </g>
 <circle r="6" fill="#FFFFFF"><animateMotion dur="8s" repeatCount="indefinite" path="M140 166 H1060"/></circle>

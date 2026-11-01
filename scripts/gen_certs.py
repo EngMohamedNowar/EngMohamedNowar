@@ -7,7 +7,7 @@ import base64, html, io, os, sys
 from PIL import Image, ImageFilter
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from brand import FONT, FONT_FACE  # noqa: E402  (Syne, embedded)
+from brand import FONT, FONT_FACE, thin  # noqa: E402  (Syne, embedded, light weights)
 
 OUT = "assets/certs"
 os.makedirs(OUT, exist_ok=True)
@@ -183,8 +183,8 @@ def timeline():
 
 for i, c in enumerate(CERTS):
     with open(os.path.join(OUT, f"{c[0]}.svg"), "w", encoding="utf-8", newline="\n") as f:
-        f.write(card(i, *c))
+        f.write(thin(card(i, *c)))
 with open(os.path.join(OUT, "timeline.svg"), "w", encoding="utf-8", newline="\n") as f:
-    f.write(timeline())
+    f.write(thin(timeline()))
 for n in sorted(os.listdir(OUT)):
     print(n, os.path.getsize(os.path.join(OUT, n)) // 1024, "KB")

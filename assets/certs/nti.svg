@@ -40,27 +40,27 @@
 <g transform="translate(28 28)">
   <rect width="153" height="32" rx="16" fill="#0D1117" fill-opacity=".82" stroke="#F59E0B" stroke-opacity=".6"/>
   <circle cx="16" cy="16" r="5" fill="#F59E0B"/><circle class="dot" cx="16" cy="16" r="5" fill="#F59E0B"/>
-  <text x="29" y="21.5" font-size="15" font-weight="600" fill="#E6EDF3">NTI × Huawei</text>
+  <text x="29" y="21.5" font-size="15" font-weight="400" fill="#E6EDF3">NTI × Huawei</text>
 </g>
 <g transform="translate(412 28)">
   <rect width="160" height="32" rx="16" fill="#F59E0B"/>
-  <text x="80" y="21.5" text-anchor="middle" font-size="15" font-weight="800" fill="#0D1117">Bootcamp</text>
+  <text x="80" y="21.5" text-anchor="middle" font-size="15" font-weight="500" fill="#0D1117">Bootcamp</text>
 </g>
 <g transform="translate(542 274)">
   <circle r="30" fill="#0D1117" fill-opacity=".85" stroke="#F59E0B" stroke-opacity=".35" stroke-width="4"/>
   <circle class="ring" r="30" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" stroke-dasharray="181 188" transform="rotate(-90)"/>
-  <text y="3" text-anchor="middle" font-size="17" font-weight="800" fill="#E6EDF3">96%</text>
-  <text y="17" text-anchor="middle" font-size="10" font-weight="700" letter-spacing="1" fill="#8B949E">SCORE</text>
+  <text y="3" text-anchor="middle" font-size="17" font-weight="500" fill="#E6EDF3">96%</text>
+  <text y="17" text-anchor="middle" font-size="10" font-weight="500" letter-spacing="1" fill="#8B949E">SCORE</text>
 </g>
 <rect x="24" y="333" width="5" height="28" rx="2.5" fill="#F59E0B"/>
-<text x="40" y="357" font-size="23" font-weight="800" fill="#E6EDF3">AI Talent Academy Track</text>
+<text x="40" y="357" font-size="23" font-weight="500" fill="#E6EDF3">AI Talent Academy Track</text>
 <text x="40" y="390" font-size="18" fill="#8B949E">80 hours · Sep – Oct 2024</text>
 <line x1="24" x2="576" y1="410" y2="410" stroke="#30363D"/>
 <g transform="translate(24 423)">
   <rect width="136" height="32" rx="16" fill="#4ADE80" fill-opacity=".12" stroke="#4ADE80" stroke-opacity=".5"/>
   <path class="chk" d="M14 16.5l4.5 4.5 9-9.5" fill="none" stroke="#4ADE80" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="38" y="21.5" font-size="15" font-weight="800" fill="#4ADE80">Verified</text>
+  <text x="38" y="21.5" font-size="15" font-weight="500" fill="#4ADE80">Verified</text>
 </g>
-<g transform="translate(576 444)"><text text-anchor="end" font-size="17" font-weight="700" fill="#F59E0B">View certificate <tspan class="arr">→</tspan></text></g>
+<g transform="translate(576 444)"><text text-anchor="end" font-size="17" font-weight="500" fill="#F59E0B">View certificate <tspan class="arr">→</tspan></text></g>
 </g>
 </svg>

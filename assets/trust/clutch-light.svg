@@ -40,9 +40,9 @@
 <rect class="edge" style="animation-delay:-1.30s" x="1.5" y="1.5" width="377" height="93" rx="17.5" fill="none" stroke="url(#accd)" stroke-width="2" pathLength="100"/>
 <rect x="20" y="20" width="56" height="56" rx="15" fill="#0A85C2" fill-opacity=".12"/>
 <rect class="tile" x="20.5" y="20.5" width="55" height="55" rx="14.5" fill="none" stroke="url(#accd)" stroke-width="1.6"/>
-<g class="mk"><text x="48" y="57.7" font-size="27" font-weight="800" text-anchor="middle" fill="#0A85C2">C</text></g>
-<text x="94" y="42" font-size="14" font-weight="600" letter-spacing="2.4" fill="#57606A">REVIEWS ON</text>
-<text x="93" y="72" font-size="24" font-weight="800" fill="#1F2328">Clutch</text>
+<g class="mk"><text x="48" y="57.7" font-size="27" font-weight="500" text-anchor="middle" fill="#0A85C2">C</text></g>
+<text x="94" y="42" font-size="14" font-weight="400" letter-spacing="2.4" fill="#57606A">REVIEWS ON</text>
+<text x="93" y="72" font-size="24" font-weight="500" fill="#1F2328">Clutch</text>
 <g class="ar"><path d="M348 30 l10 -10 M350 20 h8 v8" fill="none" stroke="#0A85C2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></g>
 <g clip-path="url(#c)"><rect class="sw" x="0" y="0" width="140" height="96" fill="url(#sheen)"/></g>
 </svg>

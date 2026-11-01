@@ -48,27 +48,27 @@
 <rect class="edge" x="1.5" y="1.5" width="1277" height="447" rx="21.5" fill="none" stroke="url(#accd)" stroke-width="2" pathLength="100"/>
 <g class="inx">
 <g transform="translate(64 44)"><g class="spark"><path d="M12 2l2.2 6.8L21 11l-6.8 2.2L12 20l-2.2-6.8L3 11l6.8-2.2z" transform="scale(1.5)" fill="#E08A6C"/></g></g>
-<text x="112" y="72" font-size="17" font-weight="600" letter-spacing="4" fill="#36BCF7">AI-ASSISTED ENGINEERING</text>
-<text x="60" y="146" font-size="52" font-weight="800" letter-spacing="-.5" fill="#FFFFFF">Shipping with</text>
-<text x="60" y="206" font-size="52" font-weight="800" letter-spacing="-.5" fill="#E08A6C">Claude Code</text>
-<text x="64" y="250" font-size="22" font-weight="500" fill="#E6EDF3">An AI pair programmer in my terminal</text>
+<text x="112" y="72" font-size="17" font-weight="400" letter-spacing="4" fill="#36BCF7">AI-ASSISTED ENGINEERING</text>
+<text x="60" y="146" font-size="52" font-weight="500" letter-spacing="-.5" fill="#FFFFFF">Shipping with</text>
+<text x="60" y="206" font-size="52" font-weight="500" letter-spacing="-.5" fill="#E08A6C">Claude Code</text>
+<text x="64" y="250" font-size="22" font-weight="400" fill="#E6EDF3">An AI pair programmer in my terminal</text>
 <text x="64" y="282" font-size="18" fill="#8B949E">for C# and ASP.NET Core code and tests</text>
 </g>
-<g class="step" style="animation-delay:0.00s"><rect x="64" y="320" width="102" height="44" rx="22" fill="#36BCF7" fill-opacity=".12" stroke="#36BCF7" stroke-opacity=".6"/><text class="mono" x="82" y="348" font-size="15" fill="#36BCF7">01</text><text x="110" y="349" font-size="18" font-weight="700" fill="#FFFFFF">Plan</text></g>
+<g class="step" style="animation-delay:0.00s"><rect x="64" y="320" width="102" height="44" rx="22" fill="#36BCF7" fill-opacity=".12" stroke="#36BCF7" stroke-opacity=".6"/><text class="mono" x="82" y="348" font-size="15" fill="#36BCF7">01</text><text x="110" y="349" font-size="18" font-weight="500" fill="#FFFFFF">Plan</text></g>
 <path d="M172 342 h12" stroke="#8B949E" stroke-width="2" stroke-linecap="round"/>
-<g class="step" style="animation-delay:0.50s"><rect x="190" y="320" width="142" height="44" rx="22" fill="#A78BFA" fill-opacity=".12" stroke="#A78BFA" stroke-opacity=".6"/><text class="mono" x="208" y="348" font-size="15" fill="#A78BFA">02</text><text x="236" y="349" font-size="18" font-weight="700" fill="#FFFFFF">Refactor</text></g>
+<g class="step" style="animation-delay:0.50s"><rect x="190" y="320" width="142" height="44" rx="22" fill="#A78BFA" fill-opacity=".12" stroke="#A78BFA" stroke-opacity=".6"/><text class="mono" x="208" y="348" font-size="15" fill="#A78BFA">02</text><text x="236" y="349" font-size="18" font-weight="500" fill="#FFFFFF">Refactor</text></g>
 <path d="M338 342 h12" stroke="#8B949E" stroke-width="2" stroke-linecap="round"/>
-<g class="step" style="animation-delay:1.00s"><rect x="356" y="320" width="102" height="44" rx="22" fill="#36BCF7" fill-opacity=".12" stroke="#36BCF7" stroke-opacity=".6"/><text class="mono" x="374" y="348" font-size="15" fill="#36BCF7">03</text><text x="402" y="349" font-size="18" font-weight="700" fill="#FFFFFF">Test</text></g>
+<g class="step" style="animation-delay:1.00s"><rect x="356" y="320" width="102" height="44" rx="22" fill="#36BCF7" fill-opacity=".12" stroke="#36BCF7" stroke-opacity=".6"/><text class="mono" x="374" y="348" font-size="15" fill="#36BCF7">03</text><text x="402" y="349" font-size="18" font-weight="500" fill="#FFFFFF">Test</text></g>
 <path d="M464 342 h12" stroke="#8B949E" stroke-width="2" stroke-linecap="round"/>
-<g class="step" style="animation-delay:1.50s"><rect x="482" y="320" width="122" height="44" rx="22" fill="#A78BFA" fill-opacity=".12" stroke="#A78BFA" stroke-opacity=".6"/><text class="mono" x="500" y="348" font-size="15" fill="#A78BFA">04</text><text x="528" y="349" font-size="18" font-weight="700" fill="#FFFFFF">Review</text></g>
-<text x="64" y="404" font-size="15" font-weight="600" letter-spacing="1.5" fill="#8B949E">CLAUDE PROPOSES THE DIFF · I REVIEW, TEST AND OWN IT</text>
+<g class="step" style="animation-delay:1.50s"><rect x="482" y="320" width="122" height="44" rx="22" fill="#A78BFA" fill-opacity=".12" stroke="#A78BFA" stroke-opacity=".6"/><text class="mono" x="500" y="348" font-size="15" fill="#A78BFA">04</text><text x="528" y="349" font-size="18" font-weight="500" fill="#FFFFFF">Review</text></g>
+<text x="64" y="404" font-size="15" font-weight="400" letter-spacing="1.5" fill="#8B949E">CLAUDE PROPOSES THE DIFF · I REVIEW, TEST AND OWN IT</text>
 <g class="in" style="animation-delay:0.20s">
 <rect x="650" y="40" width="590" height="370" rx="16" fill="#161B22" stroke="#30363D"/>
 <rect x="650" y="40" width="590" height="44" rx="16" fill="#1C2330"/><rect x="650" y="68" width="590" height="16" fill="#1C2330"/>
 <line x1="650" y1="84" x2="1240" y2="84" stroke="#30363D"/>
 <circle cx="674" cy="62" r="6.5" fill="#FF5F57"/><circle cx="696" cy="62" r="6.5" fill="#FEBC2E"/><circle cx="718" cy="62" r="6.5" fill="#28C840"/>
-<text x="945" y="68" font-size="14" font-weight="600" letter-spacing="1" text-anchor="middle" fill="#8B949E">claude — ~/src/CoffeeStore</text>
-<text x="1222" y="68" font-size="11" font-weight="700" letter-spacing="1.5" text-anchor="end" fill="#8B949E">ILLUSTRATIVE</text>
+<text x="945" y="68" font-size="14" font-weight="400" letter-spacing="1" text-anchor="middle" fill="#8B949E">claude — ~/src/CoffeeStore</text>
+<text x="1222" y="68" font-size="11" font-weight="500" letter-spacing="1.5" text-anchor="end" fill="#8B949E">ILLUSTRATIVE</text>
 <text class="mono" x="674" y="118" font-size="17" xml:space="preserve"><tspan fill="#E08A6C">✻ </tspan><tspan fill="#FFFFFF">Claude Code</tspan></text>
 <text class="mono" x="674" y="148" font-size="17" xml:space="preserve"><tspan fill="#E08A6C">&gt; </tspan><tspan fill="#E6EDF3">move order logic into CQRS handlers</tspan></text>
 <text class="mono" x="674" y="178" font-size="17" xml:space="preserve"><tspan fill="#E6EDF3">  </tspan><tspan fill="#E6EDF3">and cover it with xUnit tests</tspan></text>

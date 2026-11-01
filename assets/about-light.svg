@@ -46,8 +46,8 @@
 <rect x="1" y="40" width="1278" height="21" fill="#FFFFFF" fill-opacity=".9"/>
 <line x1="1" y1="61" x2="1279" y2="61" stroke="#D0D7DE"/>
 <circle cx="32" cy="31" r="7.5" fill="#FF5F57"/><circle cx="57" cy="31" r="7.5" fill="#FEBC2E"/><circle cx="82" cy="31" r="7.5" fill="#28C840"/>
-<text x="640" y="37" font-size="17" font-weight="600" letter-spacing="1" text-anchor="middle" fill="#57606A">Engineer.cs  —  dotnet run</text>
-<text x="1250" y="37" font-size="15" font-weight="700" letter-spacing="2.5" text-anchor="end" fill="#0A85C2">C# · .NET</text>
+<text x="640" y="37" font-size="17" font-weight="400" letter-spacing="1" text-anchor="middle" fill="#57606A">Engineer.cs  —  dotnet run</text>
+<text x="1250" y="37" font-size="15" font-weight="500" letter-spacing="2.5" text-anchor="end" fill="#0A85C2">C# · .NET</text>
 <rect class="hl" x="2" y="84" width="770" height="31" fill="#0A85C2" fill-opacity=".07"/>
 <g class="in">
 <text class="mono" x="52" y="106" font-size="16" text-anchor="end" fill="#57606A" fill-opacity=".6">1</text>
@@ -81,28 +81,28 @@
 <rect class="caret" x="558" y="491" width="11" height="23" fill="#0A85C2"/>
 <line x1="784" y1="84" x2="784" y2="540" stroke="#D0D7DE"/>
 <g class="in" style="animation-delay:0.20s">
-<text x="820" y="106" font-size="15" font-weight="600" letter-spacing="3.5" fill="#57606A">RIGHT NOW</text>
+<text x="820" y="106" font-size="15" font-weight="400" letter-spacing="3.5" fill="#57606A">RIGHT NOW</text>
 <line x1="829" y1="146" x2="829" y2="422" stroke="#D0D7DE" stroke-width="2"/>
 <line class="flow" x1="829" y1="146" x2="829" y2="422" stroke="url(#accv)" stroke-width="2"/>
 <circle cx="829" cy="146" r="8" fill="#FFFFFF" stroke="#0A85C2" stroke-width="3"/>
 <circle class="node" style="animation-delay:0.00s" cx="829" cy="146" r="3.5" fill="#0A85C2"/>
-<text x="854" y="152" font-size="14" font-weight="700" letter-spacing="2.6" fill="#0A85C2">NOW</text>
-<text x="854" y="180" font-size="22" font-weight="800" fill="#1F2328">Software Engineer</text>
+<text x="854" y="152" font-size="14" font-weight="500" letter-spacing="2.6" fill="#0A85C2">NOW</text>
+<text x="854" y="180" font-size="22" font-weight="500" fill="#1F2328">Software Engineer</text>
 <text x="854" y="204" font-size="18" fill="#57606A">J. Servo LLC · since Jun 2026</text>
 <circle cx="829" cy="238" r="8" fill="#FFFFFF" stroke="#7C3AED" stroke-width="3"/>
 <circle class="node" style="animation-delay:1.50s" cx="829" cy="238" r="3.5" fill="#7C3AED"/>
-<text x="854" y="244" font-size="14" font-weight="700" letter-spacing="2.6" fill="#7C3AED">LEARNING</text>
-<text x="854" y="272" font-size="22" font-weight="800" fill="#1F2328">Elevate Bootcamp</text>
+<text x="854" y="244" font-size="14" font-weight="500" letter-spacing="2.6" fill="#7C3AED">LEARNING</text>
+<text x="854" y="272" font-size="22" font-weight="500" fill="#1F2328">Elevate Bootcamp</text>
 <text x="854" y="296" font-size="18" fill="#57606A">Backend Advanced · .NET track</text>
 <circle cx="829" cy="330" r="8" fill="#FFFFFF" stroke="#0A85C2" stroke-width="3"/>
 <circle class="node" style="animation-delay:3.00s" cx="829" cy="330" r="3.5" fill="#0A85C2"/>
-<text x="854" y="336" font-size="14" font-weight="700" letter-spacing="2.6" fill="#0A85C2">BUILDING</text>
-<text x="854" y="364" font-size="22" font-weight="800" fill="#1F2328">Accounting Platform</text>
+<text x="854" y="336" font-size="14" font-weight="500" letter-spacing="2.6" fill="#0A85C2">BUILDING</text>
+<text x="854" y="364" font-size="22" font-weight="500" fill="#1F2328">Accounting Platform</text>
 <text x="854" y="388" font-size="18" fill="#57606A">ASP.NET Core · React · EF Core</text>
 <circle cx="829" cy="422" r="8" fill="#FFFFFF" stroke="#7C3AED" stroke-width="3"/>
 <circle class="node" style="animation-delay:4.50s" cx="829" cy="422" r="3.5" fill="#7C3AED"/>
-<text x="854" y="428" font-size="14" font-weight="700" letter-spacing="2.6" fill="#7C3AED">EXPLORING</text>
-<text x="854" y="456" font-size="22" font-weight="800" fill="#1F2328">Microservices</text>
+<text x="854" y="428" font-size="14" font-weight="500" letter-spacing="2.6" fill="#7C3AED">EXPLORING</text>
+<text x="854" y="456" font-size="22" font-weight="500" fill="#1F2328">Microservices</text>
 <text x="854" y="480" font-size="18" fill="#57606A">RabbitMQ · Azure Service Bus</text>
 </g>
 </svg>

@@ -30,8 +30,8 @@
 
 </defs>
 <g class="in">
-<text x="640" y="40" font-size="17" font-weight="800" letter-spacing="8" text-anchor="middle" fill="url(#acc)">MOHAMED NOWAR</text>
-<text x="640" y="88" font-size="29" font-weight="600" text-anchor="middle" fill="#1F2328">Building backend systems as <tspan font-weight="800" fill="url(#acc)">clean</tspan> as the code behind them.</text>
+<text x="640" y="40" font-size="17" font-weight="500" letter-spacing="8" text-anchor="middle" fill="url(#acc)">MOHAMED NOWAR</text>
+<text x="640" y="88" font-size="29" font-weight="400" text-anchor="middle" fill="#1F2328">Building backend systems as <tspan font-weight="500" fill="url(#acc)">clean</tspan> as the code behind them.</text>
 </g>
 <g class="w3" opacity=".22"><path fill="url(#acc)" d="M0 146 Q160 112 320 146 T640 146 Q800 112 960 146 T1280 146 Q1440 112 1600 146 T1920 146 Q2080 112 2240 146 T2560 146 V210 H0Z"/></g>
 <g class="w2" opacity=".42"><path fill="url(#acc)" d="M0 166 Q160 140 320 166 T640 166 Q800 140 960 166 T1280 166 Q1440 140 1600 166 T1920 166 Q2080 140 2240 166 T2560 166 V210 H0Z"/></g>
