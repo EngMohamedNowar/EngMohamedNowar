@@ -2,7 +2,7 @@
 
 Run after build_profile.py:   python scripts/build_mobile.py
 Writes assets/m/<name>-{dark,light}.svg. README.md serves them through <picture> sources with
-media="(max-width: 700px) ...", so phones get stacked layouts with readable type while desktops
+media="(max-width: 1199px) ...", so phones get stacked layouts with readable type while desktops
 keep the wide versions. A 480 canvas shows ~350px wide on a phone (scale ~0.73), so body text is
 set at 17-20 and labels at 14-15.
 """

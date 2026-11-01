@@ -469,7 +469,7 @@ def trust(mode, i, eyebrow, name, mark, note=None):
           f'<g clip-path="url(#c)"><rect class="sw" x="0" y="0" width="140" height="{H}" fill="url(#sheen)"/></g>']
     if note:
         b.append(f'<text x="{W - 56}" y="64" font-size="20" text-anchor="end" fill="{t["muted"]}">{e(note)}</text>')
-    return svg(W, H, "\n".join(b), css, t, title=f"J. SERVO on {name}", disp=(820 if note else 270))
+    return svg(W, H, "\n".join(b), css, t, title=f"J. SERVO on {name}", disp=(740 if note else 240))
 
 
 # --------------------------------------------------------------------------- animated icons (theme neutral)
@@ -796,7 +796,7 @@ def project(mode, i, slug, icon_name, title, desc, chips):
         x += w + 10
     b.append(f'<g clip-path="url(#c)"><g transform="skewX(-18)"><rect class="sw" x="0" y="0" width="140" height="{H}" fill="url(#sheen)"/></g></g>')
     defs = f'<linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{t["card"]}"/><stop offset="1" stop-color="{t["bg2"]}"/></linearGradient>'
-    return svg(W, H, "\n".join(b), css, t, defs, title=f"{title}: {desc}", disp=410)
+    return svg(W, H, "\n".join(b), css, t, defs, title=f"{title}: {desc}", disp=365)
 
 
 # --------------------------------------------------------------------------- AI-assisted engineering (Claude Code)
