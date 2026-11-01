@@ -242,11 +242,11 @@ His shipped work covers the full backend surface: a **.NET 10 coffee-commerce AP
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/metrics/stats-overview.svg" width="100%" alt="GitHub stats: contributions, commits, pull requests, repositories, active days, best day">
+<img src="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/metrics/stats-overview.svg?v=5" width="100%" alt="GitHub stats: contributions, commits, pull requests, repositories, active days, best day">
 
-<img src="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/metrics/stats-activity.svg" width="100%" alt="Daily contribution activity, last 90 days">
+<img src="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/metrics/stats-activity.svg?v=5" width="100%" alt="Daily contribution activity, last 90 days">
 
-<img src="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/metrics/stats-languages.svg" width="100%" alt="Most used languages by code size">
+<img src="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/metrics/stats-languages.svg?v=5" width="100%" alt="Most used languages by code size">
 
 <img src="https://streak-stats.demolab.com/?user=EngMohamedNowar&hide_border=true&background=15112A&stroke=2E2650&ring=20AACF&fire=B57FCB&currStreakLabel=20AACF&sideNums=FFFFFF&sideLabels=A79CC0&currStreakNum=FFFFFF&dates=A79CC0" width="70%" alt="GitHub contribution streak">
 
@@ -255,9 +255,9 @@ His shipped work covers the full backend surface: a **.NET 10 coffee-commerce AP
 <br><br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/output/github-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/output/github-snake.svg">
-  <img alt="Contribution graph being eaten by a snake" src="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/output/github-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/output/github-snake-dark.svg?v=5">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/output/github-snake.svg?v=5">
+  <img alt="Contribution graph being eaten by a snake" src="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/output/github-snake.svg?v=5">
 </picture>
 
 </div>
