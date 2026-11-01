@@ -27,6 +27,10 @@
 .b2{animation-delay:1.25s}.b3{animation-delay:1.40s}
 @keyframes bar{0%,22%,100%{transform:scaleY(1)}10%{transform:scaleY(.5)}}
 .m-clap{transform-box:fill-box;transform-origin:0 100%;animation:clap 7s ease-in-out infinite;animation-delay:1.10s}
+.m-spin{transform-box:fill-box;transform-origin:center;animation:spin 7s ease-in-out infinite;animation-delay:1.10s}
+@keyframes spin{0%,24%,100%{transform:scaleX(1)}6%{transform:scaleX(.2)}12%{transform:scaleX(-1)}18%{transform:scaleX(.3)}}
+.m-flap{transform-box:fill-box;transform-origin:50% 0;animation:flap 7s ease-in-out infinite;animation-delay:1.10s}
+@keyframes flap{0%,22%,100%{transform:scaleY(1)}10%{transform:scaleY(-.6)}}
 @keyframes clap{0%,20%,100%{transform:rotate(0)}8%{transform:rotate(-14deg)}}
 @media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
 <defs><linearGradient id="t" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#36BCF7"/><stop offset="1" stop-color="#A78BFA"/></linearGradient></defs>

@@ -504,6 +504,10 @@ ICON_CSS = """
 .b2{animation-delay:.15s}.b3{animation-delay:.3s}
 @keyframes bar{0%,22%,100%{transform:scaleY(1)}10%{transform:scaleY(.5)}}
 .m-clap{transform-box:fill-box;transform-origin:0 100%;animation:clap 7s ease-in-out infinite}
+.m-spin{transform-box:fill-box;transform-origin:center;animation:spin 7s ease-in-out infinite}
+@keyframes spin{0%,24%,100%{transform:scaleX(1)}6%{transform:scaleX(.2)}12%{transform:scaleX(-1)}18%{transform:scaleX(.3)}}
+.m-flap{transform-box:fill-box;transform-origin:50% 0;animation:flap 7s ease-in-out infinite}
+@keyframes flap{0%,22%,100%{transform:scaleY(1)}10%{transform:scaleY(-.6)}}
 @keyframes clap{0%,20%,100%{transform:rotate(0)}8%{transform:rotate(-14deg)}}"""
 
 
@@ -524,6 +528,85 @@ def icon(name, glyph, slot):
 '''
 
 
+# --------------------------------------------------------------------------- client work: Diar Al Manasik
+GOLD = {"dark": "#E3C16F", "light": "#9A7420"}
+DIAR_STATS = [("22+", "hotels listed"), ("76 m", "nearest to the Haram"), ("AR · EN", "bilingual, RTL")]
+DIAR_CHIPS = ["Next.js", "Arabic RTL", "SEO / AEO", "WhatsApp booking"]
+
+
+def diar(mode):
+    t = THEMES[mode]
+    gold = GOLD[mode]
+    W, H = 1280, 416
+    defs, back = backdrop(W, H, t)
+    css = f"""
+.ring{{transform-box:fill-box;transform-origin:center;animation:ring 3.6s ease-out infinite}}
+@keyframes ring{{0%{{transform:scale(1);stroke-opacity:.8}}100%{{transform:scale(2.6);stroke-opacity:0}}}}
+.chip{{animation:chip 6s ease-in-out infinite}}
+@keyframes chip{{0%,22%,100%{{transform:translateY(0)}}11%{{transform:translateY(-4px)}}}}
+.star{{animation:tw 3s ease-in-out infinite}}
+@keyframes tw{{0%,100%{{fill-opacity:.9}}50%{{fill-opacity:.25}}}}
+.sw{{animation:sw 9s ease-in-out infinite}}
+@keyframes sw{{0%{{transform:translateX(-300px)}}50%,100%{{transform:translateX(1500px)}}}}"""
+    b = [back, '<g class="inx">',
+         f'<text x="64" y="70" font-size="17" font-weight="600" letter-spacing="4" fill="{t["c1"]}">CLIENT WORK  ·  J. SERVO LLC</text>',
+         f'<rect x="64" y="86" width="64" height="4" rx="2" fill="url(#acc)"/>',
+         f'<text x="60" y="152" font-size="54" font-weight="800" letter-spacing="-.5" fill="{t["title"]}">Diar Al <tspan fill="{gold}">Manasik</tspan></text>',
+         f'<text x="64" y="196" font-size="24" font-weight="500" fill="{t["text"]}">Bilingual hotel platform for pilgrims in Makkah &amp; Madinah</text>',
+         f'<text x="64" y="228" font-size="18" fill="{t["muted"]}">Hotels sorted by real walking distance to the mosque · WhatsApp booking</text>',
+         '</g>']
+    # stats
+    x = 64
+    for k, (num, lab) in enumerate(DIAR_STATS):
+        b += [f'<g class="in"{delay(.15 + k * .1)}>',
+              f'<text x="{x}" y="292" font-size="38" font-weight="800" fill="{gold if k == 1 else t["title"]}">{e(num)}</text>',
+              f'<text x="{x}" y="318" font-size="17" font-weight="600" fill="{t["muted"]}">{e(lab)}</text></g>']
+        x += 210
+    x = 64
+    for k, c in enumerate(DIAR_CHIPS):
+        w = round(len(c) * 9.6 + 36)
+        col = t["c2"] if k % 2 else t["c1"]
+        b.append(f'<g class="chip"{delay(k * .45)}><rect x="{x}" y="352" width="{w}" height="36" rx="18" fill="{col}" fill-opacity=".12" stroke="{col}" stroke-opacity=".6"/>'
+                 f'<text x="{x + w / 2:.0f}" y="376" font-size="16" font-weight="600" text-anchor="middle" fill="{t["text"]}">{e(c)}</text></g>')
+        x += w + 10
+    # right motif: route Makkah -> Madinah with distance rings, stars and a travelling caravan dot
+    mk, md = (930, 300), (1170, 110)
+    route = f"M{mk[0]} {mk[1]} C {mk[0] + 40} {mk[1] - 150}, {md[0] - 160} {md[1] + 40}, {md[0]} {md[1]}"
+    stars = [(880, 70), (960, 120), (1040, 60), (1110, 190), (1220, 260), (1010, 210), (1230, 60), (870, 190)]
+    b += [f'<circle class="star"{delay(k * .4)} cx="{sx}" cy="{sy}" r="2" fill="{gold}"/>' for k, (sx, sy) in enumerate(stars)]
+    b += [f'<path d="{route}" fill="none" stroke="{t["line"]}" stroke-width="3"/>',
+          f'<path class="flow" d="{route}" fill="none" stroke="{gold}" stroke-width="2.5"/>']
+    for (cx_, cy_), name, sub in [(mk, "Makkah", "14 hotels"), (md, "Madinah", "8 hotels")]:
+        b += [f'<circle class="ring" cx="{cx_}" cy="{cy_}" r="14" fill="none" stroke="{gold}" stroke-width="2"/>',
+              f'<circle class="ring"{delay(1.8)} cx="{cx_}" cy="{cy_}" r="14" fill="none" stroke="{gold}" stroke-width="2"/>',
+              f'<circle cx="{cx_}" cy="{cy_}" r="14" fill="{t["card"]}" stroke="{gold}" stroke-width="2.5"/>',
+              f'<rect x="{cx_ - 6}" y="{cy_ - 6}" width="12" height="12" rx="1.5" fill="{gold}"/>']
+        tx = cx_ - 42 if name == "Madinah" else cx_ + 30
+        anchor = "end" if name == "Madinah" else "start"
+        ty = cy_ + 8
+        b += [f'<text x="{tx}" y="{ty}" font-size="22" font-weight="800" text-anchor="{anchor}" fill="{t["title"]}">{name}</text>',
+              f'<text x="{tx}" y="{ty + 24}" font-size="16" text-anchor="{anchor}" fill="{t["muted"]}">{sub}</text>']
+    b += [f'<circle r="7" fill="{t["c1"]}"><animateMotion dur="6s" repeatCount="indefinite" path="{route}"/></circle>',
+          f'<g clip-path="url(#panel)"><g transform="skewX(-18)"><rect class="sw" x="0" y="0" width="200" height="{H}" fill="url(#sheen)"/></g></g>']
+    return svg(W, H, "\n".join(b), css, t, defs,
+               title="Diar Al Manasik: bilingual hotel platform for pilgrims in Makkah and Madinah, built at J. Servo LLC")
+
+
+# --------------------------------------------------------------------------- header nav icons
+LINKEDIN = ("M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046"
+            "c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063"
+            " 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0"
+            " .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z")
+NAV = {
+    "portfolio": ('<circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><g class="m-spin"><ellipse cx="12" cy="12" rx="4" ry="10"/></g>', 0),
+    "linkedin": (f'<g class="m-pulse"><path d="{LINKEDIN}" fill="{CYAN}" stroke="none"/></g>', 1),
+    "projects": (ICONS["projects"][0], 2),
+    "certifications": (ICONS["certificates"][0], 3),
+    "jservo": (ICONS["work"][0], 4),
+    "contact": ('<rect x="2" y="5" width="20" height="15" rx="2"/><g class="m-flap"><path d="M2.5 6.5 12 13l9.5-6.5"/></g>', 5),
+}
+
+
 def main():
     for mode in THEMES:
         write(os.path.join(ASSETS, f"banner-{mode}.svg"), banner(mode))
@@ -534,6 +617,12 @@ def main():
         for i, (slug, eyebrow, name, mark, *note) in enumerate(TRUST):
             write(os.path.join(TRUST_OUT, f"{slug}-{mode}.svg"), trust(mode, i, eyebrow, name, mark, *note))
     write(os.path.join(ASSETS, "divider.svg"), divider())
+    for mode in THEMES:
+        write(os.path.join(ASSETS, f"diar-{mode}.svg"), diar(mode))
+    nav_out = os.path.join(ASSETS, "nav")
+    os.makedirs(nav_out, exist_ok=True)
+    for name, (glyph, slot) in NAV.items():
+        write(os.path.join(nav_out, f"{name}.svg"), icon(name, glyph, slot))
     for name, (glyph, slot) in ICONS.items():
         write(os.path.join(ICON_OUT, f"{name}.svg"), icon(name, glyph, slot))
     print("wrote", len(THEMES) * (5 + len(TRUST)) + 1 + len(ICONS), "SVGs")

@@ -1,37 +1,37 @@
 <div align="center">
 
-<a href="https://engmohamednowar.github.io/portfolio/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg?v=7"><source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg?v=7"><img src="assets/banner-dark.svg?v=7" width="100%" alt="Mohamed Nowar — Software Engineer at J. Servo LLC, .NET backend engineer building secure, tested ASP.NET Core APIs"></picture></a>
+<a href="https://engmohamednowar.github.io/portfolio/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg?v=8"><source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg?v=8"><img src="assets/banner-dark.svg?v=8" width="100%" alt="Mohamed Nowar — Software Engineer at J. Servo LLC, .NET backend engineer building secure, tested ASP.NET Core APIs"></picture></a>
 
-<p>
-  <a href="https://engmohamednowar.github.io/portfolio/"><b>Portfolio</b></a> &nbsp;·&nbsp;
-  <a href="https://linkedin.com/in/mohamednowar"><b>LinkedIn</b></a> &nbsp;·&nbsp;
-  <a href="#-featured-projects"><b>Projects</b></a> &nbsp;·&nbsp;
-  <a href="#-certifications"><b>Certifications</b></a> &nbsp;·&nbsp;
-  <a href="#-where-i-work--j-servo-llc"><b>J. Servo</b></a> &nbsp;·&nbsp;
-  <a href="mailto:mohamednowar2002@gmail.com"><b>Contact</b></a>
+<p align="center">
+  <a href="https://engmohamednowar.github.io/portfolio/" title="Portfolio"><img src="assets/nav/portfolio.svg?v=8" width="52" height="52" alt="Portfolio" title="Portfolio"></a>&nbsp;
+  <a href="https://linkedin.com/in/mohamednowar" title="LinkedIn"><img src="assets/nav/linkedin.svg?v=8" width="52" height="52" alt="LinkedIn" title="LinkedIn"></a>&nbsp;
+  <a href="#-featured-projects" title="Projects"><img src="assets/nav/projects.svg?v=8" width="52" height="52" alt="Projects" title="Projects"></a>&nbsp;
+  <a href="#-certifications" title="Certifications"><img src="assets/nav/certifications.svg?v=8" width="52" height="52" alt="Certifications" title="Certifications"></a>&nbsp;
+  <a href="#-where-i-work--j-servo-llc" title="J. Servo LLC & Diar Al Manasik"><img src="assets/nav/jservo.svg?v=8" width="52" height="52" alt="J. Servo LLC & Diar Al Manasik" title="J. Servo LLC & Diar Al Manasik"></a>&nbsp;
+  <a href="mailto:mohamednowar2002@gmail.com" title="Email"><img src="assets/nav/contact.svg?v=8" width="52" height="52" alt="Email" title="Email"></a>
 </p>
 
 <p>
   <img src="https://github-view-counter.vercel.app/api?username=EngMohamedNowar&label=PROFILE+VIEWS&base=562&layout=split&style=rounded&bgColor=%2336BCF7&labelBgColor=%23161B22&color=%230E1117&labelColor=%23ffffff&iconColor=%2336BCF7&size=16" alt="Profile views" height="28">
 </p>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg?v=7"><source media="(prefers-color-scheme: light)" srcset="assets/stats-light.svg?v=7"><img src="assets/stats-dark.svg?v=7" width="100%" alt="7 shipped projects · 583 automated tests · 8 certifications · 96% HCIA-AI score"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg?v=8"><source media="(prefers-color-scheme: light)" srcset="assets/stats-light.svg?v=8"><img src="assets/stats-dark.svg?v=8" width="100%" alt="7 shipped projects · 583 automated tests · 8 certifications · 96% HCIA-AI score"></picture>
 
 <sub>Figures as reported in my portfolio and project repositories.</sub>
 
 </div>
 
-<p align="center"><img src="assets/divider.svg?v=7" width="100%" alt=""></p>
+<p align="center"><img src="assets/divider.svg?v=8" width="100%" alt=""></p>
 
-## <img src="assets/icons/about.svg?v=7" width="34" height="34" alt=""> About Me
+## <img src="assets/icons/about.svg?v=8" width="34" height="34" alt=""> About Me
 
 **Mohamed Nowar** is a **Software Engineer at [J. Servo LLC](https://jservo.com)** and a **.NET backend developer** based in **Cairo, Egypt**. He designs and builds secure, maintainable **REST APIs with C#, ASP.NET Core, Entity Framework Core and SQL Server**, structured with **Clean Architecture, CQRS (MediatR) and the Repository / Unit of Work patterns**, and backed by automated tests in **xUnit and NSubstitute**.
 
-His shipped work covers the full backend surface: a **.NET 10 coffee-commerce API** with Redis caching, JWT authentication and **Stripe payments with signed webhooks** (182 xUnit tests); a **full-stack accounting platform** with cookie-based auth, CSRF protection, role-based workflows and validated document uploads; e-commerce, cinema-booking and gym-management systems; and a **production-deployed WPF restaurant POS** with ESC/POS thermal printing and Arabic receipts. He holds a **B.Sc. from the Egyptian E-Learning University**, an **ASP.NET Core back-end diploma from Route Academy** and **Huawei HCIA-AI (96%)**, and is currently studying **microservices, messaging and CI/CD** in Elevate's Backend Advanced Bootcamp (.NET track).
+His shipped work covers the full backend surface: a **.NET 10 coffee-commerce API** with Redis caching, JWT authentication and **Stripe payments with signed webhooks** (182 xUnit tests); a **full-stack accounting platform** with cookie-based auth, CSRF protection, role-based workflows and validated document uploads; e-commerce, cinema-booking and gym-management systems; a **production-deployed WPF restaurant POS** with ESC/POS thermal printing and Arabic receipts; and, at J. Servo, the **bilingual hotel platform for [Diar Al Manasik](https://diarmanasik.cloud/)**, which lists 22+ hotels in Makkah and Madinah by walking distance to the mosque. He holds a **B.Sc. from the Egyptian E-Learning University**, an **ASP.NET Core back-end diploma from Route Academy** and **Huawei HCIA-AI (96%)**, and is currently studying **microservices, messaging and CI/CD** in Elevate's Backend Advanced Bootcamp (.NET track).
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/about-dark.svg?v=7"><source media="(prefers-color-scheme: light)" srcset="assets/about-light.svg?v=7"><img src="assets/about-dark.svg?v=7" width="100%" alt="Engineer.cs: Name Mohamed Nowar; Role Software Engineer at J. Servo LLC; Focus .NET backend and REST APIs; Stack C#, ASP.NET Core, EF Core, SQL Server; Patterns Clean Architecture, CQRS, Unit of Work; Testing xUnit, NSubstitute; Location Cairo, Egypt; open to remote, hybrid and freelance work"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/about-dark.svg?v=8"><source media="(prefers-color-scheme: light)" srcset="assets/about-light.svg?v=8"><img src="assets/about-dark.svg?v=8" width="100%" alt="Engineer.cs: Name Mohamed Nowar; Role Software Engineer at J. Servo LLC; Focus .NET backend and REST APIs; Stack C#, ASP.NET Core, EF Core, SQL Server; Patterns Clean Architecture, CQRS, Unit of Work; Testing xUnit, NSubstitute; Location Cairo, Egypt; open to remote, hybrid and freelance work"></picture>
 
 </div>
 
@@ -44,15 +44,15 @@ His shipped work covers the full backend surface: a **.NET 10 coffee-commerce AP
 | Who is Mohamed Nowar? | A Software Engineer at J. Servo LLC and a .NET backend developer based in Cairo, Egypt. |
 | What does he specialise in? | Backend REST APIs with C#, ASP.NET Core Web API, EF Core and SQL Server, using Clean Architecture and CQRS. |
 | Which tools does he use? | ASP.NET Core, EF Core, LINQ, MediatR, AutoMapper, JWT, ASP.NET Identity, Redis, Stripe, Docker, Swagger, xUnit, NSubstitute, Azure DevOps, PostgreSQL, Python / Django REST Framework. |
-| What has he built? | A .NET 10 coffee-store API, a full-stack accounting platform, an e-commerce API, a production WPF restaurant POS, a gym-management system and a cinema-booking API. |
+| What has he built? | Diar Al Manasik's bilingual hotel platform for pilgrims (client work at J. Servo), a .NET 10 coffee-store API, a full-stack accounting platform, an e-commerce API, a production WPF restaurant POS, a gym-management system and a cinema-booking API. |
 | Is he available for work? | Yes: remote, hybrid and freelance backend projects. |
 | How can I contact him? | [mohamednowar2002@gmail.com](mailto:mohamednowar2002@gmail.com) or [LinkedIn](https://linkedin.com/in/mohamednowar). |
 
 </details>
 
-<p align="center"><img src="assets/divider.svg?v=7" width="100%" alt=""></p>
+<p align="center"><img src="assets/divider.svg?v=8" width="100%" alt=""></p>
 
-## <img src="assets/icons/stack.svg?v=7" width="34" height="34" alt=""> Tech Stack
+## <img src="assets/icons/stack.svg?v=8" width="34" height="34" alt=""> Tech Stack
 
 <div align="center">
 
@@ -65,31 +65,31 @@ His shipped work covers the full backend surface: a **.NET 10 coffee-commerce AP
 
 <table>
   <tr>
-    <td align="center" width="25%"><img src="assets/icons/cap-architecture.svg?v=7" width="44" height="44" alt=""><h3>Architecture</h3><p>Clean Architecture<br>Three-layer architecture<br>Repository pattern<br>Unit of Work<br>Dependency Injection<br>CQRS &amp; MediatR<br>OOP principles</p></td>
-    <td align="center" width="25%"><img src="assets/icons/cap-security.svg?v=7" width="44" height="44" alt=""><h3>Security</h3><p>JWT authentication<br>Cookie &amp; token auth<br>Role-based authorization<br>ASP.NET Core Identity<br>CSRF protection<br>Rate limiting</p></td>
-    <td align="center" width="25%"><img src="assets/icons/cap-data.svg?v=7" width="44" height="44" alt=""><h3>Data</h3><p>SQL Server<br>PostgreSQL<br>Redis caching<br>EF Core &amp; LINQ<br>Relational design<br>Django ORM</p></td>
-    <td align="center" width="25%"><img src="assets/icons/cap-testing.svg?v=7" width="44" height="44" alt=""><h3>Testing &amp; Cloud</h3><p>xUnit &amp; NSubstitute<br>Coverlet coverage<br>Docker<br>Azure<br>CI/CD (Azure DevOps)<br>Git / GitHub</p></td>
+    <td align="center" width="25%"><img src="assets/icons/cap-architecture.svg?v=8" width="44" height="44" alt=""><h3>Architecture</h3><p>Clean Architecture<br>Three-layer architecture<br>Repository pattern<br>Unit of Work<br>Dependency Injection<br>CQRS &amp; MediatR<br>OOP principles</p></td>
+    <td align="center" width="25%"><img src="assets/icons/cap-security.svg?v=8" width="44" height="44" alt=""><h3>Security</h3><p>JWT authentication<br>Cookie &amp; token auth<br>Role-based authorization<br>ASP.NET Core Identity<br>CSRF protection<br>Rate limiting</p></td>
+    <td align="center" width="25%"><img src="assets/icons/cap-data.svg?v=8" width="44" height="44" alt=""><h3>Data</h3><p>SQL Server<br>PostgreSQL<br>Redis caching<br>EF Core &amp; LINQ<br>Relational design<br>Django ORM</p></td>
+    <td align="center" width="25%"><img src="assets/icons/cap-testing.svg?v=8" width="44" height="44" alt=""><h3>Testing &amp; Cloud</h3><p>xUnit &amp; NSubstitute<br>Coverlet coverage<br>Docker<br>Azure<br>CI/CD (Azure DevOps)<br>Git / GitHub</p></td>
   </tr>
 </table>
 
-<p align="center"><img src="assets/divider.svg?v=7" width="100%" alt=""></p>
+<p align="center"><img src="assets/divider.svg?v=8" width="100%" alt=""></p>
 
-## <img src="assets/icons/architecture.svg?v=7" width="34" height="34" alt=""> Architecture
+## <img src="assets/icons/architecture.svg?v=8" width="34" height="34" alt=""> Architecture
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/architecture-dark.svg?v=7"><source media="(prefers-color-scheme: light)" srcset="assets/architecture-light.svg?v=7"><img src="assets/architecture-dark.svg?v=7" width="100%" alt="Clean Architecture request flow: Clients, API layer, Application layer, Domain layer, Infrastructure, SQL Server, Redis, Azure"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/architecture-dark.svg?v=8"><source media="(prefers-color-scheme: light)" srcset="assets/architecture-light.svg?v=8"><img src="assets/architecture-dark.svg?v=8" width="100%" alt="Clean Architecture request flow: Clients, API layer, Application layer, Domain layer, Infrastructure, SQL Server, Redis, Azure"></picture>
 
 </div>
 
-<p align="center"><img src="assets/divider.svg?v=7" width="100%" alt=""></p>
+<p align="center"><img src="assets/divider.svg?v=8" width="100%" alt=""></p>
 
-## <img src="assets/icons/projects.svg?v=7" width="34" height="34" alt=""> Featured Projects
+## <img src="assets/icons/projects.svg?v=8" width="34" height="34" alt=""> Featured Projects
 
 <table>
   <tr>
     <td colspan="2" valign="top">
-      <p align="center"><img src="assets/icons/p-accounting.svg?v=7" width="44" height="44" alt=""></p>
+      <p align="center"><img src="assets/icons/p-accounting.svg?v=8" width="44" height="44" alt=""></p>
       <h3 align="center">Accounting Platform — MVP</h3>
       <p align="center">
         <img src="https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt="ASP.NET Core">
@@ -105,7 +105,7 @@ His shipped work covers the full backend surface: a **.NET 10 coffee-commerce AP
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <p align="center"><img src="assets/icons/p-coffee.svg?v=7" width="44" height="44" alt=""></p>
+      <p align="center"><img src="assets/icons/p-coffee.svg?v=8" width="44" height="44" alt=""></p>
       <h3 align="center">Coffee Store API</h3>
       <p align="center">
         <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" alt="C#">
@@ -120,7 +120,7 @@ His shipped work covers the full backend surface: a **.NET 10 coffee-commerce AP
       <p align="center"><a href="https://github.com/EngMohamedNowar/CoffeeStore"><img src="https://img.shields.io/badge/View-Repository-181717?style=flat-square&logo=github&logoColor=white" alt="View CoffeeStore on GitHub"></a></p>
     </td>
     <td width="50%" valign="top">
-      <p align="center"><img src="assets/icons/p-ecommerce.svg?v=7" width="44" height="44" alt=""></p>
+      <p align="center"><img src="assets/icons/p-ecommerce.svg?v=8" width="44" height="44" alt=""></p>
       <h3 align="center">E-commerce API</h3>
       <p align="center">
         <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" alt="C#">
@@ -134,7 +134,7 @@ His shipped work covers the full backend surface: a **.NET 10 coffee-commerce AP
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <p align="center"><img src="assets/icons/p-pos.svg?v=7" width="44" height="44" alt=""></p>
+      <p align="center"><img src="assets/icons/p-pos.svg?v=8" width="44" height="44" alt=""></p>
       <h3 align="center">Restaurant POS System</h3>
       <p align="center">
         <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" alt="C#">
@@ -146,7 +146,7 @@ His shipped work covers the full backend surface: a **.NET 10 coffee-commerce AP
       <p align="center"><a href="https://github.com/EngMohamedNowar/RestaurantPOS_DesktopApplication"><img src="https://img.shields.io/badge/View-Repository-181717?style=flat-square&logo=github&logoColor=white" alt="View RestaurantPOS_DesktopApplication on GitHub"></a></p>
     </td>
     <td width="50%" valign="top">
-      <p align="center"><img src="assets/icons/p-todo.svg?v=7" width="44" height="44" alt=""></p>
+      <p align="center"><img src="assets/icons/p-todo.svg?v=8" width="44" height="44" alt=""></p>
       <h3 align="center">My Tasks — Todo App</h3>
       <p align="center">
         <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" alt="C#">
@@ -161,7 +161,7 @@ His shipped work covers the full backend surface: a **.NET 10 coffee-commerce AP
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <p align="center"><img src="assets/icons/p-gym.svg?v=7" width="44" height="44" alt=""></p>
+      <p align="center"><img src="assets/icons/p-gym.svg?v=8" width="44" height="44" alt=""></p>
       <h3 align="center">Gym Management System</h3>
       <p align="center">
         <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" alt="C#">
@@ -173,7 +173,7 @@ His shipped work covers the full backend surface: a **.NET 10 coffee-commerce AP
       <p align="center"><a href="https://github.com/EngMohamedNowar/GymManagementSystem_MVC"><img src="https://img.shields.io/badge/View-Repository-181717?style=flat-square&logo=github&logoColor=white" alt="View GymManagementSystem_MVC on GitHub"></a></p>
     </td>
     <td width="50%" valign="top">
-      <p align="center"><img src="assets/icons/p-cinema.svg?v=7" width="44" height="44" alt=""></p>
+      <p align="center"><img src="assets/icons/p-cinema.svg?v=8" width="44" height="44" alt=""></p>
       <h3 align="center">Cinema Ticket Reservation API</h3>
       <p align="center">
         <img src="https://img.shields.io/badge/REST%20API-2563EB?style=flat-square&logo=postman&logoColor=white" alt="REST API">
@@ -186,9 +186,9 @@ His shipped work covers the full backend surface: a **.NET 10 coffee-commerce AP
   </tr>
 </table>
 
-<p align="center"><img src="assets/divider.svg?v=7" width="100%" alt=""></p>
+<p align="center"><img src="assets/divider.svg?v=8" width="100%" alt=""></p>
 
-## <img src="assets/icons/screenshots.svg?v=7" width="34" height="34" alt=""> Screenshots
+## <img src="assets/icons/screenshots.svg?v=8" width="34" height="34" alt=""> Screenshots
 
 <div align="center">
 
@@ -243,17 +243,17 @@ His shipped work covers the full backend surface: a **.NET 10 coffee-commerce AP
 
 </div>
 
-<p align="center"><img src="assets/divider.svg?v=7" width="100%" alt=""></p>
+<p align="center"><img src="assets/divider.svg?v=8" width="100%" alt=""></p>
 
-## <img src="assets/icons/stats.svg?v=7" width="34" height="34" alt=""> GitHub Stats
+## <img src="assets/icons/stats.svg?v=8" width="34" height="34" alt=""> GitHub Stats
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/metrics/stats-overview.svg?v=7" width="100%" alt="GitHub stats: contributions, commits, pull requests, repositories, active days, best day">
+<img src="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/metrics/stats-overview.svg?v=8" width="100%" alt="GitHub stats: contributions, commits, pull requests, repositories, active days, best day">
 
-<img src="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/metrics/stats-activity.svg?v=7" width="100%" alt="Daily contribution activity, last 90 days">
+<img src="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/metrics/stats-activity.svg?v=8" width="100%" alt="Daily contribution activity, last 90 days">
 
-<img src="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/metrics/stats-languages.svg?v=7" width="100%" alt="Most used languages by code size">
+<img src="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/metrics/stats-languages.svg?v=8" width="100%" alt="Most used languages by code size">
 
 <img src="https://streak-stats.demolab.com/?user=EngMohamedNowar&theme=dark&hide_border=true&background=161B22&stroke=36BCF7&ring=36BCF7&fire=36BCF7&currStreakLabel=36BCF7&sideNums=DFE2E5&sideLabels=DFE2E5&currStreakNum=36BCF7&dates=8B949E" width="70%" alt="GitHub contribution streak">
 
@@ -262,69 +262,89 @@ His shipped work covers the full backend surface: a **.NET 10 coffee-commerce AP
 <br><br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/output/github-snake-dark.svg?v=7">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/output/github-snake.svg?v=7">
-  <img alt="Contribution graph being eaten by a snake" src="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/output/github-snake.svg?v=7">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/output/github-snake-dark.svg?v=8">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/output/github-snake.svg?v=8">
+  <img alt="Contribution graph being eaten by a snake" src="https://raw.githubusercontent.com/EngMohamedNowar/EngMohamedNowar/output/github-snake.svg?v=8">
 </picture>
 
 </div>
 
-<p align="center"><img src="assets/divider.svg?v=7" width="100%" alt=""></p>
+<p align="center"><img src="assets/divider.svg?v=8" width="100%" alt=""></p>
 
-## <img src="assets/icons/certificates.svg?v=7" width="34" height="34" alt=""> Certifications
+## <img src="assets/icons/certificates.svg?v=8" width="34" height="34" alt=""> Certifications
 
 <div align="center">
 
 <a href="https://drive.google.com/drive/folders/1r_ONbtYPHxP2p0TOfOcmKEdz4MIbd0Jt?usp=sharing"><img src="https://img.shields.io/badge/All%20Certificates-Google%20Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white" alt="All certificates on Google Drive"></a>
 
-<img src="assets/certs/timeline.svg?v=7" width="100%" alt="Learning journey: 8 certificates from 2024 to 2026">
+<img src="assets/certs/timeline.svg?v=8" width="100%" alt="Learning journey: 8 certificates from 2024 to 2026">
 
 </div>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="https://drive.google.com/file/d/1KATof9qObGF7jttGQBih6Z8Zl4Jj4Iqj/view?usp=sharing"><img src="assets/certs/bsc.svg?v=7" width="100%" alt="B.Sc. Graduation Certificate — Egyptian E-Learning University, 2025"></a></td>
-    <td width="50%" align="center"><a href="https://drive.google.com/file/d/1EYLlRJlzx50N_8i8D6bMJNSKNTpoiuOB/view?usp=sharing"><img src="assets/certs/route.svg?v=7" width="100%" alt="ASP.NET Core Back-End — Route Academy"></a></td>
+    <td width="50%" align="center"><a href="https://drive.google.com/file/d/1KATof9qObGF7jttGQBih6Z8Zl4Jj4Iqj/view?usp=sharing"><img src="assets/certs/bsc.svg?v=8" width="100%" alt="B.Sc. Graduation Certificate — Egyptian E-Learning University, 2025"></a></td>
+    <td width="50%" align="center"><a href="https://drive.google.com/file/d/1EYLlRJlzx50N_8i8D6bMJNSKNTpoiuOB/view?usp=sharing"><img src="assets/certs/route.svg?v=8" width="100%" alt="ASP.NET Core Back-End — Route Academy"></a></td>
   </tr>
   <tr>
-    <td width="50%" align="center"><a href="https://drive.google.com/file/d/1Uql1cZfbJ_mJwTDXv5ZWomS8w9iw30lJ/view?usp=sharing"><img src="assets/certs/hcia.svg?v=7" width="100%" alt="HCIA-AI V3.5 — Huawei, score 96%"></a></td>
-    <td width="50%" align="center"><a href="https://drive.google.com/file/d/19Fk6P6v0B3IubjQlkJDMwB6HSV3vRBOm/view?usp=sharing"><img src="assets/certs/nti.svg?v=7" width="100%" alt="AI Talent Academy Track — NTI × Huawei, 80 hours, score 96%"></a></td>
+    <td width="50%" align="center"><a href="https://drive.google.com/file/d/1Uql1cZfbJ_mJwTDXv5ZWomS8w9iw30lJ/view?usp=sharing"><img src="assets/certs/hcia.svg?v=8" width="100%" alt="HCIA-AI V3.5 — Huawei, score 96%"></a></td>
+    <td width="50%" align="center"><a href="https://drive.google.com/file/d/19Fk6P6v0B3IubjQlkJDMwB6HSV3vRBOm/view?usp=sharing"><img src="assets/certs/nti.svg?v=8" width="100%" alt="AI Talent Academy Track — NTI × Huawei, 80 hours, score 96%"></a></td>
   </tr>
   <tr>
-    <td width="50%" align="center"><a href="https://drive.google.com/file/d/13mJhYLAQvHMASVqRJ1wvc61cuEPA7h6g/view?usp=sharing"><img src="assets/certs/python.svg?v=7" width="100%" alt="Full Stack Python — ITI, 120 hours"></a></td>
-    <td width="50%" align="center"><a href="https://drive.google.com/file/d/1m_PpMnaFMPOwi3jKf3DjCYNt4sfYoS3r/view?usp=sharing"><img src="assets/certs/oop.svg?v=7" width="100%" alt="Mastering OOP using C++ — ITI Mahara-Tech"></a></td>
+    <td width="50%" align="center"><a href="https://drive.google.com/file/d/13mJhYLAQvHMASVqRJ1wvc61cuEPA7h6g/view?usp=sharing"><img src="assets/certs/python.svg?v=8" width="100%" alt="Full Stack Python — ITI, 120 hours"></a></td>
+    <td width="50%" align="center"><a href="https://drive.google.com/file/d/1m_PpMnaFMPOwi3jKf3DjCYNt4sfYoS3r/view?usp=sharing"><img src="assets/certs/oop.svg?v=8" width="100%" alt="Mastering OOP using C++ — ITI Mahara-Tech"></a></td>
   </tr>
   <tr>
-    <td width="50%" align="center"><a href="https://drive.google.com/file/d/1aBJj-ccxO_rRc7DQUeFpHM9x783MTAe7/view?usp=sharing"><img src="assets/certs/cleancode.svg?v=7" width="100%" alt="Principles of Clean Code — ITI Mahara-Tech"></a></td>
-    <td width="50%" align="center"><a href="https://drive.google.com/file/d/1cxs0XJfog1LW_tvE4f6Igs_CmpSj8fjY/view?usp=sharing"><img src="assets/certs/db.svg?v=7" width="100%" alt="Database Fundamentals — ITI Mahara-Tech"></a></td>
+    <td width="50%" align="center"><a href="https://drive.google.com/file/d/1aBJj-ccxO_rRc7DQUeFpHM9x783MTAe7/view?usp=sharing"><img src="assets/certs/cleancode.svg?v=8" width="100%" alt="Principles of Clean Code — ITI Mahara-Tech"></a></td>
+    <td width="50%" align="center"><a href="https://drive.google.com/file/d/1cxs0XJfog1LW_tvE4f6Igs_CmpSj8fjY/view?usp=sharing"><img src="assets/certs/db.svg?v=8" width="100%" alt="Database Fundamentals — ITI Mahara-Tech"></a></td>
   </tr>
 </table>
 
-<p align="center"><img src="assets/divider.svg?v=7" width="100%" alt=""></p>
+<p align="center"><img src="assets/divider.svg?v=8" width="100%" alt=""></p>
 
-## <img src="assets/icons/work.svg?v=7" width="34" height="34" alt=""> Where I work — J. Servo LLC
+## <img src="assets/icons/work.svg?v=8" width="34" height="34" alt=""> Where I work — J. Servo LLC
 
-I'm a Software Engineer at **[J. Servo LLC](https://jservo.com)**, a technology company in New Cairo, Egypt, that builds practical business solutions and integrated AI modules for small and mid-size businesses and startups. Independent reviews and verified listings for the company:
+I'm a Software Engineer at **[J. Servo LLC](https://jservo.com)**, a technology company in New Cairo, Egypt, that builds practical business solutions and integrated AI modules for small and mid-size businesses and startups. Below: a client platform I work on, then independent reviews and verified listings for the company.
+
+### Client work: Diar Al Manasik
+
+<a href="https://diarmanasik.cloud/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/diar-dark.svg?v=8"><source media="(prefers-color-scheme: light)" srcset="assets/diar-light.svg?v=8"><img src="assets/diar-dark.svg?v=8" width="100%" alt="Diar Al Manasik: bilingual hotel platform for pilgrims in Makkah and Madinah, built at J. Servo LLC"></picture></a>
+
+**[Diar Al Manasik International](https://diarmanasik.cloud/)** (ديار المناسك) is a Makkah-based hospitality company that places pilgrims in hotels near Masjid al-Haram and the Prophet's Mosque and arranges their visas, transport and on-the-ground handling. At J. Servo I work on its **bilingual Arabic / English platform**: **22+ partner hotels** in Makkah and Madinah, each listed with its real walking distance to the mosque (the nearest is 76 m from the Haram), star-rating filters and distance sorting, full **RTL** support, search- and answer-engine-friendly FAQ content, and direct **WhatsApp** booking.
+
+<table>
+  <tr>
+    <td align="center" width="33%"><a href="https://diarmanasik.cloud/en"><img loading="lazy" src="screenshots/diar-almanasik-en.jpg" width="100%" alt="Diar Al Manasik English home page"></a><br><sub>Home (English)</sub></td>
+    <td align="center" width="33%"><a href="https://diarmanasik.cloud/ar"><img loading="lazy" src="screenshots/diar-almanasik-ar.jpg" width="100%" alt="Diar Al Manasik Arabic home page, right-to-left"></a><br><sub>Home (Arabic, RTL)</sub></td>
+    <td align="center" width="33%"><a href="https://diarmanasik.cloud/en/hotels/makkah"><img loading="lazy" src="screenshots/diar-almanasik-makkah.jpg" width="100%" alt="Makkah hotels sorted by walking distance to Masjid al-Haram"></a><br><sub>Makkah hotels, nearest first</sub></td>
+  </tr>
+</table>
 
 <p align="center">
-  <a href="https://www.trustpilot.com/review/jservo.com" title="J. SERVO reviews on Trustpilot"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/trust/trustpilot-dark.svg?v=7"><source media="(prefers-color-scheme: light)" srcset="assets/trust/trustpilot-light.svg?v=7"><img src="assets/trust/trustpilot-dark.svg?v=7" width="32%" alt="J. SERVO reviews on Trustpilot"></picture></a>
-  <a href="https://clutch.co/profile/j-servo" title="J. SERVO reviews on Clutch"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/trust/clutch-dark.svg?v=7"><source media="(prefers-color-scheme: light)" srcset="assets/trust/clutch-light.svg?v=7"><img src="assets/trust/clutch-dark.svg?v=7" width="32%" alt="J. SERVO reviews on Clutch"></picture></a>
-  <a href="https://www.goodfirms.co/company/j-servo-llc" title="J. SERVO reviews on GoodFirms"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/trust/goodfirms-dark.svg?v=7"><source media="(prefers-color-scheme: light)" srcset="assets/trust/goodfirms-light.svg?v=7"><img src="assets/trust/goodfirms-dark.svg?v=7" width="32%" alt="J. SERVO reviews on GoodFirms"></picture></a>
+  <a href="https://diarmanasik.cloud/"><img src="https://img.shields.io/badge/Visit_live_site-diarmanasik.cloud-36BCF7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Visit diarmanasik.cloud"></a>
+</p>
+
+### J. Servo reviews and listings
+
+<p align="center">
+  <a href="https://www.trustpilot.com/review/jservo.com" title="J. SERVO reviews on Trustpilot"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/trust/trustpilot-dark.svg?v=8"><source media="(prefers-color-scheme: light)" srcset="assets/trust/trustpilot-light.svg?v=8"><img src="assets/trust/trustpilot-dark.svg?v=8" width="32%" alt="J. SERVO reviews on Trustpilot"></picture></a>
+  <a href="https://clutch.co/profile/j-servo" title="J. SERVO reviews on Clutch"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/trust/clutch-dark.svg?v=8"><source media="(prefers-color-scheme: light)" srcset="assets/trust/clutch-light.svg?v=8"><img src="assets/trust/clutch-dark.svg?v=8" width="32%" alt="J. SERVO reviews on Clutch"></picture></a>
+  <a href="https://www.goodfirms.co/company/j-servo-llc" title="J. SERVO reviews on GoodFirms"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/trust/goodfirms-dark.svg?v=8"><source media="(prefers-color-scheme: light)" srcset="assets/trust/goodfirms-light.svg?v=8"><img src="assets/trust/goodfirms-dark.svg?v=8" width="32%" alt="J. SERVO reviews on GoodFirms"></picture></a>
 </p>
 
 <p align="center">
-  <a href="https://techbehemoths.com/company/j-servo-llc" title="J. SERVO verified profile on TechBehemoths"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/trust/techbehemoths-dark.svg?v=7"><source media="(prefers-color-scheme: light)" srcset="assets/trust/techbehemoths-light.svg?v=7"><img src="assets/trust/techbehemoths-dark.svg?v=7" width="32%" alt="J. SERVO verified profile on TechBehemoths"></picture></a>
-  <a href="https://www.sortlist.com/agency/jservo" title="J. SERVO agency profile on Sortlist"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/trust/sortlist-dark.svg?v=7"><source media="(prefers-color-scheme: light)" srcset="assets/trust/sortlist-light.svg?v=7"><img src="assets/trust/sortlist-dark.svg?v=7" width="32%" alt="J. SERVO agency profile on Sortlist"></picture></a>
-  <a href="https://www.f6s.com/company/j-servo" title="J. SERVO company profile on F6S"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/trust/f6s-dark.svg?v=7"><source media="(prefers-color-scheme: light)" srcset="assets/trust/f6s-light.svg?v=7"><img src="assets/trust/f6s-dark.svg?v=7" width="32%" alt="J. SERVO company profile on F6S"></picture></a>
+  <a href="https://techbehemoths.com/company/j-servo-llc" title="J. SERVO verified profile on TechBehemoths"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/trust/techbehemoths-dark.svg?v=8"><source media="(prefers-color-scheme: light)" srcset="assets/trust/techbehemoths-light.svg?v=8"><img src="assets/trust/techbehemoths-dark.svg?v=8" width="32%" alt="J. SERVO verified profile on TechBehemoths"></picture></a>
+  <a href="https://www.sortlist.com/agency/jservo" title="J. SERVO agency profile on Sortlist"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/trust/sortlist-dark.svg?v=8"><source media="(prefers-color-scheme: light)" srcset="assets/trust/sortlist-light.svg?v=8"><img src="assets/trust/sortlist-dark.svg?v=8" width="32%" alt="J. SERVO agency profile on Sortlist"></picture></a>
+  <a href="https://www.f6s.com/company/j-servo" title="J. SERVO company profile on F6S"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/trust/f6s-dark.svg?v=8"><source media="(prefers-color-scheme: light)" srcset="assets/trust/f6s-light.svg?v=8"><img src="assets/trust/f6s-dark.svg?v=8" width="32%" alt="J. SERVO company profile on F6S"></picture></a>
 </p>
 
 <p align="center">
-  <a href="https://www.wikidata.org/wiki/Q141189697" title="J. SERVO on Wikidata (Q141189697)"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/trust/wikidata-dark.svg?v=7"><source media="(prefers-color-scheme: light)" srcset="assets/trust/wikidata-light.svg?v=7"><img src="assets/trust/wikidata-dark.svg?v=7" width="97%" alt="J. SERVO on Wikidata (Q141189697)"></picture></a>
+  <a href="https://www.wikidata.org/wiki/Q141189697" title="J. SERVO on Wikidata (Q141189697)"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/trust/wikidata-dark.svg?v=8"><source media="(prefers-color-scheme: light)" srcset="assets/trust/wikidata-light.svg?v=8"><img src="assets/trust/wikidata-dark.svg?v=8" width="97%" alt="J. SERVO on Wikidata (Q141189697)"></picture></a>
 </p>
 
-<p align="center"><img src="assets/divider.svg?v=7" width="100%" alt=""></p>
+<p align="center"><img src="assets/divider.svg?v=8" width="100%" alt=""></p>
 
-## <img src="assets/icons/connect.svg?v=7" width="34" height="34" alt=""> Let's Connect
+## <img src="assets/icons/connect.svg?v=8" width="34" height="34" alt=""> Let's Connect
 
 <div align="center">
 
@@ -340,6 +360,6 @@ I'm a Software Engineer at **[J. Servo LLC](https://jservo.com)**, a technology 
 
 <br>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.svg?v=7"><source media="(prefers-color-scheme: light)" srcset="assets/footer-light.svg?v=7"><img src="assets/footer-dark.svg?v=7" width="100%" alt="Building backend systems as clean as the code behind them."></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.svg?v=8"><source media="(prefers-color-scheme: light)" srcset="assets/footer-light.svg?v=8"><img src="assets/footer-dark.svg?v=8" width="100%" alt="Building backend systems as clean as the code behind them."></picture>
 
 <p align="center"><sub>Artwork set in <a href="https://fonts.google.com/specimen/Syne">Syne</a> &amp; Syne Mono (SIL Open Font License) · generated by <a href="scripts/build_profile.py">scripts/build_profile.py</a></sub></p>
