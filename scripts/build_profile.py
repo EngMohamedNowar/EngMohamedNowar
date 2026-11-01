@@ -894,8 +894,6 @@ def main():
         write(os.path.join(ASSETS, f"stats-{mode}.svg"), stats(mode))
         write(os.path.join(ASSETS, f"architecture-{mode}.svg"), architecture(mode))
         write(os.path.join(ASSETS, f"footer-{mode}.svg"), footer(mode))
-        for i, (slug, eyebrow, name, mark, *note) in enumerate(TRUST):
-            write(os.path.join(TRUST_OUT, f"{slug}-{mode}.svg"), trust(mode, i, eyebrow, name, mark, *note))
     write(os.path.join(ASSETS, "divider.svg"), divider())
     for mode in THEMES:
         write(os.path.join(ASSETS, f"jservo-{mode}.svg"), jservo(mode))

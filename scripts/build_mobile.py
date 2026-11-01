@@ -12,8 +12,8 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 from build_profile import (CHAR_W, CLAUDE, CRM_KPIS, CRM_STAGES, DIAR_STATS, GOLD, ICON_CSS, ICONS,  # noqa: E402
-                           PROJECTS, SCREENS, STATS, STEPS, THEMES, TRUST, _shot, about, backdrop, delay, e,
-                           svg, trust, write)
+                           PROJECTS, SCREENS, STATS, STEPS, THEMES, _shot, about, backdrop, delay, e,
+                           svg, write)
 
 OUT = os.path.join(ROOT, "assets", "m")
 os.makedirs(OUT, exist_ok=True)
@@ -309,9 +309,6 @@ def main():
         write(os.path.join(OUT, f"about-{mode}.svg"), about(mode, mobile=True))
         for i, (slug, icon_name, title, desc, chips) in enumerate(PROJECTS):
             write(os.path.join(OUT, f"project-{slug}-{mode}.svg"), project(mode, i, slug, icon_name, title, desc, chips))
-        # Wikidata as a standard-size badge on phones
-        slug, eyebrow, name, mark, _note = TRUST[-1]
-        write(os.path.join(OUT, f"trust-{slug}-{mode}.svg"), trust(mode, 6, "ENTITY Q141189697", name, mark))
     print("wrote", len(os.listdir(OUT)), "mobile SVGs")
 
 
