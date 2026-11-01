@@ -96,26 +96,26 @@
 </g>
 <line class="flow" x1="760" y1="418.0" x2="658" y2="418.0" stroke="#7C3AED" stroke-width="2"/>
 <path d="M666 411.0 l-8 7 8 7" fill="none" stroke="#7C3AED" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="708" y="406.0" font-size="12" font-weight="700" letter-spacing="1" text-anchor="middle" fill="#57606A">IMPLEMENTS</text>
+<text x="708" y="406.0" font-size="11" font-weight="700" letter-spacing=".8" text-anchor="middle" fill="#57606A">IMPLEMENTS</text>
 <path class="flow" d="M648 302.0 H996.0 V362" fill="none" stroke="#0A85C2" stroke-width="2"/>
 <path d="M989.0 355 l7 8 7 -8" fill="none" stroke="#0A85C2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="1010.0" y="290.0" font-size="14" font-weight="700" letter-spacing="1.5" fill="#57606A">DI REGISTRATION</text>
 <line class="flow" x1="834.7" y1="464" x2="834.7" y2="488" stroke="#57606A" stroke-opacity=".7" stroke-width="1.6"/>
 <g class="in" style="animation-delay:0.60s">
 <rect x="760.0" y="488" width="149.3" height="92" rx="14" fill="#F6F8FA" stroke="#D0D7DE"/>
-<text x="834.7" y="528" font-size="16" font-weight="800" text-anchor="middle" fill="#1F2328">SQL Server</text>
+<text x="834.7" y="528" font-size="15" font-weight="800" text-anchor="middle" fill="#1F2328">SQL Server</text>
 <text x="834.7" y="554" font-size="14" text-anchor="middle" fill="#57606A">Relational data</text>
 </g>
 <line class="flow" x1="996.0" y1="464" x2="996.0" y2="488" stroke="#57606A" stroke-opacity=".7" stroke-width="1.6"/>
 <g class="in" style="animation-delay:0.70s">
 <rect x="921.3" y="488" width="149.3" height="92" rx="14" fill="#F6F8FA" stroke="#D0D7DE"/>
-<text x="996.0" y="528" font-size="16" font-weight="800" text-anchor="middle" fill="#1F2328">Redis</text>
+<text x="996.0" y="528" font-size="15" font-weight="800" text-anchor="middle" fill="#1F2328">Redis</text>
 <text x="996.0" y="554" font-size="14" text-anchor="middle" fill="#57606A">Cache · Baskets</text>
 </g>
 <line class="flow" x1="1157.3" y1="464" x2="1157.3" y2="488" stroke="#57606A" stroke-opacity=".7" stroke-width="1.6"/>
 <g class="in" style="animation-delay:0.80s">
 <rect x="1082.7" y="488" width="149.3" height="92" rx="14" fill="#F6F8FA" stroke="#D0D7DE"/>
-<text x="1157.3" y="528" font-size="16" font-weight="800" text-anchor="middle" fill="#1F2328">Azure</text>
+<text x="1157.3" y="528" font-size="15" font-weight="800" text-anchor="middle" fill="#1F2328">Azure</text>
 <text x="1157.3" y="554" font-size="14" text-anchor="middle" fill="#57606A">Cloud hosting</text>
 </g>
 </svg>

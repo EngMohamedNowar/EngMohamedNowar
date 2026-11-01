@@ -359,7 +359,7 @@ def architecture(mode):
           '</g>',
           f'<line class="flow" x1="{ix}" y1="{iy + bh / 2}" x2="{cx + cw + 10}" y2="{iy + bh / 2}" stroke="{t["c2"]}" stroke-width="2"/>',
           f'<path d="M{cx + cw + 18} {iy + bh / 2 - 7} l-8 7 8 7" fill="none" stroke="{t["c2"]}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>',
-          f'<text x="{(ix + cx + cw) / 2 + 4:.0f}" y="{iy + bh / 2 - 12}" font-size="12" font-weight="700" letter-spacing="1" text-anchor="middle" fill="{t["muted"]}">IMPLEMENTS</text>',
+          f'<text x="{(ix + cx + cw) / 2 + 4:.0f}" y="{iy + bh / 2 - 12}" font-size="11" font-weight="700" letter-spacing=".8" text-anchor="middle" fill="{t["muted"]}">IMPLEMENTS</text>',
           f'<path class="flow" d="M{cx + cw} {ys[1] + bh / 2} H{ix + iw / 2} V{iy - 10}" fill="none" stroke="{t["c1"]}" stroke-width="2"/>',
           f'<path d="M{ix + iw / 2 - 7} {iy - 17} l7 8 7 -8" fill="none" stroke="{t["c1"]}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>',
           f'<text x="{ix + iw / 2 + 14}" y="{ys[1] + bh / 2 - 12}" font-size="14" font-weight="700" letter-spacing="1.5" fill="{t["muted"]}">DI REGISTRATION</text>']
@@ -370,7 +370,7 @@ def architecture(mode):
         b += [f'<line class="flow" x1="{x + sw / 2:.1f}" y1="{iy + bh}" x2="{x + sw / 2:.1f}" y2="{sy}" stroke="{t["muted"]}" stroke-opacity=".7" stroke-width="1.6"/>',
               f'<g class="in"{delay(.6 + k * .1)}>',
               f'<rect x="{x:.1f}" y="{sy}" width="{sw:.1f}" height="{bh}" rx="14" fill="{t["card2"]}" stroke="{t["line"]}"/>',
-              f'<text x="{x + sw / 2:.1f}" y="{sy + 40}" font-size="16" font-weight="800" text-anchor="middle" fill="{t["title"]}">{e(name)}</text>',
+              f'<text x="{x + sw / 2:.1f}" y="{sy + 40}" font-size="15" font-weight="800" text-anchor="middle" fill="{t["title"]}">{e(name)}</text>',
               f'<text x="{x + sw / 2:.1f}" y="{sy + 66}" font-size="14" text-anchor="middle" fill="{t["muted"]}">{e(sub)}</text>',
               '</g>']
     return svg(W, H, "\n".join(b), css, t, defs, mono=True,
