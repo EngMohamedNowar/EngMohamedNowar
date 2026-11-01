@@ -8,6 +8,8 @@ on:
     branches: [main]
     paths:
       - scripts/gen_stats.py
+      - scripts/brand.py
+      - scripts/fonts/**
       - .github/workflows/stats.yml
 
 permissions:

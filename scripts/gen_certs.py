@@ -3,25 +3,28 @@
 Usage: python scripts/gen_certs.py   (needs Pillow; run from the repo root)
 Reads certificates/*.jpg, writes assets/certs/*.svg with the image embedded (SVGs in <img> can't load external files).
 """
-import base64, html, io, os
+import base64, html, io, os, sys
 from PIL import Image, ImageFilter
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from brand import CYAN, FONT, FONT_FACE, PURPLE, PURPLE_SOFT, THEMES  # noqa: E402
 
 OUT = "assets/certs"
 os.makedirs(OUT, exist_ok=True)
-FONT = "-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
-FG, SUB, CARD, LINE, BG = "#E6EDF3", "#8B949E", "#161B22", "#30363D", "#0D1117"
+_T = THEMES["dark"]
+FG, SUB, CARD, LINE, BG, BG2 = _T["text"], _T["muted"], _T["card"], _T["line"], _T["bg1"], _T["bg2"]
 RM = "@media (prefers-reduced-motion: reduce){*{animation:none!important}}"
 
 # slug, image, title, issuer, meta, category, accent, highlight
 CERTS = [
-    ("bsc", "bachelor-certificate.jpg", "B.Sc. Graduation Certificate", "Egyptian E-Learning University", "Bachelor's degree · 2025", "Degree", "#FBBF24", ""),
-    ("route", "route-aspnet-core.jpg", "ASP.NET Core Back-End", "Route Academy", "Dec 2025 – Jul 2026 · Certificate of Achievement", "Diploma", "#36BCF7", ""),
-    ("hcia", "huawei-hcia-ai.jpg", "HCIA-AI V3.5", "Huawei", "Huawei Talent Online · 2024", "Certification", "#F43F5E", "96%"),
-    ("nti", "nti.jpg", "AI Talent Academy Track", "NTI × Huawei", "80 hours · Sep – Oct 2024", "Bootcamp", "#F59E0B", "96%"),
-    ("python", "iti-python.jpg", "Full Stack Python", "ITI", "120 hours · Jul – Aug 2024", "Training", "#A78BFA", ""),
-    ("oop", "mastering-oop.jpg", "Mastering OOP using C++", "ITI · Mahara-Tech", "Oct 2025", "Course", "#4ADE80", ""),
-    ("cleancode", "clean-code.jpg", "Principles of Clean Code", "ITI · Mahara-Tech", "Oct 2025", "Course", "#2DD4BF", ""),
-    ("db", "database.jpg", "Database Fundamentals", "ITI · Mahara-Tech", "Oct 2024", "Course", "#60A5FA", ""),
+    ("bsc", "bachelor-certificate.jpg", "B.Sc. Graduation Certificate", "Egyptian E-Learning University", "Bachelor's degree · 2025", "Degree", PURPLE_SOFT, ""),
+    ("route", "route-aspnet-core.jpg", "ASP.NET Core Back-End", "Route Academy", "Dec 2025 – Jul 2026 · Certificate of Achievement", "Diploma", CYAN, ""),
+    ("hcia", "huawei-hcia-ai.jpg", "HCIA-AI V3.5", "Huawei", "Huawei Talent Online · 2024", "Certification", PURPLE_SOFT, "96%"),
+    ("nti", "nti.jpg", "AI Talent Academy Track", "NTI × Huawei", "80 hours · Sep – Oct 2024", "Bootcamp", CYAN, "96%"),
+    ("python", "iti-python.jpg", "Full Stack Python", "ITI", "120 hours · Jul – Aug 2024", "Training", PURPLE_SOFT, ""),
+    ("oop", "mastering-oop.jpg", "Mastering OOP using C++", "ITI · Mahara-Tech", "Oct 2025", "Course", CYAN, ""),
+    ("cleancode", "clean-code.jpg", "Principles of Clean Code", "ITI · Mahara-Tech", "Oct 2025", "Course", PURPLE_SOFT, ""),
+    ("db", "database.jpg", "Database Fundamentals", "ITI · Mahara-Tech", "Oct 2024", "Course", CYAN, ""),
 ]
 
 
@@ -53,8 +56,8 @@ def card(i, slug, fn, title, issuer, meta, cat, acc, hi):
     dw, dh = iw * s, ih * s
     dx, dy = px + (pw - dw) / 2, py + (ph - dh) / 2
     u = f"c{slug}"
-    chip_w = 34 + len(issuer) * 7.0
-    cat_w = 18 + len(cat) * 7.4
+    chip_w = 34 + len(issuer) * 8.0
+    cat_w = 18 + len(cat) * 8.6
     score = ""
     if hi:
         score = f'''<g transform="translate({W-58} {py+ph-42})">
@@ -66,6 +69,7 @@ def card(i, slug, fn, title, issuer, meta, cat, acc, hi):
     return f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{W}" height="{H}" viewBox="0 0 {W} {H}">
 <title>{esc(title)} — {esc(issuer)}</title>
 <style>
+  {FONT_FACE}
   text{{font-family:{FONT}}}
   .edge{{stroke-dasharray:14 86;animation:edge 7s linear infinite;animation-delay:-{i*0.9:.1f}s}}
   .shine{{animation:shine 5s ease-in-out infinite;animation-delay:{i*0.6:.1f}s}}
@@ -85,7 +89,7 @@ def card(i, slug, fn, title, issuer, meta, cat, acc, hi):
   {RM}
 </style>
 <defs>
-  <linearGradient id="{u}g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{acc}"/><stop offset="1" stop-color="#36BCF7"/></linearGradient>
+  <linearGradient id="{u}g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{acc}"/><stop offset="1" stop-color="{CYAN}"/></linearGradient>
   <linearGradient id="{u}s" x1="0" x2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".5" stop-color="#FFFFFF" stop-opacity=".28"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
   <linearGradient id="{u}fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{BG}" stop-opacity=".35"/><stop offset="1" stop-color="{BG}" stop-opacity=".75"/></linearGradient>
   <clipPath id="{u}p"><rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="12"/></clipPath>
@@ -108,17 +112,17 @@ def card(i, slug, fn, title, issuer, meta, cat, acc, hi):
 </g>
 <g transform="translate({px+pw-12-cat_w:.0f} {py+12})">
   <rect width="{cat_w:.0f}" height="26" rx="13" fill="{acc}"/>
-  <text x="{cat_w/2:.0f}" y="17.5" text-anchor="middle" font-size="12" font-weight="700" fill="{BG}">{esc(cat)}</text>
+  <text x="{cat_w/2:.0f}" y="17.5" text-anchor="middle" font-size="12" font-weight="800" fill="{BG}">{esc(cat)}</text>
 </g>
 {score}
 <rect x="24" y="334" width="4" height="22" rx="2" fill="{acc}"/>
-<text x="38" y="352" font-size="22" font-weight="700" fill="{FG}">{esc(title)}</text>
+<text x="38" y="352" font-size="22" font-weight="800" fill="{FG}">{esc(title)}</text>
 <text x="38" y="378" font-size="14" fill="{SUB}">{esc(meta)}</text>
 <line x1="24" x2="{W-24}" y1="398" y2="398" stroke="{LINE}"/>
 <g transform="translate(24 410)">
-  <rect width="92" height="26" rx="13" fill="#4ADE80" fill-opacity=".12" stroke="#4ADE80" stroke-opacity=".5"/>
-  <path class="chk" d="M12 13.5l4 4 8-8.5" fill="none" stroke="#4ADE80" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="32" y="17.5" font-size="12" font-weight="700" fill="#4ADE80">Verified</text>
+  <rect width="92" height="26" rx="13" fill="{CYAN}" fill-opacity=".12" stroke="{CYAN}" stroke-opacity=".5"/>
+  <path class="chk" d="M12 13.5l4 4 8-8.5" fill="none" stroke="{CYAN}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="32" y="17.5" font-size="12" font-weight="800" fill="{CYAN}">Verified</text>
 </g>
 <g transform="translate({W-24} 428)"><text text-anchor="end" font-size="13" font-weight="600" fill="{acc}">View certificate <tspan class="arr">→</tspan></text></g>
 </g>
@@ -128,10 +132,10 @@ def card(i, slug, fn, title, issuer, meta, cat, acc, hi):
 
 def timeline():
     # chronological
-    ev = [("Jul 2024", "Full Stack Python", "ITI", "#A78BFA"), ("Oct 2024", "AI Talent Track", "NTI × Huawei", "#F59E0B"),
-          ("2024", "HCIA-AI V3.5", "Huawei", "#F43F5E"), ("Oct 2024", "Database", "Mahara-Tech", "#60A5FA"),
-          ("2025", "B.Sc. Degree", "EELU", "#FBBF24"), ("Oct 2025", "OOP in C++", "Mahara-Tech", "#4ADE80"),
-          ("Oct 2025", "Clean Code", "Mahara-Tech", "#2DD4BF"), ("Jul 2026", "ASP.NET Core", "Route", "#36BCF7")]
+    ev = [("Jul 2024", "Full Stack Python", "ITI", PURPLE_SOFT), ("Oct 2024", "AI Talent Track", "NTI × Huawei", CYAN),
+          ("2024", "HCIA-AI V3.5", "Huawei", PURPLE_SOFT), ("Oct 2024", "Database", "Mahara-Tech", CYAN),
+          ("2025", "B.Sc. Degree", "EELU", PURPLE_SOFT), ("Oct 2025", "OOP in C++", "Mahara-Tech", CYAN),
+          ("Oct 2025", "Clean Code", "Mahara-Tech", PURPLE_SOFT), ("Jul 2026", "ASP.NET Core", "Route", CYAN)]
     W, H = 1200, 250
     x0, x1, y = 115, W - 115, 142
     step = (x1 - x0) / (len(ev) - 1)
@@ -144,12 +148,13 @@ def timeline():
 <line x1="{x:.1f}" x2="{x:.1f}" y1="{y}" y2="{y-22 if up else y+22}" stroke="{c}" stroke-opacity=".5"/>
 <circle class="pulse" style="animation-delay:{i*0.45:.2f}s" cx="{x:.1f}" cy="{y}" r="9" fill="none" stroke="{c}"/>
 <circle cx="{x:.1f}" cy="{y}" r="9" fill="{BG}" stroke="{c}" stroke-width="3"/><circle cx="{x:.1f}" cy="{y}" r="3.5" fill="{c}"/>
-<text x="{x:.1f}" y="{ty-18 if up else ty}" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="1" fill="{c}">{esc(d.upper())}</text>
-<text x="{x:.1f}" y="{ty if up else ty+18}" text-anchor="middle" font-size="14" font-weight="700" fill="{FG}">{esc(t)}</text>
+<text x="{x:.1f}" y="{ty-18 if up else ty}" text-anchor="middle" font-size="11" font-weight="800" letter-spacing="1" fill="{c}">{esc(d.upper())}</text>
+<text x="{x:.1f}" y="{ty if up else ty+18}" text-anchor="middle" font-size="14" font-weight="800" fill="{FG}">{esc(t)}</text>
 <text x="{x:.1f}" y="{ty+16 if up else ty+34}" text-anchor="middle" font-size="11.5" fill="{SUB}">{esc(org)}</text>
 </g>'''
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">
 <style>
+  {FONT_FACE}
   text{{font-family:{FONT}}}
   .ev{{animation:in .8s cubic-bezier(.2,.7,.2,1) both}}
   .flow{{stroke-dasharray:6 8;animation:flow 1.4s linear infinite}}
@@ -162,17 +167,17 @@ def timeline():
   {RM}
 </style>
 <defs>
-  <linearGradient id="tlg" x1="0" x2="1"><stop offset="0" stop-color="#A78BFA"/><stop offset=".5" stop-color="#F59E0B"/><stop offset="1" stop-color="#36BCF7"/></linearGradient>
-  <linearGradient id="tlbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{BG}"/><stop offset="1" stop-color="#0B1B2B"/></linearGradient>
+  <linearGradient id="tlg" x1="0" x2="1"><stop offset="0" stop-color="{PURPLE}"/><stop offset=".5" stop-color="{PURPLE_SOFT}"/><stop offset="1" stop-color="{CYAN}"/></linearGradient>
+  <linearGradient id="tlbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{BG}"/><stop offset="1" stop-color="{BG2}"/></linearGradient>
 </defs>
 <rect x="1" y="1" width="{W-2}" height="{H-2}" rx="16" fill="url(#tlbg)" stroke="{LINE}"/>
 <rect class="edge" x="1" y="1" width="{W-2}" height="{H-2}" rx="16" fill="none" stroke="url(#tlg)" stroke-width="2" pathLength="100"/>
-<text x="28" y="34" font-size="13" font-weight="700" letter-spacing="2" fill="{SUB}">LEARNING JOURNEY · 8 CERTIFICATES · 2024 → 2026</text>
+<text x="28" y="34" font-size="13" font-weight="800" letter-spacing="2" fill="{SUB}">LEARNING JOURNEY · 8 CERTIFICATES · 2024 → 2026</text>
 <line x1="{x0}" x2="{x1}" y1="{y}" y2="{y}" stroke="{LINE}" stroke-width="4" stroke-linecap="round"/>
 <line class="flow" x1="{x0}" x2="{x1}" y1="{y}" y2="{y}" stroke="url(#tlg)" stroke-width="2.5"/>
 {g}
 <circle r="6" fill="#FFFFFF"><animateMotion dur="8s" repeatCount="indefinite" path="M{x0} {y} H{x1}"/></circle>
-<circle r="14" fill="#36BCF7" fill-opacity=".25"><animateMotion dur="8s" repeatCount="indefinite" path="M{x0} {y} H{x1}"/></circle>
+<circle r="14" fill="{CYAN}" fill-opacity=".25"><animateMotion dur="8s" repeatCount="indefinite" path="M{x0} {y} H{x1}"/></circle>
 </svg>
 '''
 

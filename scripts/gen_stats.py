@@ -14,10 +14,13 @@ OUT = sys.argv[1] if len(sys.argv) > 1 else "dist"
 LOGIN = sys.argv[2] if len(sys.argv) > 2 else os.environ.get("GH_LOGIN", "EngMohamedNowar")
 TOKEN = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
 
-ACC, ACC2 = "#36BCF7", "#A78BFA"
-BG1, BG2, CARD, LINE = "#0D1117", "#0B1B2B", "#161B22", "#30363D"
-FG, SUB, OK = "#E6EDF3", "#8B949E", "#4ADE80"
-FONT = "-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from brand import CYAN, FONT, FONT_FACE, PURPLE_SOFT, THEMES  # noqa: E402  (Syne + #804199/#20AACF)
+
+_T = THEMES["dark"]
+ACC, ACC2 = CYAN, PURPLE_SOFT
+BG1, BG2, CARD, LINE = _T["bg1"], _T["bg2"], _T["card"], _T["line"]
+FG, SUB, OK = _T["text"], _T["muted"], _T["ok"]
 RM = "@media (prefers-reduced-motion: reduce){*{animation:none!important}}"
 
 QUERY = """
@@ -60,8 +63,9 @@ def w(name, s):
 def odometer(uid, value, x, y, fs, fill, delay=0.0, anchor_end=False):
     """Rolling-digit counter. Base transforms hold the final value, so static renderers show it."""
     s = f"{value:,}"
-    cw, h = fs * 0.62, fs * 1.25
-    width = sum(cw if ch.isdigit() else fs * 0.3 for ch in s)
+    # Syne 800 digits are proportional and ~1.1em wide: give each digit a centred 1.16em cell
+    cw, h = fs * 1.16, fs * 1.25
+    width = sum(cw if ch.isdigit() else fs * 0.34 for ch in s)
     x0 = x - width if anchor_end else x
     out = f'<clipPath id="{uid}"><rect x="{x0}" y="{y-fs}" width="{width+4:.1f}" height="{h:.1f}"/></clipPath><g clip-path="url(#{uid})" font-size="{fs}" font-weight="800" fill="{fill}">'
     cx = x0
@@ -70,11 +74,11 @@ def odometer(uid, value, x, y, fs, fill, delay=0.0, anchor_end=False):
     for ch in s:
         if not ch.isdigit():
             out += f'<text x="{cx:.1f}" y="{y}">{ch}</text>'
-            cx += fs * 0.3
+            cx += fs * 0.34
             continue
         d = int(ch)
         idx = 10 + d
-        stack = "".join(f'<text x="{cx:.1f}" y="{y + k*h:.1f}">{k % 10}</text>' for k in range(20))
+        stack = "".join(f'<text x="{cx + cw / 2:.1f}" y="{y + k*h:.1f}" text-anchor="middle">{k % 10}</text>' for k in range(20))
         roll = 1.4 + (len(digits) - di) * 0.25
         dur = roll + delay
         k = delay / dur
@@ -89,6 +93,7 @@ def odometer(uid, value, x, y, fs, fill, delay=0.0, anchor_end=False):
 def frame(wd, ht, uid, title, subtitle, body, extra_css=""):
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{wd}" height="{ht}" viewBox="0 0 {wd} {ht}">
 <style>
+  {FONT_FACE}
   text{{font-family:{FONT};font-variant-numeric:tabular-nums}}
   .edge{{stroke-dasharray:12 88;animation:edge 8s linear infinite}}
   .in{{animation:in .8s cubic-bezier(.2,.7,.2,1) both}}
@@ -107,7 +112,7 @@ def frame(wd, ht, uid, title, subtitle, body, extra_css=""):
 <rect x="1" y="1" width="{wd-2}" height="{ht-2}" rx="16" fill="none" stroke="{LINE}"/>
 <rect class="edge" x="1" y="1" width="{wd-2}" height="{ht-2}" rx="16" fill="none" stroke="url(#{uid}acc)" stroke-width="2" pathLength="100"/>
 <rect x="32" y="30" width="4" height="26" rx="2" fill="{ACC}"/>
-<text x="46" y="50" font-size="20" font-weight="700" fill="{FG}">{title}</text>
+<text x="46" y="50" font-size="20" font-weight="800" fill="{FG}">{title}</text>
 <text x="{wd-32}" y="50" text-anchor="end" font-size="13" fill="{SUB}">{subtitle}</text>
 {body}
 </svg>
@@ -241,7 +246,7 @@ def languages(u):
         body += f'''<g class="in" style="animation-delay:{d:.2f}s">
 <circle cx="{x+7}" cy="{y+6}" r="6" fill="{col}"/>
 <text x="{x+22}" y="{y+11}" font-size="15" font-weight="600" fill="{FG}">{n}</text>
-<text x="{x+rw}" y="{y+11}" text-anchor="end" font-size="14" font-weight="700" fill="{ACC}">{pct:.1f}%</text>
+<text x="{x+rw}" y="{y+11}" text-anchor="end" font-size="14" font-weight="800" fill="{ACC}">{pct:.1f}%</text>
 <rect x="{x}" y="{y+20}" width="{rw:.1f}" height="8" rx="4" fill="{CARD}"/>
 <clipPath id="slf{i}"><rect x="{x}" y="{y+20}" width="{fw:.1f}" height="8" rx="4"/></clipPath>
 <rect class="fillbar" style="animation-delay:{d+.2:.2f}s" x="{x}" y="{y+20}" width="{fw:.1f}" height="8" rx="4" fill="{col}"/>
